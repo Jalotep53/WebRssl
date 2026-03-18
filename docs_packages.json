@@ -1,0 +1,110 @@
+﻿[
+    {
+        "package":  "bridging",
+        "count":  246
+    },
+    {
+        "package":  "rekammedis",
+        "count":  237
+    },
+    {
+        "package":  "keuangan",
+        "count":  167
+    },
+    {
+        "package":  "grafikanalisa",
+        "count":  148
+    },
+    {
+        "package":  "inventory",
+        "count":  118
+    },
+    {
+        "package":  "laporan",
+        "count":  107
+    },
+    {
+        "package":  "kepegawaian",
+        "count":  74
+    },
+    {
+        "package":  "simrskhanza",
+        "count":  72
+    },
+    {
+        "package":  "surat",
+        "count":  60
+    },
+    {
+        "package":  "ipsrs",
+        "count":  44
+    },
+    {
+        "package":  "dapur",
+        "count":  36
+    },
+    {
+        "package":  "toko",
+        "count":  35
+    },
+    {
+        "package":  "widget",
+        "count":  35
+    },
+    {
+        "package":  "inventaris",
+        "count":  35
+    },
+    {
+        "package":  "setting",
+        "count":  32
+    },
+    {
+        "package":  "fungsi",
+        "count":  18
+    },
+    {
+        "package":  "restore",
+        "count":  18
+    },
+    {
+        "package":  "permintaan",
+        "count":  16
+    },
+    {
+        "package":  "perpustakaan",
+        "count":  16
+    },
+    {
+        "package":  "ziscsr",
+        "count":  15
+    },
+    {
+        "package":  "informasi",
+        "count":  11
+    },
+    {
+        "package":  "tranfusidarah",
+        "count":  10
+    },
+    {
+        "package":  "viabarcode",
+        "count":  8
+    },
+    {
+        "package":  "smsui",
+        "count":  6
+    },
+    {
+        "package":  "parkir",
+        "count":  3
+    },
+    {
+        "package":  "smsobj",
+        "count":  1
+    },
+    {
+        "package":  "smsservice",
+        "count":  1
+    }
+]

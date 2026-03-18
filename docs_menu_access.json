@@ -1,0 +1,5617 @@
+﻿[
+    {
+        "permission":  "admin",
+        "button":  "btnAdmin",
+        "label":  "Set Admin"
+    },
+    {
+        "permission":  "akun_aset_inventaris",
+        "button":  "btnAkunAsetInventaris",
+        "label":  "Akun Jenis Aset/Inventaris"
+    },
+    {
+        "permission":  "akun_bayar",
+        "button":  "btnakun_bayar",
+        "label":  "Akun Bayar"
+    },
+    {
+        "permission":  "akun_bayar_hutang",
+        "button":  "btnAkunBayarHutang",
+        "label":  "Akun Bayar Hutang"
+    },
+    {
+        "permission":  "akun_host_to_host_bank_jabar",
+        "button":  "btnAkunRekeningHtHBankJabar",
+        "label":  "Host To Host Bank Jabar"
+    },
+    {
+        "permission":  "akun_host_to_host_bank_jateng",
+        "button":  "btnAkunRekeningHtHBankJateng",
+        "label":  "Host To Host Bank Jateng"
+    },
+    {
+        "permission":  "akun_host_to_host_bank_mandiri",
+        "button":  "btnHostToHostBankMandiri",
+        "label":  "Host To Host Bank Mandiri"
+    },
+    {
+        "permission":  "akun_host_to_host_bank_papua",
+        "button":  "btnAkunRekeningHtHBankPapua",
+        "label":  "Host To Host Bank Papua"
+    },
+    {
+        "permission":  "akun_penagihan_piutang",
+        "button":  "btnAkunPenagihanPiutang",
+        "label":  "Akun Penagihan Piutang"
+    },
+    {
+        "permission":  "akun_piutang",
+        "button":  "btnAkunPiutang",
+        "label":  "Akun Piutang"
+    },
+    {
+        "permission":  "akun_rekening",
+        "button":  "btnRekening",
+        "label":  "Akun Rekening"
+    },
+    {
+        "permission":  "anggota_militer_dirawat",
+        "button":  "btnAnggotaMiliterDirawat",
+        "label":  "Anggota TNI Dirawat"
+    },
+    {
+        "permission":  "anggota_perpustakaan",
+        "button":  "btnAnggotaPerpustakaan",
+        "label":  "Anggota Perpustakaan"
+    },
+    {
+        "permission":  "anggota_polri_dirawat",
+        "button":  "btnAnggotaPolriDirawat",
+        "label":  "Anggota POLRI Dirawat"
+    },
+    {
+        "permission":  "aplicare_ketersediaan_kamar",
+        "button":  "btnAplicareKetersediaanKamar",
+        "label":  "Ketersediaan Kamar Aplicare"
+    },
+    {
+        "permission":  "aplicare_referensi_kamar",
+        "button":  "btnAplicareReferensiKamar",
+        "label":  "Referensi Kamar Aplicare"
+    },
+    {
+        "permission":  "aplikasi",
+        "button":  "btnSetupAplikasi",
+        "label":  "Set Aplikasi"
+    },
+    {
+        "permission":  "asal_hibah",
+        "button":  "btnAsalHibah",
+        "label":  "Asal Hibah"
+    },
+    {
+        "permission":  "asuhan_gizi",
+        "button":  "btnAsuhanGizi",
+        "label":  "Asuhan Gizi"
+    },
+    {
+        "permission":  "audit_bundle_iadp",
+        "button":  "btnAuditBundleIADP",
+        "label":  "Audit Bundle IADP"
+    },
+    {
+        "permission":  "audit_bundle_ido",
+        "button":  "btnAuditBundleIDO",
+        "label":  "Audit Bundle IDO"
+    },
+    {
+        "permission":  "audit_bundle_isk",
+        "button":  "btnAuditBundleISK",
+        "label":  "Audit Bundle ISK"
+    },
+    {
+        "permission":  "audit_bundle_plabsi",
+        "button":  "btnAuditBundlePLABSI",
+        "label":  "Audit Bundle PLABSI"
+    },
+    {
+        "permission":  "audit_bundle_vap",
+        "button":  "btnAuditBundleVAP",
+        "label":  "Audit Bundle VAP"
+    },
+    {
+        "permission":  "audit_cuci_tangan_medis",
+        "button":  "btnAuditCuciTanganMedis",
+        "label":  "Audit Cuci Tangan Medis"
+    },
+    {
+        "permission":  "audit_fasilitas_apd",
+        "button":  "btnAuditFasilitasAPD",
+        "label":  "Audit Fasilitas APD"
+    },
+    {
+        "permission":  "audit_fasilitas_kebersihan_tangan",
+        "button":  "btnAuditFasilitasKebersihanTangan",
+        "label":  "Audit Fasilitas Kebersihan Tangan"
+    },
+    {
+        "permission":  "audit_kamar_jenazah",
+        "button":  "btnAuditKamarJenazah",
+        "label":  "Audit Kamar Jenazah"
+    },
+    {
+        "permission":  "audit_kepatuhan_apd",
+        "button":  "btnAuditKepatuhanAPD",
+        "label":  "Audit Kepatuhan APD"
+    },
+    {
+        "permission":  "audit_pembuangan_benda_tajam",
+        "button":  "btnAuditPembuanganBendaTajam",
+        "label":  "Audit Pembuangan Benda Tajam \u0026 Jarum"
+    },
+    {
+        "permission":  "audit_pembuangan_limbah",
+        "button":  "btnAuditPembuanganLimbah",
+        "label":  "Audit Pembuangan Limbah"
+    },
+    {
+        "permission":  "audit_pembuangan_limbah_cair_infeksius",
+        "button":  "btnAuditPembuanganLimbahCairInfeksius",
+        "label":  "Audit Pembuangan Limbah Cair Infeksius"
+    },
+    {
+        "permission":  "audit_penanganan_darah",
+        "button":  "btnAuditPenangananDarah",
+        "label":  "Audit Penanganan Darah"
+    },
+    {
+        "permission":  "audit_penempatan_pasien",
+        "button":  "btnAuditPenempatanPasien",
+        "label":  "Audit Penempatan Pasien"
+    },
+    {
+        "permission":  "audit_pengelolaan_linen_kotor",
+        "button":  "btnAuditPengelolaanLinenKotor",
+        "label":  "Audit Pengelolaan Linen Kotor"
+    },
+    {
+        "permission":  "audit_sterilisasi_alat",
+        "button":  "btnAuditSterilisasiAlat",
+        "label":  "Audit Sterilisasi Alat"
+    },
+    {
+        "permission":  "bagian_tubuh_k3rs",
+        "button":  "btnBagianTubuhK3",
+        "label":  "Bagian Tubuh K3"
+    },
+    {
+        "permission":  "bagian_tubuh_k3rstahun",
+        "button":  "btnBagianTubuhK3PerTahun",
+        "label":  "Bagian Tubuh K3 Per Tahun"
+    },
+    {
+        "permission":  "bahasa_pasien",
+        "button":  "btnBahasa",
+        "label":  "Bahasa Pasien"
+    },
+    {
+        "permission":  "balance_cairan",
+        "button":  "btnCatatanKeseimbanganCairan",
+        "label":  "Keseimbangan Cairan"
+    },
+    {
+        "permission":  "bank_tujuan_transfer_bankmandiri",
+        "button":  "btnMandiriBankTujuanTRansfer",
+        "label":  "Bank Tujuan Transfer Bank Mandiri"
+    },
+    {
+        "permission":  "barang_cssd",
+        "button":  "btnBarangCSSD",
+        "label":  "Barang CSSD"
+    },
+    {
+        "permission":  "barcode",
+        "button":  "btnBarcode",
+        "label":  "Barcode Presensi"
+    },
+    {
+        "permission":  "barcoderalan",
+        "button":  "btnBarcodeRalan",
+        "label":  "Rawat Jalan"
+    },
+    {
+        "permission":  "barcoderanap",
+        "button":  "btnBarcodeRanap",
+        "label":  "Rawat Inap"
+    },
+    {
+        "permission":  "batal_pendaftaran_mobilejkn_bpjs",
+        "button":  "btnBatalPendaftaranMobileJKN",
+        "label":  "Batal Pendaftaran Mobile JKN"
+    },
+    {
+        "permission":  "bayar_beban_hutang_lain",
+        "button":  "btnBayarBebanHutangLain",
+        "label":  "Bayar Beban Hutang Lain"
+    },
+    {
+        "permission":  "bayar_denda_perpustakaan",
+        "button":  "btnBayarDendaPerpustakaan",
+        "label":  "Bayar Denda Perpustakaan"
+    },
+    {
+        "permission":  "bayar_jm_dokter",
+        "button":  "btnBayarJMDokter",
+        "label":  "Bayar JM Dokter"
+    },
+    {
+        "permission":  "bayar_pemesanan_iventaris",
+        "button":  "btnBayarPemesananInventaris",
+        "label":  "Bayar Pesan Aset/Inventaris"
+    },
+    {
+        "permission":  "bayar_pemesanan_obat",
+        "button":  "btnbayar_pemesanan",
+        "label":  "Bayar Pesan Obat/BHP"
+    },
+    {
+        "permission":  "bayar_pesan_dapur",
+        "button":  "btnBayarPesanDapur",
+        "label":  "Bayar Pesan Dapur"
+    },
+    {
+        "permission":  "bayar_pesan_non_medis",
+        "button":  "btnBayarPesanNonMedis",
+        "label":  "Bayar Pesan Non Medis"
+    },
+    {
+        "permission":  "bayar_piutang",
+        "button":  "btnBayarPiutang",
+        "label":  "Bayar Piutang"
+    },
+    {
+        "permission":  "bayar_piutang_jasa_perusahaan",
+        "button":  "btnBayarPiutangJasaPerusahaan",
+        "label":  "Bayar Piutang Jasa Perusahaan"
+    },
+    {
+        "permission":  "bayar_piutang_lain",
+        "button":  "btnBayarPiutangLainLain",
+        "label":  "Bayar Piutang Peminjaman Uang"
+    },
+    {
+        "permission":  "beban_hutang_lain",
+        "button":  "btnBebanHutangLain",
+        "label":  "Beban Hutang Lain"
+    },
+    {
+        "permission":  "beri_obat",
+        "button":  "btnBeriObat",
+        "label":  "Beri Obat/BHP"
+    },
+    {
+        "permission":  "berkas_digital_perawatan",
+        "button":  "btnBerkasDigitalPerawatan",
+        "label":  "Berkas Digital Perawatan"
+    },
+    {
+        "permission":  "berkas_kepegawaian",
+        "button":  "btnBerkasPegawai",
+        "label":  "Berkas Kepegawaian"
+    },
+    {
+        "permission":  "biaya_harian",
+        "button":  "btnSetBiayaHarian",
+        "label":  "Biaya Harian"
+    },
+    {
+        "permission":  "biaya_masuk_sekali",
+        "button":  "btnSetBiayaMasukSekali",
+        "label":  "Biaya Masuk Sekali"
+    },
+    {
+        "permission":  "biaya_pengadaan_dapur",
+        "button":  "btnRBiayaDapur",
+        "label":  "Biaya Pengadaan Dapur"
+    },
+    {
+        "permission":  "booking_mcu_perusahaan",
+        "button":  "btnBookingMCUPerusahaan",
+        "label":  "Booking MCU Perusahaan"
+    },
+    {
+        "permission":  "booking_operasi",
+        "button":  "btnJadwalOperasi",
+        "label":  "Jadwal Operasi"
+    },
+    {
+        "permission":  "booking_periksa",
+        "button":  "btnBookingPeriksa",
+        "label":  "Booking Periksa"
+    },
+    {
+        "permission":  "booking_registrasi",
+        "button":  "btnBookingRegistrasi",
+        "label":  "Booking Registrasi"
+    },
+    {
+        "permission":  "bpjs_antrean_pertanggal",
+        "button":  "btnBPJSAntreanPerTanggalMobileJKN",
+        "label":  "Antrean Per Tanggal Mobile JKN"
+    },
+    {
+        "permission":  "bpjs_cek_carakeluar",
+        "button":  "btnCekReferensiCaraKeluarBPJS",
+        "label":  "Referensi Cara Keluar VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_dokter",
+        "button":  "btnCekReferensiDokterBPJS",
+        "label":  "Referensi Dokter VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_dokterdpjp",
+        "button":  "btnCekReferensiDokterDPJPBPJS",
+        "label":  "Referensi Dokter DPJP VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_kabupaten",
+        "button":  "btnCekReferensiKabupatenBPJS",
+        "label":  "Referensi Kabupaten VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_kartu",
+        "button":  "btnCekBPJSKartu",
+        "label":  "Cek No.Kartu VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_kecamatan",
+        "button":  "btnCekReferensiKecamatanBPJS",
+        "label":  "Referensi Kecamatan VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_kelas_rawat",
+        "button":  "btnCekReferensiKelasRawatBPJS",
+        "label":  "Referensi Kelas Rawat VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_nik",
+        "button":  "btnCekBPJSNik",
+        "label":  "Cek NIK VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_nomor_rujukan",
+        "button":  "btnCekBPJSNomorRujukanPCare",
+        "label":  "Cek No.Rujukan PCare di VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_nomor_rujukan_rs",
+        "button":  "btnCekBPJSNomorRujukanRS",
+        "label":  "Cek No.Rujukan RS di VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_pasca_pulang",
+        "button":  "btnCekReferensiPascaPulangBPJS",
+        "label":  "Referensi Pasca Pulang VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_propinsi",
+        "button":  "btnCekReferensiPropinsiBPJS",
+        "label":  "Referensi Propinsi VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_prosedur",
+        "button":  "btnCekReferensiProsedurBPJS",
+        "label":  "Referensi Prosedur VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_riwayat",
+        "button":  "btnCekBPJSRiwayatRujukanPCare",
+        "label":  "Riwayat Rujukan PCare di VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_riwayat_rujukanrs",
+        "button":  "btnCekBPJSRiwayatRujukanRS",
+        "label":  "Riwayat Rujukan RS di VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_ruangrawat",
+        "button":  "btnCekReferensiRuangRawatBPJS",
+        "label":  "Referensi Ruang Rawat VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_rujukan_kartu_pcare",
+        "button":  "btnCekBPJSRujukanKartuPCare",
+        "label":  "Cek Rujukan Kartu PCare di VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_rujukan_kartu_rs",
+        "button":  "btnCekBPJSRujukanKartuRS",
+        "label":  "Cek Rujukan Kartu RS di VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_sep",
+        "button":  "btnCekSEP",
+        "label":  "Cek Nomor SEP"
+    },
+    {
+        "permission":  "bpjs_cek_skdp",
+        "button":  "btnCekBPJSSKDP",
+        "label":  "Cek SKDP VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_spesialistik",
+        "button":  "btnCekReferensiSpesialistikBPJS",
+        "label":  "Referensi Spesialistik VClaim"
+    },
+    {
+        "permission":  "bpjs_cek_tanggal_rujukan",
+        "button":  "btnCekBPJSTanggalRujukan",
+        "label":  "Tanggal Rujukan di VClaim"
+    },
+    {
+        "permission":  "bpjs_daftar_finger_print",
+        "button":  "btnBPJSPasienFinger",
+        "label":  "Pasien Finger Print VClaim"
+    },
+    {
+        "permission":  "bpjs_daftar_pelayanan_obat_apotek",
+        "button":  "btnBPJSDaftarPelayananObatApotek",
+        "label":  "Daftar Pelayanan Obat Apotek BPJS"
+    },
+    {
+        "permission":  "bpjs_data_induk_kecelakaan",
+        "button":  "btnBPJSDataIndukKecelakaan",
+        "label":  "Data Induk Kecelakaan VClaim"
+    },
+    {
+        "permission":  "bpjs_diagnosa_prb",
+        "button":  "btnBPJSReferensiDiagnosaPRB",
+        "label":  "Referensi Diagnosa PRB VClaim"
+    },
+    {
+        "permission":  "bpjs_histori_pelayanan",
+        "button":  "btnBPJSHistoriPelayanan",
+        "label":  "Histori Pelayanan BPJS"
+    },
+    {
+        "permission":  "bpjs_klaim_jasa_raharja",
+        "button":  "btnBPJSKlaimJasaRaharja",
+        "label":  "Klaim Jaminan Jasa Raharja VClaim"
+    },
+    {
+        "permission":  "bpjs_kunjungan_sep_apotek",
+        "button":  "btnBPJSKunjunganSEPApotek",
+        "label":  "Pencarian SEP Apotek BPJS"
+    },
+    {
+        "permission":  "bpjs_mapping_dokterdpjp",
+        "button":  "btnMappingDokterDPJPVClaim",
+        "label":  "Mapping Dokter DPJP VClaim"
+    },
+    {
+        "permission":  "bpjs_mapping_obat_apotek",
+        "button":  "btnBPJSMapingObatApotek",
+        "label":  "Mapping Obat Apotek BPJS"
+    },
+    {
+        "permission":  "bpjs_monitoring_klaim",
+        "button":  "btnMonitoringKlaim",
+        "label":  "Monitoring Verifikasi Klaim BPJS"
+    },
+    {
+        "permission":  "bpjs_monitoring_klaim_apotek",
+        "button":  "btnBPJSMonitoringKlaimApotek",
+        "label":  "Monitoring Klaim Apotek BPJS"
+    },
+    {
+        "permission":  "bpjs_obat_prb",
+        "button":  "btnBPJSReferensiObatPRB",
+        "label":  "Referensi Obat PRB VClaim"
+    },
+    {
+        "permission":  "bpjs_program_prb",
+        "button":  "btnBPJSProgramPRB",
+        "label":  "Program PRB di VClaim"
+    },
+    {
+        "permission":  "bpjs_referensi_diagnosa",
+        "button":  "btnCekBPJSDiagnosa",
+        "label":  "Referensi Diagnosa VClaim"
+    },
+    {
+        "permission":  "bpjs_referensi_dokter_hfis",
+        "button":  "btnBPJSReferensiDokterHFIS",
+        "label":  "Referensi Dokter HFIS"
+    },
+    {
+        "permission":  "bpjs_referensi_dpho_apotek",
+        "button":  "btnBPJSReferensiDPHOApotek",
+        "label":  "Referensi DPHO Apotek BPJS"
+    },
+    {
+        "permission":  "bpjs_referensi_faskes",
+        "button":  "btnCekBPJSFaskes",
+        "label":  "Referensi Faskes VClaim"
+    },
+    {
+        "permission":  "bpjs_referensi_faskes_apotek",
+        "button":  "btnBPJSReferensiFaskesApotek",
+        "label":  "Referensi Faskes Apotek BPJS"
+    },
+    {
+        "permission":  "bpjs_referensi_jadwal_hfis",
+        "button":  "btnBPJSReferensiJadwalHFIS",
+        "label":  "Referensi Jadwal HFIS"
+    },
+    {
+        "permission":  "bpjs_referensi_obat_apotek",
+        "button":  "btnBPJSReferensiObatApotek",
+        "label":  "Referensi Obat Apotek BPJS"
+    },
+    {
+        "permission":  "bpjs_referensi_poli",
+        "button":  "btnCekBPJSPoli",
+        "label":  "Referensi Poli VClaim"
+    },
+    {
+        "permission":  "bpjs_referensi_poli_apotek",
+        "button":  "btnBPJSReferensiPoliApotek",
+        "label":  "Referensi Poli Apotek BPJS"
+    },
+    {
+        "permission":  "bpjs_referensi_poli_hfis",
+        "button":  "btnBPJSReferensiPoliHFIS",
+        "label":  "Referensi Poli HFIS"
+    },
+    {
+        "permission":  "bpjs_referensi_setting_apotek",
+        "button":  "btnBPJSReferensiSettingPPKApotek",
+        "label":  "Referensi Setting PPK Apotek BPJS"
+    },
+    {
+        "permission":  "bpjs_referensi_spesialistik_apotek",
+        "button":  "btnBPJSReferensiSpesialistikApotek",
+        "label":  "Referensi Spesialistik Apotek BPJS"
+    },
+    {
+        "permission":  "bpjs_rujukan_keluar",
+        "button":  "btnRujukanKeluarBPJS",
+        "label":  "Data Rujukan Keluar VClaim"
+    },
+    {
+        "permission":  "bpjs_rujukan_khusus",
+        "button":  "btnBPJSRujukanKhusus",
+        "label":  "Rujukan Khusus VClaim"
+    },
+    {
+        "permission":  "bpjs_sep",
+        "button":  "btnBPJSSEP",
+        "label":  "Data Bridging SEP VClaim"
+    },
+    {
+        "permission":  "bpjs_sep_internal",
+        "button":  "btnBPJSDataSEPInternal",
+        "label":  "Data SEP Internal VClaim"
+    },
+    {
+        "permission":  "bpjs_suplesi_jasaraharja",
+        "button":  "btnBPJSSuplesiJasaRaharja",
+        "label":  "Suplesi Jasa Raharja di VClaim"
+    },
+    {
+        "permission":  "bpjs_surat_kontrol",
+        "button":  "btnBPJSSuratKontrol",
+        "label":  "Surat Kontrol VClaim"
+    },
+    {
+        "permission":  "bpjs_surat_pri",
+        "button":  "btnBPJSSuratPRI",
+        "label":  "Surat PRI VClaim"
+    },
+    {
+        "permission":  "bpjs_task_id",
+        "button":  "btnBPJSTaskIDMobileJKN",
+        "label":  "Task ID Mobile JKN"
+    },
+    {
+        "permission":  "bridging_pcare_daftar",
+        "button":  "btnPCarePendaftaran",
+        "label":  "Data Pendaftaran PCare"
+    },
+    {
+        "permission":  "buku_besar",
+        "button":  "btnBubes",
+        "label":  "Buku Besar"
+    },
+    {
+        "permission":  "bulanan_dokter",
+        "button":  "btnRBDokter",
+        "label":  "Bulanan Dokter"
+    },
+    {
+        "permission":  "bulanan_HAIs",
+        "button":  "btnBulananHAIs",
+        "label":  "Bulanan HAIs"
+    },
+    {
+        "permission":  "bulanan_js",
+        "button":  "btnRBJasaSarana",
+        "label":  "Bulanan Jasa Sarana"
+    },
+    {
+        "permission":  "bulanan_klasifikasi_pasien_ranap",
+        "button":  "btnBulananKlasifikasiPasienRanap",
+        "label":  "Bulanan Klasifikasi Pasien Ranap"
+    },
+    {
+        "permission":  "bulanan_kso",
+        "button":  "btnRBKSO",
+        "label":  "Bulanan KSO"
+    },
+    {
+        "permission":  "bulanan_menejemen",
+        "button":  "btnRBMenejemen",
+        "label":  "Bulanan Menejemen"
+    },
+    {
+        "permission":  "bulanan_paket_bhp",
+        "button":  "btnRBPaketBHP",
+        "label":  "Bulanan BHP Medis/Paket Obat"
+    },
+    {
+        "permission":  "bulanan_paramedis",
+        "button":  "btnRBParamedis",
+        "label":  "Bulanan Paramedis"
+    },
+    {
+        "permission":  "cacat_fisik",
+        "button":  "btnCacatFisik",
+        "label":  "Cacat Fisik"
+    },
+    {
+        "permission":  "cara_bayar",
+        "button":  "btnCaraBayar",
+        "label":  "Asuransi/Askes/Jenis Bayar"
+    },
+    {
+        "permission":  "cashflow",
+        "button":  "btnCashFlow",
+        "label":  "Cash Flow"
+    },
+    {
+        "permission":  "catatan_adime_gizi",
+        "button":  "btnCatatanADIMEGizi",
+        "label":  "Catatan ADIME Gizi"
+    },
+    {
+        "permission":  "catatan_anestesi_sedasi",
+        "button":  "btnCatatanAnastesiSedasi",
+        "label":  "Catatan Anestesi-Sedasi"
+    },
+    {
+        "permission":  "catatan_cairan_hemodialisa",
+        "button":  "btnCatatanCairanHemodialisa",
+        "label":  "Catatan Cairan Hemodialisa"
+    },
+    {
+        "permission":  "catatan_cek_gds",
+        "button":  "btnCatatanCekGDS",
+        "label":  "Catatan Cek GDS"
+    },
+    {
+        "permission":  "catatan_keperawatan_ralan",
+        "button":  "btnCatatanKeperawatanRalan",
+        "label":  "Catatan Keperawatan Ralan"
+    },
+    {
+        "permission":  "catatan_keperawatan_ranap",
+        "button":  "btnCatatanKeperawatanRanap",
+        "label":  "Catatan Keperawatan Ranap"
+    },
+    {
+        "permission":  "catatan_observasi_bayi",
+        "button":  "btnCatatanObservasiBayi",
+        "label":  "Catatan Observasi Bayi"
+    },
+    {
+        "permission":  "catatan_observasi_chbp",
+        "button":  "btnCatatanObservasiCHBP",
+        "label":  "Catatan Observasi CHBP"
+    },
+    {
+        "permission":  "catatan_observasi_hemodialisa",
+        "button":  "btnCatatanObservasiHemodialisa",
+        "label":  "Catatan Observasi Hemodialisa"
+    },
+    {
+        "permission":  "catatan_observasi_igd",
+        "button":  "btnCatatanObservasiIGD",
+        "label":  "Observasi Pasien Selama Proses Merujuk"
+    },
+    {
+        "permission":  "catatan_observasi_induksi_persalinan",
+        "button":  "btnCatatanObservasiInduksiPersalinan",
+        "label":  "Catatan Observasi Induksi Persalinan"
+    },
+    {
+        "permission":  "catatan_observasi_ranap",
+        "button":  "btnCatatanObservasiRanap",
+        "label":  "Catatan Observasi Ranap"
+    },
+    {
+        "permission":  "catatan_observasi_ranap_kebidanan",
+        "button":  "btnCatatanObservasiRanapKebidanan",
+        "label":  "Catatan Observasi Ranap Kebidanan"
+    },
+    {
+        "permission":  "catatan_observasi_ranap_postpartum",
+        "button":  "btnCatatanObservasiRanapPostPartum",
+        "label":  "Catatan Observasi Ranap Post Partum"
+    },
+    {
+        "permission":  "catatan_observasi_restrain_nonfarma",
+        "button":  "btnCatatanObservasiRestrainNonFramakologi",
+        "label":  "Catatan Observasi Restrain Nonfarmakologi"
+    },
+    {
+        "permission":  "catatan_observasi_ventilator",
+        "button":  "btnCatatanObservasiVentilator",
+        "label":  "Catatan Observasi Ventilator"
+    },
+    {
+        "permission":  "catatan_pasien",
+        "button":  "btnCatatanPasien",
+        "label":  "Catatan Pasien"
+    },
+    {
+        "permission":  "catatan_pengkajian_paska_operasi",
+        "button":  "btnCatatanPengkajianPaskaOperasi",
+        "label":  "Catatan Pengkajian Paska Operasi"
+    },
+    {
+        "permission":  "catatan_persalinan",
+        "button":  "btnCatatanPersalinan",
+        "label":  "Catatan Persalinan"
+    },
+    {
+        "permission":  "cek_entry_ralan",
+        "button":  "btnCekEntryRalan",
+        "label":  "Cek Entry Ralan"
+    },
+    {
+        "permission":  "checklist_kesiapan_anestesi",
+        "button":  "btnChecklistKesiapanAnestesi",
+        "label":  "Check List Kesiapan Anestesi"
+    },
+    {
+        "permission":  "checklist_kriteria_keluar_hcu",
+        "button":  "btnChecklistKriteriaKeluarHCU",
+        "label":  "Check List Kriteria Keluar HCU"
+    },
+    {
+        "permission":  "checklist_kriteria_keluar_icu",
+        "button":  "btnChecklistKriteriaKeluarICU",
+        "label":  "Check List Kriteria Keluar ICU"
+    },
+    {
+        "permission":  "checklist_kriteria_masuk_hcu",
+        "button":  "btnChecklistKriteriaMasukHCU",
+        "label":  "Check List Kriteria Masuk HCU"
+    },
+    {
+        "permission":  "checklist_kriteria_masuk_icu",
+        "button":  "btnChecklistKriteriaMasukICU",
+        "label":  "Check List Kriteria Masuk ICU"
+    },
+    {
+        "permission":  "checklist_pemberian_fibrinolitik",
+        "button":  "btnChecklistPemberianFibrinolitik",
+        "label":  "Check List Pemberian Fibrinolitik"
+    },
+    {
+        "permission":  "checklist_post_operasi",
+        "button":  "btnChecklistPostOperasi",
+        "label":  "Check List Post Operasi"
+    },
+    {
+        "permission":  "checklist_pre_operasi",
+        "button":  "btnChecklistPreOperasi",
+        "label":  "Check List Pre Operasi"
+    },
+    {
+        "permission":  "closing_kasir",
+        "button":  "btnClosingKasir",
+        "label":  "Closing Kasir"
+    },
+    {
+        "permission":  "daftar_pasien_ranap",
+        "button":  "btnDaftarPasienRanap",
+        "label":  "Daftar Pasien Ranap"
+    },
+    {
+        "permission":  "daftar_pasien_ranap_polri",
+        "button":  "btnDaftarPasienRanapPolri",
+        "label":  "Daftar Pasien Ranap POLRI"
+    },
+    {
+        "permission":  "daftar_pasien_ranaptni",
+        "button":  "btnDaftarPasienRanapTNI",
+        "label":  "Daftar Pasien Ranap TNI"
+    },
+    {
+        "permission":  "dampak_cidera_k3rs",
+        "button":  "btnDampakCideraK3",
+        "label":  "Dampak Cidera K3"
+    },
+    {
+        "permission":  "dampak_cidera_k3rstahun",
+        "button":  "btnDampakCideraK3PerTahun",
+        "label":  "Dampak Cidera K3 Per Tahun"
+    },
+    {
+        "permission":  "dapur_barang",
+        "button":  "btnBarangDapur",
+        "label":  "Barang Dapur"
+    },
+    {
+        "permission":  "dapur_opname",
+        "button":  "btnOpnameDapur",
+        "label":  "Stok Opname Barang Dapur"
+    },
+    {
+        "permission":  "dapur_pembelian",
+        "button":  "btnPembelianDapur",
+        "label":  "Pengadaan Barang Dapur"
+    },
+    {
+        "permission":  "dapur_pemesanan",
+        "button":  "btnPenerimaanBarangDapur",
+        "label":  "Penerimaan Barang Dapur"
+    },
+    {
+        "permission":  "dapur_returbeli",
+        "button":  "btnReturBarangDapur",
+        "label":  "Retur Ke Suplier Dapur"
+    },
+    {
+        "permission":  "dapur_ringkasan_pembelian",
+        "button":  "btnRingkasanPengadaanDapur",
+        "label":  "Ringkasan Pengadaan Dapur"
+    },
+    {
+        "permission":  "dapur_riwayat_barang",
+        "button":  "btnRiwayatBarangDapur",
+        "label":  "Riwayat Barang Dapur"
+    },
+    {
+        "permission":  "dapur_stok_keluar",
+        "button":  "btnPengeluaranDapur",
+        "label":  "Stok Keluar Dapur"
+    },
+    {
+        "permission":  "dapur_stokkeluar_pertanggal",
+        "button":  "btnStokKeluarDapurPerTanggal",
+        "label":  "Stok Keluar Dapur Per Tanggal"
+    },
+    {
+        "permission":  "dapur_suplier",
+        "button":  "btnSuplierDapur",
+        "label":  "Suplier Dapur"
+    },
+    {
+        "permission":  "darurat_stok",
+        "button":  "btnDaruratStok",
+        "label":  "Darurat Stok"
+    },
+    {
+        "permission":  "data_batch",
+        "button":  "btnDataBatch",
+        "label":  "Data Batch"
+    },
+    {
+        "permission":  "data_HAIs",
+        "button":  "btnDataHAIs",
+        "label":  "Data HAIs"
+    },
+    {
+        "permission":  "data_rekomendasi_dpjp",
+        "button":  "btnRekomendasidpjp",
+        "label":  "ReRekomendasi dpjp"
+    },
+    {
+        "permission":  "data_resume_pasien",
+        "button":  "btnResumePasien",
+        "label":  "Resume Pasien Ralan"
+    },
+    {
+        "permission":  "data_sasaran_usialansia",
+        "button":  "btnDataSasaranUsiaLansia",
+        "label":  "Data Sasaran Usia Lansia"
+    },
+    {
+        "permission":  "data_sasaran_usiaproduktif",
+        "button":  "btnDataSasaranUsiaProduktif",
+        "label":  "Data Sasaran Usia Produktif"
+    },
+    {
+        "permission":  "data_triase_igd",
+        "button":  "btnDataTriaseIGD",
+        "label":  "Data Triase IGD"
+    },
+    {
+        "permission":  "demografi_umur_kunjungan",
+        "button":  "btnDemografiUmurKunjungan",
+        "label":  "Demografi Umur Kunjungan"
+    },
+    {
+        "permission":  "denda_perpustakaan",
+        "button":  "btnDendaPerpustakaan",
+        "label":  "Denda Perpustakaan"
+    },
+    {
+        "permission":  "deposit_pasien",
+        "button":  "btnDeposit",
+        "label":  "Deposit Pasien"
+    },
+    {
+        "permission":  "detail_piutang_penjab",
+        "button":  "btnPiutangPerCaraBayar",
+        "label":  "Piutang Per Cara Bayar"
+    },
+    {
+        "permission":  "detail_tindakan",
+        "button":  "btnDetailTindakan",
+        "label":  "Detail Tindakan"
+    },
+    {
+        "permission":  "detail_tindakan_okvk",
+        "button":  "btnDetailVKOK",
+        "label":  "Detail VK \u0026 OK"
+    },
+    {
+        "permission":  "detailjmdokter2",
+        "button":  "btnJMDetailDokter2",
+        "label":  "Detail JM Dokter 2"
+    },
+    {
+        "permission":  "deteksi_corona",
+        "button":  "btnDeteksiDiniCorona",
+        "label":  "Deteksi Dini Corona"
+    },
+    {
+        "permission":  "diagnosa_pasien",
+        "button":  "btnDiagnosa",
+        "label":  "Diagnosa Pasien"
+    },
+    {
+        "permission":  "diagnosa_pasien_corona",
+        "button":  "btnDiagnosaPasienCorona",
+        "label":  "Diagnosa Pasien Corona"
+    },
+    {
+        "permission":  "diet_pasien",
+        "button":  "btnDiet",
+        "label":  "Diet Pasien"
+    },
+    {
+        "permission":  "display",
+        "button":  "btnDisplay",
+        "label":  "Display Antrian Registrasi \u0026 Poli"
+    },
+    {
+        "permission":  "display_apotek",
+        "button":  "btnDisplayApotek",
+        "label":  "Display Antrian Apotek"
+    },
+    {
+        "permission":  "dokter",
+        "button":  "btnDokter",
+        "label":  "Dokter"
+    },
+    {
+        "permission":  "dokter_asal_pasien_ranap",
+        "button":  "btnDokterAsalPasienRanap",
+        "label":  "Dokter Asal Pasien Ranap"
+    },
+    {
+        "permission":  "dosis_radiologi",
+        "button":  "btnDosisRadiologi",
+        "label":  "Dosis Radiologi"
+    },
+    {
+        "permission":  "dpjp_ranap",
+        "button":  "BtnDpjp",
+        "label":  "DPJP Ranap"
+    },
+    {
+        "permission":  "duta_parkir_rekap_keluar",
+        "button":  "btnRekapKeluarDutaParking",
+        "label":  "Rekap Keluar Duta Parking"
+    },
+    {
+        "permission":  "ebook_perpustakaan",
+        "button":  "btnEbookPerpustakaan",
+        "label":  "Data Koleksi Ebook"
+    },
+    {
+        "permission":  "edukasi_pasien_keluarga_rj",
+        "button":  "btnEdukasiPasienKeluargaRJ",
+        "label":  "Edukasi Pasien \u0026 Keluarga Rawat Jalan"
+    },
+    {
+        "permission":  "edukasi_pasien_keluarga_rj",
+        "button":  "btnRujukanPasienKeluarRumahSakit",
+        "label":  "Rujukan Pasien Keluar Rumah Sakit"
+    },
+    {
+        "permission":  "fee_bacaan_ekg",
+        "button":  "btnfee_bacaan_ekg",
+        "label":  "Fee Bacaan EKG"
+    },
+    {
+        "permission":  "fee_ralan",
+        "button":  "btnfee_ralan",
+        "label":  "Fee Periksa Ralan"
+    },
+    {
+        "permission":  "fee_rujukan_ranap",
+        "button":  "btnfee_rujukan_ranap",
+        "label":  "Fee Rujukan Ranap"
+    },
+    {
+        "permission":  "fee_rujukan_rontgen",
+        "button":  "btnfee_rujukan_rontgen",
+        "label":  "Fee Rujukan Rontgen"
+    },
+    {
+        "permission":  "fee_visit_dokter",
+        "button":  "btnfee_visit_dokter",
+        "label":  "Fee Visit Dokter"
+    },
+    {
+        "permission":  "follow_up_dbd",
+        "button":  "btnDataFollowUpDBD",
+        "label":  "Follow Up DBD"
+    },
+    {
+        "permission":  "golongan_barang",
+        "button":  "btnGolonganBarang",
+        "label":  "Golongan Obat, Alkes \u0026 BHP"
+    },
+    {
+        "permission":  "golongan_polri",
+        "button":  "btnGolonganPolri",
+        "label":  "Golongan POLRI"
+    },
+    {
+        "permission":  "golongan_tni",
+        "button":  "btnGolonganTNI",
+        "label":  "Golongan TNI"
+    },
+    {
+        "permission":  "grafik_air_pdam_perbulan",
+        "button":  "btnGrafikPemakaianAirPDAMPerBulan",
+        "label":  "Pemakaian Air PDAM Per Bulan"
+    },
+    {
+        "permission":  "grafik_air_pdam_pertanggal",
+        "button":  "btnGrafikPemakaianAirPDAMPerTanggal",
+        "label":  "Pemakaian Air PDAM Per Tanggal"
+    },
+    {
+        "permission":  "grafik_air_tanah_perbulan",
+        "button":  "btnGrafikPemakaianAirTanahPerBulan",
+        "label":  "Pemakaian Air Tanah Per Bulan"
+    },
+    {
+        "permission":  "grafik_air_tanah_pertanggal",
+        "button":  "btnGrafikPemakaianAirTanahPerTanggal",
+        "label":  "Pemakaian Air Tanah Per Tanggal"
+    },
+    {
+        "permission":  "grafik_bidangpegawai",
+        "button":  "btnGrafikBidangPegawai",
+        "label":  "Pegawai Per Bidang/Bagian"
+    },
+    {
+        "permission":  "grafik_bulanan_hemodialisa",
+        "button":  "btnGrafikHemodialisaPerBulan",
+        "label":  "Hemodialisa Per Bulan"
+    },
+    {
+        "permission":  "grafik_bulanan_meninggal",
+        "button":  "btnGrafikMeninggalPerBulan",
+        "label":  "Pasien Meninggal Per Bulan"
+    },
+    {
+        "permission":  "grafik_departemenpegawai",
+        "button":  "btnGrafikDepartemenPegawai",
+        "label":  "Pegawai Per Departemen"
+    },
+    {
+        "permission":  "grafik_emergency_indexpegawai",
+        "button":  "btnGrafikEmergencyIndexPegawai",
+        "label":  "Pegawai Per Emergency Index"
+    },
+    {
+        "permission":  "grafik_HAIs_laju_hap",
+        "button":  "btnGrafikHAIsLajuHAP",
+        "label":  "Laju HAIs HAP Per Ruang"
+    },
+    {
+        "permission":  "grafik_HAIs_laju_iad",
+        "button":  "btnGrafikHAIsLajuIAD",
+        "label":  "Laju HAIs IAD Per Ruang"
+    },
+    {
+        "permission":  "grafik_HAIs_laju_ilo",
+        "button":  "btnGrafikHAIsLajuILO",
+        "label":  "Laju HAIs ILO Per Ruang"
+    },
+    {
+        "permission":  "grafik_HAIs_laju_isk",
+        "button":  "btnGrafikHAIsLajuISK",
+        "label":  "Laju HAIs ISK Per Ruang"
+    },
+    {
+        "permission":  "grafik_HAIs_laju_pleb",
+        "button":  "btnGrafikHAIsLajuPleb",
+        "label":  "Laju HAIs Plebitis Per Ruang"
+    },
+    {
+        "permission":  "grafik_HAIs_laju_vap",
+        "button":  "btnGrafikHAIsLajuVAP",
+        "label":  "Laju HAIs VAP Per Ruang"
+    },
+    {
+        "permission":  "grafik_HAIs_pasienbangsal",
+        "button":  "btnGrafikHAIsPasienRuang",
+        "label":  "Pasien HAIs Per Ruang"
+    },
+    {
+        "permission":  "grafik_HAIs_pasienbulan",
+        "button":  "btnGrafikHAIsPasienBulan",
+        "label":  "Pasien HAIs Per Bulan"
+    },
+    {
+        "permission":  "grafik_harian_hemodialisa",
+        "button":  "btnGrafikHemodialisaPerTanggal",
+        "label":  "Hemodialisa Per Tanggal"
+    },
+    {
+        "permission":  "grafik_ikp_dampak",
+        "button":  "btnGrafikKejadianIKPPerDampak",
+        "label":  "Kejadian IKP Per Dampak"
+    },
+    {
+        "permission":  "grafik_ikp_jenis",
+        "button":  "btnGrafikKejadianIKPPerJenis",
+        "label":  "Kejadian IKP Per Jenis"
+    },
+    {
+        "permission":  "grafik_ikp_perbulan",
+        "button":  "btnGrafikKejadianIKPPerBulan",
+        "label":  "Kejadian IKP Per Bulan"
+    },
+    {
+        "permission":  "grafik_ikp_pertahun",
+        "button":  "btnGrafikKejadianIKPPerTahun",
+        "label":  "Kejadian IKP Per Tahun"
+    },
+    {
+        "permission":  "grafik_ikp_pertanggal",
+        "button":  "btnGrafikKejadianIKPPerTanggal",
+        "label":  "Kejadian IKP Per Tanggal"
+    },
+    {
+        "permission":  "grafik_inventaris_jenis",
+        "button":  "btnGrafikInventarisJenis",
+        "label":  "Jumlah Inventaris Per Jenis"
+    },
+    {
+        "permission":  "grafik_inventaris_kategori",
+        "button":  "btnGrafikInventarisKategori",
+        "label":  "Jumlah Inventaris Per Kategori"
+    },
+    {
+        "permission":  "grafik_inventaris_merk",
+        "button":  "btnGrafikInventarisMerk",
+        "label":  "Jumlah Inventaris Per Merk"
+    },
+    {
+        "permission":  "grafik_inventaris_produsen",
+        "button":  "btnGrafikInventarisProdusen",
+        "label":  "Jumlah Inventaris Per Produsen"
+    },
+    {
+        "permission":  "grafik_inventaris_ruang",
+        "button":  "btnGrafikInventarisRuang",
+        "label":  "Jumlah Inventaris Per Ruang"
+    },
+    {
+        "permission":  "grafik_jenjang_jabatanpegawai",
+        "button":  "btnGrafikJenjangJabatanPegawai",
+        "label":  "Pegawai Per Jenjang Jabatan"
+    },
+    {
+        "permission":  "grafik_k3_dampakcidera",
+        "button":  "btnGrafikK3PerDampakCidera",
+        "label":  "K3 Per Dampak Cidera"
+    },
+    {
+        "permission":  "grafik_k3_lokasikejadian",
+        "button":  "btnGrafikK3PerLokasiKejadian",
+        "label":  "K3 Per Lokasi Kejadian"
+    },
+    {
+        "permission":  "grafik_k3_perbagiantubuh",
+        "button":  "btnGrafikK3PerBagianTubuh",
+        "label":  "K3 Per Bagian Tubuh"
+    },
+    {
+        "permission":  "grafik_k3_perbulan",
+        "button":  "btnGrafikK3PerBulan",
+        "label":  "K3 Per Bulan"
+    },
+    {
+        "permission":  "grafik_k3_perjeniscidera",
+        "button":  "btnGrafikK3PerJenisCidera",
+        "label":  "K3 Per Jenis Cidera"
+    },
+    {
+        "permission":  "grafik_k3_perjenisluka",
+        "button":  "btnGrafikK3PerJenisLuka",
+        "label":  "K3 Per Jenis Luka"
+    },
+    {
+        "permission":  "grafik_k3_perjenispekerjaan",
+        "button":  "btnGrafikK3PerJenisPekerjaan",
+        "label":  "K3 Per Jenis Pekerjaan"
+    },
+    {
+        "permission":  "grafik_k3_perpenyebab",
+        "button":  "btnGrafikK3PerPenyebab",
+        "label":  "K3 Per Penyebab Kecelakaan"
+    },
+    {
+        "permission":  "grafik_k3_pertahun",
+        "button":  "btnGrafikK3PerTahun",
+        "label":  "K3 Per Tahun"
+    },
+    {
+        "permission":  "grafik_k3_pertanggal",
+        "button":  "btnGrafikK3PerTanggal",
+        "label":  "K3 Per Tanggal"
+    },
+    {
+        "permission":  "grafik_kelompok_jabatanpegawai",
+        "button":  "btnGrafikKelompokJabatanPegawai",
+        "label":  "Pegawai Per Kelompok Jabatan"
+    },
+    {
+        "permission":  "grafik_kunjungan_bahasa",
+        "button":  "btnGrafikKunjunganPerBahasa",
+        "label":  "Registrasi Per Bahasa"
+    },
+    {
+        "permission":  "grafik_kunjungan_demografi",
+        "button":  "btnGrafikDemografiRegistrasi",
+        "label":  "Demografi Registrasi"
+    },
+    {
+        "permission":  "grafik_kunjungan_per_agama",
+        "button":  "btnGrafikKunjunganPerAgama",
+        "label":  "Registrasi Per Agama"
+    },
+    {
+        "permission":  "grafik_kunjungan_per_cacat",
+        "button":  "btnGrafikKunjunganPerCacat",
+        "label":  "Registrasi Per Cacat Fisik"
+    },
+    {
+        "permission":  "grafik_kunjungan_per_umur",
+        "button":  "btnGrafikKunjunganPerUmur",
+        "label":  "Registrasi Per Umur"
+    },
+    {
+        "permission":  "grafik_kunjungan_perbulan",
+        "button":  "btnGrafikKunjunganPerBulan",
+        "label":  "Registrasi Per Bulan"
+    },
+    {
+        "permission":  "grafik_kunjungan_percarabayar",
+        "button":  "btnGrafikKunjunganPerCarabayar",
+        "label":  "Registrasi Per Cara Bayar"
+    },
+    {
+        "permission":  "grafik_kunjungan_perdokter",
+        "button":  "btnGrafikKunjunganPerDokter",
+        "label":  "Registrasi Per Dokter"
+    },
+    {
+        "permission":  "grafik_kunjungan_perpekerjaan",
+        "button":  "btnGrafikKunjunganPerPekerjaan",
+        "label":  "Registrasi Per Pekerjaan"
+    },
+    {
+        "permission":  "grafik_kunjungan_perpendidikan",
+        "button":  "btnGrafikKunjunganPerPendidikan",
+        "label":  "Registrasi Per Pendidikan"
+    },
+    {
+        "permission":  "grafik_kunjungan_pertahun",
+        "button":  "btnGrafikKunjunganPerTahun",
+        "label":  "Registrasi Per Tahun"
+    },
+    {
+        "permission":  "grafik_kunjungan_pertanggal",
+        "button":  "btnGrafikKunjunganPerTanggal",
+        "label":  "Registrasi Per Tanggal"
+    },
+    {
+        "permission":  "grafik_kunjungan_poli",
+        "button":  "btnGrafikKunjunganPoli",
+        "label":  "Registrasi Per Poli"
+    },
+    {
+        "permission":  "grafik_kunjungan_ranap_peruang",
+        "button":  "btnGrafikKunjunganRanapRuang",
+        "label":  "Kunjungan Ranap Per Ruang"
+    },
+    {
+        "permission":  "grafik_kunjungan_ranapbulan",
+        "button":  "btnGrafikKunjunganRanapBulan",
+        "label":  "Kunjungan Ranap Per Bulan"
+    },
+    {
+        "permission":  "grafik_kunjungan_ranaptahun",
+        "button":  "btnGrafikKunjunganRanapPerTahun",
+        "label":  "Kunjungan Ranap Per Tahun"
+    },
+    {
+        "permission":  "grafik_kunjungan_ranaptanggal",
+        "button":  "btnGrafikKunjunganRanapTanggal",
+        "label":  "Kunjungan Ranap Per Tanggal"
+    },
+    {
+        "permission":  "grafik_kunjungan_statusbatalbulan",
+        "button":  "btnGrafikStatusRegBatalPerBulan",
+        "label":  "Batal Periksa Per Bulan"
+    },
+    {
+        "permission":  "grafik_kunjungan_statusbataltahun",
+        "button":  "btnGrafikStatusRegBatalPerTahun",
+        "label":  "Batal Periksa Per Tahun"
+    },
+    {
+        "permission":  "grafik_kunjungan_statusbataltanggal",
+        "button":  "btnGrafikStatusRegBatalPerTanggal",
+        "label":  "Batal Periksa Per Tanggal"
+    },
+    {
+        "permission":  "grafik_kunjungan_statusdaftarbulan",
+        "button":  "btnGrafikStatusRegPerBulan",
+        "label":  "Registrasi Lama Per Bulan"
+    },
+    {
+        "permission":  "grafik_kunjungan_statusdaftarbulan2",
+        "button":  "btnGrafikStatusRegPerBulan2",
+        "label":  "Registrasi Baru Per Bulan"
+    },
+    {
+        "permission":  "grafik_kunjungan_statusdaftartahun",
+        "button":  "btnGrafikStatusRegPerTahun",
+        "label":  "Registrasi Lama Per Tahun"
+    },
+    {
+        "permission":  "grafik_kunjungan_statusdaftartahun2",
+        "button":  "btnGrafikStatusRegPerTahun2",
+        "label":  "Registrasi Baru Per Tahun"
+    },
+    {
+        "permission":  "grafik_kunjungan_statusdaftartanggal",
+        "button":  "btnGrafikStatusRegPerTanggal",
+        "label":  "Registrasi Lama Per Tanggal"
+    },
+    {
+        "permission":  "grafik_kunjungan_statusdaftartanggal2",
+        "button":  "btnGrafikStatusRegPerTanggal2",
+        "label":  "Registrasi Baru Per Tanggal"
+    },
+    {
+        "permission":  "grafik_kunjungan_suku",
+        "button":  "btnGrafikKunjunganPerSuku",
+        "label":  "Registrasi Per Suku/Bangsa"
+    },
+    {
+        "permission":  "grafik_lab_ralanbulan",
+        "button":  "btnGrafikLabRalanPerBulan",
+        "label":  "Kunjungan Lab Ralan Per Bulan"
+    },
+    {
+        "permission":  "grafik_lab_ralanhari",
+        "button":  "btnGrafikLabRalanPerHari",
+        "label":  "Kunjungan Lab Ralan Per Tanggal"
+    },
+    {
+        "permission":  "grafik_lab_ralantahun",
+        "button":  "btnGrafikLabRalanPerTahun",
+        "label":  "Kunjungan Lab Ralan Per Tahun"
+    },
+    {
+        "permission":  "grafik_limbahb3_perbulan",
+        "button":  "btnGrafikLimbahB3MedisPerBulan",
+        "label":  "Limbah B3 Medis Per Bulan"
+    },
+    {
+        "permission":  "grafik_limbahb3_pertanggal",
+        "button":  "btnGrafikLimbahB3MedisPerTanggal",
+        "label":  "Limbah B3 Medis Per Tanggal"
+    },
+    {
+        "permission":  "grafik_limbahb3cair_perbulan",
+        "button":  "btnGrafikLimbahB3MedisCairPerBulan",
+        "label":  "Limbah B3 Cair Per Bulan"
+    },
+    {
+        "permission":  "grafik_limbahb3cair_pertanggal",
+        "button":  "btnGrafikLimbahB3MedisCairPerTanggal",
+        "label":  "Limbah B3 Cair Per Tanggal"
+    },
+    {
+        "permission":  "grafik_limbahdomestik_perbulan",
+        "button":  "btnGrafikLimbahDomestikPerBulan",
+        "label":  "Limbah Padat Domestik Medis Per Bulan"
+    },
+    {
+        "permission":  "grafik_limbahdomestik_pertanggal",
+        "button":  "btnGrafikLimbahDomestikPerTanggal",
+        "label":  "Limbah Padat Domestik Per Tanggal"
+    },
+    {
+        "permission":  "grafik_pendidikanpegawai",
+        "button":  "btnGrafikPendidikanPegawai",
+        "label":  "Pegawai Per Pendidikan"
+    },
+    {
+        "permission":  "grafik_pengajuan_aset_departemen",
+        "button":  "btnGrafikPengajuanAsetDepartemen",
+        "label":  "Pengajuan Aset Per Departemen"
+    },
+    {
+        "permission":  "grafik_pengajuan_aset_status",
+        "button":  "btnGrafikPengajuanAsetStatus",
+        "label":  "Pengajuan Aset Per Status"
+    },
+    {
+        "permission":  "grafik_pengajuan_aset_urgensi",
+        "button":  "btnGrafikPengajuanAsetUrgensi",
+        "label":  "Pengajuan Aset Per Urgensi"
+    },
+    {
+        "permission":  "grafik_per_perujuk",
+        "button":  "btnGrafikPerPerujuk",
+        "label":  "Registrasi Per Perujuk"
+    },
+    {
+        "permission":  "grafik_perbaikan_inventaris_perbulan",
+        "button":  "btnGrafikPerbaikanInventarisPerBulan",
+        "label":  "Perbaikan Inventaris Per Bulan"
+    },
+    {
+        "permission":  "grafik_perbaikan_inventaris_perpelaksana_status",
+        "button":  "btnGrafikPerbaikanInventarisPerPelaksanaStatus",
+        "label":  "Perbaikan Inventaris Per Pelaksana \u0026 Status"
+    },
+    {
+        "permission":  "grafik_perbaikan_inventaris_pertahun",
+        "button":  "btnGrafikPerbaikanInventarisPerTahun",
+        "label":  "Perbaikan Inventaris Per Tahun"
+    },
+    {
+        "permission":  "grafik_perbaikan_inventaris_pertanggal",
+        "button":  "btnGrafikPerbaikanInventarisPerTanggal",
+        "label":  "Perbaikan Inventaris Per Tanggal"
+    },
+    {
+        "permission":  "grafik_porsidiet_perbangsal",
+        "button":  "btnGrafikPorsiDietPerRuang",
+        "label":  "Porsi Diet Per Ruang"
+    },
+    {
+        "permission":  "grafik_porsidiet_perbulan",
+        "button":  "btnGrafikPorsiDietPerBulan",
+        "label":  "Porsi Diet Per Bulan"
+    },
+    {
+        "permission":  "grafik_porsidiet_pertahun",
+        "button":  "btnGrafikPorsiDietPerTahun",
+        "label":  "Porsi Diet Per Tahun"
+    },
+    {
+        "permission":  "grafik_porsidiet_pertanggal",
+        "button":  "btnGrafikPorsiDietPerTanggal",
+        "label":  "Porsi Diet Per Tanggal"
+    },
+    {
+        "permission":  "grafik_rad_ralanbulan",
+        "button":  "btnGrafikRadRalanPerBulan",
+        "label":  "Kunjungan Rad Ralan Per Bulan"
+    },
+    {
+        "permission":  "grafik_rad_ralanhari",
+        "button":  "btnGrafikRadRalanPerHari",
+        "label":  "Kunjungan Rad Ralan Per Tanggal"
+    },
+    {
+        "permission":  "grafik_rad_ralantahun",
+        "button":  "btnGrafikRadRalanPerTahun",
+        "label":  "Kunjungan Rad Ralan Per Tahun"
+    },
+    {
+        "permission":  "grafik_resiko_kerjapegawai",
+        "button":  "btnGrafikRisikoKerjaPegawai",
+        "label":  "Pegawai Per Risiko Kerja"
+    },
+    {
+        "permission":  "grafik_sttskerjapegawai",
+        "button":  "btnGrafikStatusKerjaPegawai",
+        "label":  "Pegawai Per Status Kerja"
+    },
+    {
+        "permission":  "grafik_sttspulangranap",
+        "button":  "btnGrafikStatusPulangRanap",
+        "label":  "Status Pulang Ranap"
+    },
+    {
+        "permission":  "grafik_sttswppegawai",
+        "button":  "btnGrafikStatusWPPegawai",
+        "label":  "Pegawai Per Status WP"
+    },
+    {
+        "permission":  "grafik_tahunan_hemodialisa",
+        "button":  "btnGrafikHemodialisaPerTahun",
+        "label":  "Hemodialisa Per Tahun"
+    },
+    {
+        "permission":  "grafik_tb_hasilakhirpengobatan",
+        "button":  "btnGrafikTBHasilAkhirPengobatan",
+        "label":  "Hasil Akhir Pengobatan TB"
+    },
+    {
+        "permission":  "grafik_tb_hasilteshiv",
+        "button":  "btnGrafikTBHasilTesHIV",
+        "label":  "Hasil Tes HIV TB"
+    },
+    {
+        "permission":  "grafik_tb_konfirmasiskoring5",
+        "button":  "btnGrafikTBKonfirmasiSkoring5",
+        "label":  "Konfirmasi Skoring 5 TB"
+    },
+    {
+        "permission":  "grafik_tb_konfirmasiskoring6",
+        "button":  "btnGrafikTBKonfirmasiSkoring6",
+        "label":  "Konfirmasi Skoring 6 TB"
+    },
+    {
+        "permission":  "grafik_tb_periodelaporan",
+        "button":  "btnGrafikTBLaporanPeriode",
+        "label":  "Periode Laporan TB"
+    },
+    {
+        "permission":  "grafik_tb_riwayat",
+        "button":  "btnGrafikTBRiwayat",
+        "label":  "Riwayat TB"
+    },
+    {
+        "permission":  "grafik_tb_rujukan",
+        "button":  "btnGrafikTBRujukan",
+        "label":  "Rujukan TB"
+    },
+    {
+        "permission":  "grafik_tb_skoringanak",
+        "button":  "btnGrafikTBSkoringAnak",
+        "label":  "Skoring Anak TB"
+    },
+    {
+        "permission":  "grafik_tb_statushiv",
+        "button":  "btnGrafikTBSTatusHIV",
+        "label":  "Status HIV TB"
+    },
+    {
+        "permission":  "grafik_tb_sumberobat",
+        "button":  "btnGrafikTBSumberObat",
+        "label":  "Sumber Obat TB"
+    },
+    {
+        "permission":  "grafik_tb_tipediagnosis",
+        "button":  "btnGrafikTBTipeDiagnosis",
+        "label":  "Tipe Diagnosis TB"
+    },
+    {
+        "permission":  "hais_perbangsal",
+        "button":  "btnHAIsBangsal",
+        "label":  "HAIs Per Kamar/Bangsal"
+    },
+    {
+        "permission":  "harian_dokter",
+        "button":  "btnRHDOkter",
+        "label":  "Harian Dokter"
+    },
+    {
+        "permission":  "harian_HAIs",
+        "button":  "btnHarianHAIs",
+        "label":  "Harian HAIs"
+    },
+    {
+        "permission":  "harian_HAIs2",
+        "button":  "btnHarianHAIs2",
+        "label":  "Harian HAIs 2"
+    },
+    {
+        "permission":  "harian_js",
+        "button":  "btnRHJasaSarana",
+        "label":  "Harian Jasa Sarana"
+    },
+    {
+        "permission":  "harian_kamar",
+        "button":  "btnHarianKamar",
+        "label":  "Harian Kamar"
+    },
+    {
+        "permission":  "harian_klasifikasi_pasien_ranap",
+        "button":  "btnHarianKlasifikasiPasienRanap",
+        "label":  "Harian Klasifikasi Pasien Ranap"
+    },
+    {
+        "permission":  "harian_kso",
+        "button":  "btnRHKSO",
+        "label":  "Harian KSO"
+    },
+    {
+        "permission":  "harian_menejemen",
+        "button":  "btnRHMenejemen",
+        "label":  "Harian Menejemen"
+    },
+    {
+        "permission":  "harian_paket_bhp",
+        "button":  "btnRHPaketBHP",
+        "label":  "Harian BHP Medis/Paket Obat"
+    },
+    {
+        "permission":  "harian_paramedis",
+        "button":  "btnRHParamedis",
+        "label":  "Harian Paramedis"
+    },
+    {
+        "permission":  "harian_tindakan_dokter",
+        "button":  "btnTagihanDokter",
+        "label":  "Harian Dokter Ralan"
+    },
+    {
+        "permission":  "harian_tindakan_poli",
+        "button":  "btnTagihanPoli",
+        "label":  "Harian Dokter Poli"
+    },
+    {
+        "permission":  "hasil_endoskopi_faring_laring",
+        "button":  "btnHasilEndoskopiFaringLaring",
+        "label":  "Hasil Endoskopi Faring/Laring"
+    },
+    {
+        "permission":  "hasil_endoskopi_hidung",
+        "button":  "btnHasilEndoskopiHidung",
+        "label":  "Hasil Endoskopi Hidung"
+    },
+    {
+        "permission":  "hasil_endoskopi_telinga",
+        "button":  "btnHasilEndoskopiTelinga",
+        "label":  "Hasil Endoskopi Telinga"
+    },
+    {
+        "permission":  "hasil_pemeriksaan_echo",
+        "button":  "btnHasilPemeriksaanECHO",
+        "label":  "Hasil Pemeriksaan ECHO"
+    },
+    {
+        "permission":  "hasil_pemeriksaan_ekg",
+        "button":  "btnHasilPemeriksaanEKG",
+        "label":  "Hasil Pemeriksaan EKG"
+    },
+    {
+        "permission":  "hasil_pemeriksaan_oct",
+        "button":  "btnHasilPemeriksaanOCT",
+        "label":  "Hasil Pemeriksaan OCT"
+    },
+    {
+        "permission":  "hasil_pemeriksaan_slit_lamp",
+        "button":  "btnHasilPemeriksaanSlitLamp",
+        "label":  "Hasil Pemeriksaan Slit Lamp"
+    },
+    {
+        "permission":  "hasil_pemeriksaan_usg",
+        "button":  "btnHasilPemeriksaanUSG",
+        "label":  "Hasil USG Kandungan"
+    },
+    {
+        "permission":  "hasil_tindakan_eswl",
+        "button":  "btnDokumentasiTindakanESWL",
+        "label":  "Dokumentasi Tindakan ESWL"
+    },
+    {
+        "permission":  "hasil_usg_gynecologi",
+        "button":  "btnHasilUSGGynecologi",
+        "label":  "Hasil USG Gynecologi"
+    },
+    {
+        "permission":  "hasil_usg_neonatus",
+        "button":  "btnHasilUSGNeonatus",
+        "label":  "Hasil USG Neonatus"
+    },
+    {
+        "permission":  "hasil_usg_urologi",
+        "button":  "btnHasilUSGUrologi",
+        "label":  "Hasil USG Urologi"
+    },
+    {
+        "permission":  "hemodialisa",
+        "button":  "btnHemodialisa",
+        "label":  "Hemodialisa"
+    },
+    {
+        "permission":  "hibah_aset_inventaris",
+        "button":  "btnHibahAsetInventaris",
+        "label":  "Hibah Aset/Inventaris"
+    },
+    {
+        "permission":  "hibah_dapur",
+        "button":  "btnHibahDapur",
+        "label":  "Hibah Barang Dapur"
+    },
+    {
+        "permission":  "hibah_non_medis",
+        "button":  "btnHibahNonMedis",
+        "label":  "Hibah Non Medis"
+    },
+    {
+        "permission":  "hibah_obat_bhp",
+        "button":  "btnHibahObatBHP",
+        "label":  "Hibah Obat \u0026 BHP"
+    },
+    {
+        "permission":  "hitung_alos",
+        "button":  "btnHitungAlos",
+        "label":  "Hitung ALOS"
+    },
+    {
+        "permission":  "hitung_bor",
+        "button":  "btnHitungBor",
+        "label":  "Hitung BOR"
+    },
+    {
+        "permission":  "hutang_aset_inventaris",
+        "button":  "btnHutangAsetInventaris",
+        "label":  "Hutang Aset/Inventaris"
+    },
+    {
+        "permission":  "hutang_barang_non_medis",
+        "button":  "btnHutangNonMedis",
+        "label":  "Hutang Non Medis"
+    },
+    {
+        "permission":  "hutang_dapur",
+        "button":  "btnHutangDapur",
+        "label":  "Hutang Barang Dapur"
+    },
+    {
+        "permission":  "hutang_obat",
+        "button":  "btnHutangObat",
+        "label":  "Hutang Obat \u0026 BHP"
+    },
+    {
+        "permission":  "icd9",
+        "button":  "btnICD9",
+        "label":  "ICD 9"
+    },
+    {
+        "permission":  "igd",
+        "button":  "btnIGD",
+        "label":  "IGD/UGD"
+    },
+    {
+        "permission":  "inacbg_coder_nik",
+        "button":  "btnInaCBGCoderNIK",
+        "label":  "Coder NIK INACBG"
+    },
+    {
+        "permission":  "inacbg_klaim_baru_manual",
+        "button":  "btnInaCBGKlaimBaruManual",
+        "label":  "Klaim Baru Manual INACBG"
+    },
+    {
+        "permission":  "inacbg_klaim_baru_manual2",
+        "button":  "btnInaCBGKlaimBaruManual2",
+        "label":  "Klaim Baru Manual INACBG 2"
+    },
+    {
+        "permission":  "inacbg_klaim_baru_otomatis",
+        "button":  "btnInaCBGKlaimBaruOtomatis",
+        "label":  "Klaim Baru Otomatis INACBG"
+    },
+    {
+        "permission":  "industrifarmasi",
+        "button":  "btnIndustriFarmasi",
+        "label":  "Industri Farmasi"
+    },
+    {
+        "permission":  "informasi_kamar",
+        "button":  "btnAnalisaKamar",
+        "label":  "Informasi Kamar"
+    },
+    {
+        "permission":  "inhealth_cek_eligibilitas",
+        "button":  "btnCekEligibilitasInhealth",
+        "label":  "Cek Eligibilitas Inhealth"
+    },
+    {
+        "permission":  "inhealth_kirim_tagihan",
+        "button":  "btnKirimTagihanInheath",
+        "label":  "Tagihan Inhealth"
+    },
+    {
+        "permission":  "inhealth_mapping_dokter",
+        "button":  "btnMappingDokterInhealth",
+        "label":  "Mapping Dokter Inhealth"
+    },
+    {
+        "permission":  "inhealth_mapping_poli",
+        "button":  "btnMappingPoliInhealth",
+        "label":  "Mapping Poli Inhealth"
+    },
+    {
+        "permission":  "inhealth_mapping_tindakan_laborat",
+        "button":  "btnMappingTindakanLaboratInhealth",
+        "label":  "Tarif Laborat Inhealth"
+    },
+    {
+        "permission":  "inhealth_mapping_tindakan_operasi",
+        "button":  "btnMappingTindakanOperasiInhealth",
+        "label":  "Tarif Operasi Inhealth"
+    },
+    {
+        "permission":  "inhealth_mapping_tindakan_radiologi",
+        "button":  "btnMappingTindakanRadiologiInhealth",
+        "label":  "Tarif Radiologi Inhealth"
+    },
+    {
+        "permission":  "inhealth_mapping_tindakan_ralan",
+        "button":  "btnMappingTindakanRalanInhealth",
+        "label":  "Tarif Ralan Inhealth"
+    },
+    {
+        "permission":  "inhealth_mapping_tindakan_ranap",
+        "button":  "btnMappingTindakanRanapInhealth",
+        "label":  "Tarif Ranap Inhealth"
+    },
+    {
+        "permission":  "inhealth_referensi_faskes",
+        "button":  "btnCekInhealthFaskes",
+        "label":  "Referensi Faskes Inhealth"
+    },
+    {
+        "permission":  "inhealth_referensi_jenpel_ruang_rawat",
+        "button":  "btnReferensiKamarInhealth",
+        "label":  "Referensi Ruang Rawat Inhealth"
+    },
+    {
+        "permission":  "inhealth_referensi_poli",
+        "button":  "btnCekInhealthPoli",
+        "label":  "Referensi Poli Inhealth"
+    },
+    {
+        "permission":  "inhealth_sjp",
+        "button":  "btnInhealthSJP",
+        "label":  "Data Bridging SJP Inhealth"
+    },
+    {
+        "permission":  "insiden_keselamatan",
+        "button":  "btnInsidenKeselamatan",
+        "label":  "Insiden Keselamatan"
+    },
+    {
+        "permission":  "insiden_keselamatan_pasien",
+        "button":  "btnInsidenKeselamatanPasien",
+        "label":  "Data Insiden Keselamatan"
+    },
+    {
+        "permission":  "integrasi_briapi",
+        "button":  "btnIntegrasiBRIApi",
+        "label":  "Integrasi BRI API"
+    },
+    {
+        "permission":  "inventaris_inventaris",
+        "button":  "btnInventaris",
+        "label":  "Data Inventaris"
+    },
+    {
+        "permission":  "inventaris_jenis",
+        "button":  "btnJenisInventaris",
+        "label":  "Jenis Inventaris"
+    },
+    {
+        "permission":  "inventaris_kategori",
+        "button":  "btnKategoriInventaris",
+        "label":  "Kategori Inventaris"
+    },
+    {
+        "permission":  "inventaris_koleksi",
+        "button":  "btnBarangInventaris",
+        "label":  "Koleksi Inventaris"
+    },
+    {
+        "permission":  "inventaris_merk",
+        "button":  "btnMerkInventaris",
+        "label":  "Merk Inventaris"
+    },
+    {
+        "permission":  "inventaris_perpustakaan",
+        "button":  "btnInventarisPerpustakaan",
+        "label":  "Inventaris Perpustakaan"
+    },
+    {
+        "permission":  "inventaris_produsen",
+        "button":  "btnProdusenInventaris",
+        "label":  "Produsen Inventaris"
+    },
+    {
+        "permission":  "inventaris_ruang",
+        "button":  "btnRuangInventaris",
+        "label":  "Ruang Inventaris"
+    },
+    {
+        "permission":  "inventaris_sirkulasi",
+        "button":  "btnSirkulasiInventaris",
+        "label":  "Sirkulasi Inventaris"
+    },
+    {
+        "permission":  "ipsrs_barang",
+        "button":  "btnBarangIpsrs",
+        "label":  "Barang Non Medis"
+    },
+    {
+        "permission":  "ipsrs_jenis_barang",
+        "button":  "btnJenisIpsrs",
+        "label":  "Jenis Barang Non Medis"
+    },
+    {
+        "permission":  "ipsrs_pengadaan_barang",
+        "button":  "btnPembelianIpsrs",
+        "label":  "Pengadaan Barang Non Medis"
+    },
+    {
+        "permission":  "ipsrs_pengadaan_pertanggal",
+        "button":  "btnPengadaanIPSRSPerTanggal",
+        "label":  "Pengadaan Non Medis Per Tanggal"
+    },
+    {
+        "permission":  "ipsrs_pengeluaran_harian",
+        "button":  "btnRBiayaIpsrs",
+        "label":  "Biaya Pengadaan Non Medis"
+    },
+    {
+        "permission":  "ipsrs_rekap_pengadaan",
+        "button":  "btnRHMasukIpsrs",
+        "label":  "Rekap Pengadaan Non Medis"
+    },
+    {
+        "permission":  "ipsrs_rekap_stok_keluar",
+        "button":  "btnRHKeluarIpsrs",
+        "label":  "Rekap Stok Keluar Non Medis"
+    },
+    {
+        "permission":  "ipsrs_returbeli",
+        "button":  "btnReturBarangNonMedis",
+        "label":  "Retur Ke Suplier Non Medis"
+    },
+    {
+        "permission":  "ipsrs_riwayat_barang",
+        "button":  "btnRiwayatBarangNonMedis",
+        "label":  "Riwayat Barang Non Medis"
+    },
+    {
+        "permission":  "ipsrs_stok_keluar",
+        "button":  "btnPengeluaranIpsrs",
+        "label":  "Stok Keluar Non Medis"
+    },
+    {
+        "permission":  "ipsrs_stokkeluar_pertanggal",
+        "button":  "btnStokKeluarIPSRSPerTanggal",
+        "label":  "Stok Keluar Non Medis Per Tanggal"
+    },
+    {
+        "permission":  "item_apotek_golongan",
+        "button":  "btnGrafikItemApotekPerGolongan",
+        "label":  "Item Apotek Per Golongan"
+    },
+    {
+        "permission":  "item_apotek_industrifarmasi",
+        "button":  "btnGrafikItemApotekPerIndustriFarmasi",
+        "label":  "Item Apotek Per Industri Farmasi"
+    },
+    {
+        "permission":  "item_apotek_jenis",
+        "button":  "btnGrafikItemApotekPerJenis",
+        "label":  "Item Apotek Per Jenis"
+    },
+    {
+        "permission":  "item_apotek_kategori",
+        "button":  "btnGrafikItemApotekPerKategori",
+        "label":  "Item Apotek Per Kategori"
+    },
+    {
+        "permission":  "jabatan_polri",
+        "button":  "btnJabatanPolri",
+        "label":  "Jabatan POLRI"
+    },
+    {
+        "permission":  "jabatan_tni",
+        "button":  "btnJabatanTNI",
+        "label":  "Jabatan TNI"
+    },
+    {
+        "permission":  "jadwal_pegawai",
+        "button":  "btnJadwalPegawai",
+        "label":  "Jadwal Pegawai"
+    },
+    {
+        "permission":  "jadwal_praktek",
+        "button":  "BtnJadwal",
+        "label":  "Jadwal Praktek"
+    },
+    {
+        "permission":  "jam_diet_pasien",
+        "button":  "btnJamDietPasien",
+        "label":  "Jam Diet Pasien"
+    },
+    {
+        "permission":  "jam_masuk",
+        "button":  "btnJamPresensi",
+        "label":  "Jam Presensi"
+    },
+    {
+        "permission":  "jasa_tindakan_pasien",
+        "button":  "btnJasaTindakanPasien",
+        "label":  "Jasa Tindakan Pasien"
+    },
+    {
+        "permission":  "jenis_barang",
+        "button":  "btnJnsBarang",
+        "label":  "Jenis Obat, Alkes \u0026 BHP"
+    },
+    {
+        "permission":  "jenis_cidera_k3rs",
+        "button":  "btnJenisCideraK3",
+        "label":  "Jenis Cidera K3"
+    },
+    {
+        "permission":  "jenis_cidera_k3rstahun",
+        "button":  "btnJenisCideraK3PerTahun",
+        "label":  "Jenis Cidera K3 Per Tahun"
+    },
+    {
+        "permission":  "jenis_luka_k3rs",
+        "button":  "btnJenisLukaK3",
+        "label":  "Jenis Luka K3"
+    },
+    {
+        "permission":  "jenis_luka_k3rstahun",
+        "button":  "btnJenisLukaK3PerTahun",
+        "label":  "Jenis Luka K3 Per Tahun"
+    },
+    {
+        "permission":  "jenis_pekerjaan_k3rs",
+        "button":  "btnJenisPekerjaanK3",
+        "label":  "Jenis Pekerjaan K3"
+    },
+    {
+        "permission":  "jenis_pekerjaan_k3rstahun",
+        "button":  "btnJenisPekerjaanK3PerTahun",
+        "label":  "Jenis Pekerjaan K3 Per Tahun"
+    },
+    {
+        "permission":  "jenis_perpustakaan",
+        "button":  "btnJenisPerpustakaan",
+        "label":  "Jenis Koleksi"
+    },
+    {
+        "permission":  "jm_ranap_dokter",
+        "button":  "btnJMDetailDokter",
+        "label":  "Detail JM Dokter"
+    },
+    {
+        "permission":  "jumlah_macam_diet",
+        "button":  "btnJumlahMacamDiet",
+        "label":  "Rekap Bulanan Macam Diet"
+    },
+    {
+        "permission":  "jumlah_pengunjung_ralan_polri",
+        "button":  "btnJumlahPengunjungRalanPolri",
+        "label":  "Jumlah Pengunjung Ralan POLRI"
+    },
+    {
+        "permission":  "jumlah_pengunjung_ralan_tni",
+        "button":  "btnJumlahPengunjungRalanTNI",
+        "label":  "Jumlah Pengunjung Ralan TNI"
+    },
+    {
+        "permission":  "jumlah_porsi_diet",
+        "button":  "btnJumlahPorsiDiet",
+        "label":  "Rekap Bulanan Porsi Diet"
+    },
+    {
+        "permission":  "jurnal_harian",
+        "button":  "btnJurnalHarian",
+        "label":  "Jurnal Harian"
+    },
+    {
+        "permission":  "kadaluarsa_batch",
+        "button":  "btnKadaluarsaBatch",
+        "label":  "Kadaluarsa Batch"
+    },
+    {
+        "permission":  "kamar",
+        "button":  "btnKamar",
+        "label":  "Kamar"
+    },
+    {
+        "permission":  "kategori_barang",
+        "button":  "btnKategoriBarang",
+        "label":  "Kategori Obat, Alkes \u0026 BHP"
+    },
+    {
+        "permission":  "kategori_pemasukan_lain",
+        "button":  "btnKategoriPemasukanLian",
+        "label":  "Kategori Pemasukan Lain-lain"
+    },
+    {
+        "permission":  "kategori_pengeluaran_harian",
+        "button":  "btnKategoriPengeluaranHarian",
+        "label":  "Kategori Pengeluaran Harian"
+    },
+    {
+        "permission":  "kategori_perpustakaan",
+        "button":  "btnKategoriPerpustakaan",
+        "label":  "Kategori Koleksi"
+    },
+    {
+        "permission":  "kategori_piutang_jasa_perusahaan",
+        "button":  "btnKategoriPiutangJasaPerusahaan",
+        "label":  "Kategori Piutang Jasa Perusahaan"
+    },
+    {
+        "permission":  "kedatangan_pasien",
+        "button":  "btnKedatanganPasienPerJam",
+        "label":  "Kedatangan Pasien Per Jam"
+    },
+    {
+        "permission":  "kegiatan_farmasi",
+        "button":  "btnKegiatanFarmasi",
+        "label":  "Kegiatan Farmasi"
+    },
+    {
+        "permission":  "kegiatan_ilmiah",
+        "button":  "btnKegiatanIlmiah",
+        "label":  "Kegiatan Ilmiah \u0026 Pelatihan"
+    },
+    {
+        "permission":  "kelahiran_bayi",
+        "button":  "btnLahir",
+        "label":  "Kelahiran Bayi"
+    },
+    {
+        "permission":  "kemenkes_sitt",
+        "button":  "btnDataSITT",
+        "label":  "Data TB"
+    },
+    {
+        "permission":  "kepatuhan_kelengkapan_keselamatan_bedah",
+        "button":  "btnKepatuhanKelengkapanKeselamatanBedah",
+        "label":  "Kepatuhan Kelengkapan Keselamatan Bedah"
+    },
+    {
+        "permission":  "kesling_limbah_b3medis_cair",
+        "button":  "btnLimbahB3MedisCair",
+        "label":  "Limbah Cair B3 Medis"
+    },
+    {
+        "permission":  "keterlambatan_presensi",
+        "button":  "btnKeterlambatanPresensi",
+        "label":  "Set Keterlambatan Presensi"
+    },
+    {
+        "permission":  "keuangan",
+        "button":  "btnLabaRugi",
+        "label":  "Keuangan"
+    },
+    {
+        "permission":  "keuntungan_beri_obat",
+        "button":  "btnKeuntunganObatRanap",
+        "label":  "Keuntungan Beri Obat "
+    },
+    {
+        "permission":  "keuntungan_beri_obat_nonpiutang",
+        "button":  "btnKeuntunganObat2",
+        "label":  "Keuntungan Beri Obat 2"
+    },
+    {
+        "permission":  "keuntungan_penjualan",
+        "button":  "btnKeuntungan",
+        "label":  "Keuntungan Penjualan"
+    },
+    {
+        "permission":  "kip_pasien_ralan",
+        "button":  "btnKIPPasienRalan",
+        "label":  "KIP Pasien Ralan"
+    },
+    {
+        "permission":  "kip_pasien_ranap",
+        "button":  "btnKIPPasienRanap",
+        "label":  "KIP Pasien Ranap"
+    },
+    {
+        "permission":  "klaim_rawat_jalan",
+        "button":  "btnKlaimRawatJalan",
+        "label":  "Klaim Rawat Jalan"
+    },
+    {
+        "permission":  "klasifikasi_pasien_perbangsal",
+        "button":  "btnKlasifikasiPasienPerRuang",
+        "label":  "Klasifikasi Pasien Per Ruang"
+    },
+    {
+        "permission":  "klasifikasi_pasien_ranap",
+        "button":  "btnKlasifikasiPasienRanap",
+        "label":  "Klasifikasi Pasien Ranap"
+    },
+    {
+        "permission":  "kodetransaksi_tujuan_transfer_bankmandiri",
+        "button":  "btnMandiriKodeTransaksiTujuanTRansfer",
+        "label":  "Kode Transaksi Tujuan Transfer Bank Mandiri"
+    },
+    {
+        "permission":  "koleksi_perpustakaan",
+        "button":  "btnKoleksiPerpustakaan",
+        "label":  "Koleksi Perpustakaan"
+    },
+    {
+        "permission":  "konseling_farmasi",
+        "button":  "btnKonselingFarmasi",
+        "label":  "Konseling Farmasi"
+    },
+    {
+        "permission":  "konsultasi_medik",
+        "button":  "btnKonsultasiMedik",
+        "label":  "Konsultasi Medik"
+    },
+    {
+        "permission":  "konversi_satuan",
+        "button":  "btnKonversi",
+        "label":  "Konversi Satuan"
+    },
+    {
+        "permission":  "kriteria_keluar_nicu",
+        "button":  "btnChecklistKriteriaKeluarNICU",
+        "label":  "Check List Kriteria Keluar NICU"
+    },
+    {
+        "permission":  "kriteria_keluar_picu",
+        "button":  "btnChecklistKriteriaKeluarPICU",
+        "label":  "Check List Kriteria Keluar PICU"
+    },
+    {
+        "permission":  "kriteria_masuk_nicu",
+        "button":  "btnChecklistKriteriaMasukNICU",
+        "label":  "Check List Kriteria Masuk NICU"
+    },
+    {
+        "permission":  "kriteria_masuk_picu",
+        "button":  "btnChecklistKriteriaMasukPICU",
+        "label":  "Check List Kriteria Masuk PICU"
+    },
+    {
+        "permission":  "kunjungan_bangsal_pertahun",
+        "button":  "btnKunjunganBangsalTahun",
+        "label":  "Masuk Ruang Per Tahun"
+    },
+    {
+        "permission":  "kunjungan_permintaan_lab",
+        "button":  "btnKunjunganLabRalan",
+        "label":  "Kunjungan Lab Ralan"
+    },
+    {
+        "permission":  "kunjungan_permintaan_lab2",
+        "button":  "btnKunjunganLabRanap",
+        "label":  "Kunjungan Lab Ranap"
+    },
+    {
+        "permission":  "kunjungan_permintaan_radiologi",
+        "button":  "btnKunjunganRadRalan",
+        "label":  "Kunjungan Radiologi Ralan"
+    },
+    {
+        "permission":  "kunjungan_permintaan_radiologi2",
+        "button":  "btnKunjunganRadRanap",
+        "label":  "Kunjungan Radiologi Ranap"
+    },
+    {
+        "permission":  "kunjungan_ralan",
+        "button":  "btnKunjunganRalan",
+        "label":  "Kunjungan Ralan"
+    },
+    {
+        "permission":  "kunjungan_ranap",
+        "button":  "btnKunjunganRanap",
+        "label":  "Kunjungan Ranap"
+    },
+    {
+        "permission":  "lama_operasi",
+        "button":  "btnLamaOperasi",
+        "label":  "Lama Operasi"
+    },
+    {
+        "permission":  "lama_pelayanan_apotek",
+        "button":  "btnLamaPelayananApotek",
+        "label":  "Lama Pelayanan Apotek"
+    },
+    {
+        "permission":  "lama_pelayanan_cssd",
+        "button":  "btnLamaPelayananCSSD",
+        "label":  "Lama Pelayanan CSSD"
+    },
+    {
+        "permission":  "lama_pelayanan_lab",
+        "button":  "btnLamaPelayananLab",
+        "label":  "Lama Pelayanan Lab PK"
+    },
+    {
+        "permission":  "lama_pelayanan_pasien",
+        "button":  "btnLamaPelayananPasien",
+        "label":  "Lama Pelayanan Pasien"
+    },
+    {
+        "permission":  "lama_pelayanan_poli",
+        "button":  "btnLamaPelayananPoli",
+        "label":  "Lama Pelayanan Poli"
+    },
+    {
+        "permission":  "lama_pelayanan_radiologi",
+        "button":  "btnLamaPelayananRadiologi",
+        "label":  "Lama Pelayanan Radiologi"
+    },
+    {
+        "permission":  "lama_pelayanan_ralan",
+        "button":  "btnLamaPelayananRalan",
+        "label":  "Lama Pelayanan Ralan"
+    },
+    {
+        "permission":  "lama_penyiapan_rm",
+        "button":  "btnLamaPenyiapanRM",
+        "label":  "Lama Penyiapan RM"
+    },
+    {
+        "permission":  "laporan_bulanan_irj",
+        "button":  "btnLaporanBulananIRJ",
+        "label":  "Laporan Bulanan IRJ"
+    },
+    {
+        "permission":  "laporan_penyakit_polri",
+        "button":  "btnLaporanPenyakitPolri",
+        "label":  "Laporan Penyakit POLRI"
+    },
+    {
+        "permission":  "laporan_penyakit_tni",
+        "button":  "btnLaporanPenyakitTNI",
+        "label":  "Laporan Penyakit TNI"
+    },
+    {
+        "permission":  "laporan_tahunan_igd",
+        "button":  "btnLaporanTahunanIGD",
+        "label":  "Laporan Tahunan IGD"
+    },
+    {
+        "permission":  "laporan_tahunan_irj",
+        "button":  "btnLaporanTahunanIRJ",
+        "label":  "Laporan Tahunan IRJ"
+    },
+    {
+        "permission":  "laporan_tahunan_penolakan_anjuran_medis",
+        "button":  "btnLaporanTahunanPenolakanAnjuranMedis",
+        "label":  "Laporan Tahunan Penolakan Anjuran Medis"
+    },
+    {
+        "permission":  "laporan_tindakan",
+        "button":  "btnLaporanTindakan",
+        "label":  "Laporan Tindakan Medis"
+    },
+    {
+        "permission":  "layanan_kedokteran_fisik_rehabilitasi",
+        "button":  "btnLayananKedokteranFisikRehabilitasi",
+        "label":  "Layanan Kedokteran Fisik \u0026 Rehabilitasi"
+    },
+    {
+        "permission":  "layanan_program_kfr",
+        "button":  "btnLayananProgramKFR",
+        "label":  "Layanan Program KFR"
+    },
+    {
+        "permission":  "limbah_b3_medis",
+        "button":  "btnLimbahB3Medis",
+        "label":  "Limbah Padat B3 Medis"
+    },
+    {
+        "permission":  "limbah_domestik",
+        "button":  "btnLimbahDomestik",
+        "label":  "Limbah Padat Domestik"
+    },
+    {
+        "permission":  "lokasi_kejadian_k3rs",
+        "button":  "btnLokasiKejadianK3",
+        "label":  "Lokasi Kejadian K3"
+    },
+    {
+        "permission":  "lokasi_kejadian_k3rstahun",
+        "button":  "btnLokasiKejadianK3PerTahun",
+        "label":  "Lokasi Kejadian K3 Per Tahun"
+    },
+    {
+        "permission":  "mapping_poli_bpjs",
+        "button":  "btnMapingPoliBPJS",
+        "label":  "Mapping Poli VClaim"
+    },
+    {
+        "permission":  "master_berkas_pegawai",
+        "button":  "btnMasterBerkasPegawai",
+        "label":  "Master Berkas Pegawai"
+    },
+    {
+        "permission":  "master_imunisasi",
+        "button":  "btnMasterImunisasi",
+        "label":  "Master Imunisasi"
+    },
+    {
+        "permission":  "master_kesimpulan_anjuran_mcu",
+        "button":  "btnMasterKesimpulanAnjuranMCU",
+        "label":  "Master Kesimpulan \u0026 Anjuran MCU"
+    },
+    {
+        "permission":  "master_masalah_keperawatan",
+        "button":  "btnMasterMasalahKeperawatan",
+        "label":  "Master Masalah Keperawatan"
+    },
+    {
+        "permission":  "master_masalah_keperawatan_anak",
+        "button":  "btnMasterMasalahKeperawatanAnak",
+        "label":  "Master Masalah Keperawatan Bayi/Anak"
+    },
+    {
+        "permission":  "master_masalah_keperawatan_geriatri",
+        "button":  "btnMasterMasalahKeperawatanGeriatri",
+        "label":  "Master Masalah Keperawatan Geriatri"
+    },
+    {
+        "permission":  "master_masalah_keperawatan_gigi",
+        "button":  "btnMasterMasalahKeperawatanGigi",
+        "label":  "Master Masalah Keperawatan Gigi"
+    },
+    {
+        "permission":  "master_masalah_keperawatan_igd",
+        "button":  "btnMasterMasalahKeperawatanIGD",
+        "label":  "Master Masalah Keperawatan IGD"
+    },
+    {
+        "permission":  "master_masalah_keperawatan_mata",
+        "button":  "btnMasterMasalahKeperawatanMata",
+        "label":  "Master Masalah Keperawatan Mata"
+    },
+    {
+        "permission":  "master_masalah_keperawatan_neonatus",
+        "button":  "btnMasterMasalahKeperawatanNeonatus",
+        "label":  "Master Masalah Keperawatan Neonatus"
+    },
+    {
+        "permission":  "master_masalah_keperawatan_psikiatri",
+        "button":  "btnMasterMasalahKeperawatanPsikiatri",
+        "label":  "Master Masalah Keperawatan Psikiatri"
+    },
+    {
+        "permission":  "master_menolak_anjuran_medis",
+        "button":  "btnMasterMenolakAnjuranMedis",
+        "label":  "Master Menolak Anjuran Medis"
+    },
+    {
+        "permission":  "master_rencana_keperawatan",
+        "button":  "btnMasterRencanaKeperawatan",
+        "label":  "Master Rencana Keperawatan"
+    },
+    {
+        "permission":  "master_rencana_keperawatan_anak",
+        "button":  "btnMasterRencanaKeperawatanAnak",
+        "label":  "Master Rencana Keperawatan Bayi/Anak"
+    },
+    {
+        "permission":  "master_rencana_keperawatan_geriatri",
+        "button":  "btnMasterRencanaKeperawatanGeriatri",
+        "label":  "Master Rencana Keperawatan Geriatri"
+    },
+    {
+        "permission":  "master_rencana_keperawatan_gigi",
+        "button":  "btnMasterRencanaKeperawatanGigi",
+        "label":  "Master Rencana Keperawatan Gigi"
+    },
+    {
+        "permission":  "master_rencana_keperawatan_igd",
+        "button":  "btnMasterRencanaKeperawatanIGD",
+        "label":  "Master Rencana Keperawatan IGD"
+    },
+    {
+        "permission":  "master_rencana_keperawatan_mata",
+        "button":  "btnMasterRencanaKeperawatanMata",
+        "label":  "Master Rencana Keperawatan Mata"
+    },
+    {
+        "permission":  "master_rencana_keperawatan_neonatus",
+        "button":  "btnMasterRencanaKeperawatanNeonatus",
+        "label":  "Master Rencana Keperawatan Neonatus"
+    },
+    {
+        "permission":  "master_rencana_keperawatan_psikiatri",
+        "button":  "btnMasterRencanaKeperawatanPsikiatri",
+        "label":  "Master Rencana Keperawatan Psikiatri"
+    },
+    {
+        "permission":  "master_sampel_bakumutu",
+        "button":  "btnLabKeslingSampelBakuMutu",
+        "label":  "Master Sampel Lab Kesling"
+    },
+    {
+        "permission":  "master_triase_macamkasus",
+        "button":  "btnMasterTriaseMacamKasus",
+        "label":  "Master Triase Macam Kasus"
+    },
+    {
+        "permission":  "master_triase_pemeriksaan",
+        "button":  "btnMasterTriasePemeriksaan",
+        "label":  "Master Triase Pemeriksaan"
+    },
+    {
+        "permission":  "master_triase_skala1",
+        "button":  "btnMasterTriaseSkala1",
+        "label":  "Master Triase Skala 1"
+    },
+    {
+        "permission":  "master_triase_skala2",
+        "button":  "btnMasterTriaseSkala2",
+        "label":  "Master Triase Skala 2"
+    },
+    {
+        "permission":  "master_triase_skala3",
+        "button":  "btnMasterTriaseSkala3",
+        "label":  "Master Triase Skala 3"
+    },
+    {
+        "permission":  "master_triase_skala4",
+        "button":  "btnMasterTriaseSkala4",
+        "label":  "Master Triase Skala 4"
+    },
+    {
+        "permission":  "master_triase_skala5",
+        "button":  "btnMasterTriaseSkala5",
+        "label":  "Master Triase Skala 5"
+    },
+    {
+        "permission":  "metode_pembayaran_bankmandiri",
+        "button":  "btnMandiriMetodePembayaran",
+        "label":  "Metode Pembayaran Bank Mandiri"
+    },
+    {
+        "permission":  "metode_racik",
+        "button":  "btnMetodeRacik",
+        "label":  "Metode Racik"
+    },
+    {
+        "permission":  "monitoring_asuhan_gizi",
+        "button":  "btnMonitoringAsuhanGizi",
+        "label":  "Monitoring Asuhan Gizi"
+    },
+    {
+        "permission":  "monitoring_reaksi_tranfusi",
+        "button":  "btnMonitoringReaksiTranfusi",
+        "label":  "Monitoring Reaksi Tranfusi"
+    },
+    {
+        "permission":  "mpp_skrining",
+        "button":  "btnSkriningManagerPelayananPasien",
+        "label":  "Skrining Manajer Pelayanan Pasien"
+    },
+    {
+        "permission":  "mutasi_barang",
+        "button":  "btnMutasiBarang",
+        "label":  "Mutasi Obat \u0026 BHP"
+    },
+    {
+        "permission":  "mutasi_berkas",
+        "button":  "btnMutasiBerkas",
+        "label":  "Mutasi Berkas RM"
+    },
+    {
+        "permission":  "mutu_air_limbah",
+        "button":  "btnMutuAirLimbah",
+        "label":  "Mutu Air Limbah"
+    },
+    {
+        "permission":  "nilai_normal_baku_mutu_lab_kesehatan_lingkungan",
+        "button":  "btnLabKeslingNilaiNormalBakuMutu",
+        "label":  "Nilai Normal Baku Mutu Lab Kesling"
+    },
+    {
+        "permission":  "nilai_penerimaan_vendor_dapur_perbulan",
+        "button":  "btnNilaiPenerimaanVendorDapurPerBulan",
+        "label":  "Nilai Penerimaan Vendor Dapur Per Bulan"
+    },
+    {
+        "permission":  "nilai_penerimaan_vendor_farmasi_perbulan",
+        "button":  "btnNilaiPenerimaanVendorFarmasiPerBulan",
+        "label":  "Nilai Penerimaan Vendor Farmasi Per Bulan"
+    },
+    {
+        "permission":  "nilai_penerimaan_vendor_nonmedis_perbulan",
+        "button":  "btnNilaiPenerimaanVendorNonMedisPerBulan",
+        "label":  "Nilai Penerimaan Vendor Non Medis Per Bulan"
+    },
+    {
+        "permission":  "nilai_piutang_perjenis_bayar_per_bulan",
+        "button":  "btnNilaiPiutangPerJenisBayarPerBulan",
+        "label":  "Nilai Piutang Per Cara Bayar Per Bulan"
+    },
+    {
+        "permission":  "obat",
+        "button":  "btnObat",
+        "label":  "Obat, Alkes \u0026 BHP"
+    },
+    {
+        "permission":  "obat_bhp_tidakbergerak",
+        "button":  "btnObatBHPTidakBergerak",
+        "label":  "Obat/Alkes/BHP Tidak Bergerak"
+    },
+    {
+        "permission":  "obat_penyakit",
+        "button":  "btnObatPenyakit",
+        "label":  "Obat Penyakit"
+    },
+    {
+        "permission":  "obat_per_cara_bayar",
+        "button":  "btnObatPerCaraBayar",
+        "label":  "Obat Per Cara Bayar"
+    },
+    {
+        "permission":  "obat_per_dokter_peresep",
+        "button":  "btnObatPasienPeresep",
+        "label":  "Obat Per Dokter Peresep"
+    },
+    {
+        "permission":  "obat_per_dokter_ralan",
+        "button":  "btnObatPasienRalan",
+        "label":  "Obat Per Dokter Ralan"
+    },
+    {
+        "permission":  "obat_per_dokter_ranap",
+        "button":  "btnObatPasienRanap",
+        "label":  "Obat Per Dokter Ranap"
+    },
+    {
+        "permission":  "obat_per_kamar",
+        "button":  "btnTagihanObatBangsal",
+        "label":  "Obat Per Kamar"
+    },
+    {
+        "permission":  "obat_per_poli",
+        "button":  "btnTagihanObatPoli",
+        "label":  "Obat Per Poli"
+    },
+    {
+        "permission":  "obat_per_resep",
+        "button":  "btnObatPerResep",
+        "label":  "Obat Per Resep"
+    },
+    {
+        "permission":  "obat10_terbanyak_poli",
+        "button":  "btn10BesarObatPoli",
+        "label":  "10 Obat Terbanyak Poli"
+    },
+    {
+        "permission":  "omset_penerimaan",
+        "button":  "btnOmsetPenerimaan",
+        "label":  "Penerimaan/Omset/Kas Masuk"
+    },
+    {
+        "permission":  "operasi",
+        "button":  "btnTagihanOperasi",
+        "label":  "Operasi/VK"
+    },
+    {
+        "permission":  "operasi_per_bulan",
+        "button":  "btnOperasiPerBulan",
+        "label":  "Operasi Per Bulan"
+    },
+    {
+        "permission":  "pangkat_polri",
+        "button":  "btnPangkatPolri",
+        "label":  "Pangkat POLRI"
+    },
+    {
+        "permission":  "pangkat_tni",
+        "button":  "btnPangkatTNI",
+        "label":  "Pangkat TNI"
+    },
+    {
+        "permission":  "parameter_pengujian_lab_kesehatan_lingkungan",
+        "button":  "btnLabKeslingParameterPengujian",
+        "label":  "Parameter Pengujian Lab Kesling"
+    },
+    {
+        "permission":  "parkir_barcode",
+        "button":  "btnBarcodeParkir",
+        "label":  "Barcode Parkir"
+    },
+    {
+        "permission":  "parkir_in",
+        "button":  "btnParkirMasuk",
+        "label":  "Parkir Masuk"
+    },
+    {
+        "permission":  "parkir_jenis",
+        "button":  "btnJenisParkir",
+        "label":  "Jenis Parkir"
+    },
+    {
+        "permission":  "pasien",
+        "button":  "btnPasien",
+        "label":  "Pasien"
+    },
+    {
+        "permission":  "pasien_corona",
+        "button":  "btnPasienCorona",
+        "label":  "Pasien Corona"
+    },
+    {
+        "permission":  "pasien_meninggal",
+        "button":  "btnPasienMati",
+        "label":  "Pasien Meninggal"
+    },
+    {
+        "permission":  "password_asuransi",
+        "button":  "btnPasswordAsuransi",
+        "label":  "Password BPJS"
+    },
+    {
+        "permission":  "payment_point",
+        "button":  "btnPaymentPoint",
+        "label":  "Payment Point"
+    },
+    {
+        "permission":  "payment_point2",
+        "button":  "btnPaymentPoint2",
+        "label":  "Payment Point 2"
+    },
+    {
+        "permission":  "pcare_alasan_tacc",
+        "button":  "btnCekPCareTACC",
+        "label":  "Referensi TACC PCare"
+    },
+    {
+        "permission":  "pcare_cek_alergi",
+        "button":  "btnPCareReferensiAlergi",
+        "label":  "Referensi Alergi PCare"
+    },
+    {
+        "permission":  "pcare_cek_dokter",
+        "button":  "btnPCareReferensiDokter",
+        "label":  "Referensi Dokter PCare"
+    },
+    {
+        "permission":  "pcare_cek_faskesalihrawat",
+        "button":  "btnPCareFaskesAlihRawat",
+        "label":  "Faskes Alih Rawat PCare"
+    },
+    {
+        "permission":  "pcare_cek_faskessubspesialis",
+        "button":  "btnPCareFaskesSubspesialis",
+        "label":  "Faskes Subspesialis PCare"
+    },
+    {
+        "permission":  "pcare_cek_faskesthalasemia",
+        "button":  "btnPCareFaskesThalasemia",
+        "label":  "Faskes Thalasemia \u0026 Hemofili PCare"
+    },
+    {
+        "permission":  "pcare_cek_kartu",
+        "button":  "btnPCareCekKartu",
+        "label":  "Cek No.Kartu PCare"
+    },
+    {
+        "permission":  "pcare_cek_kesadaran",
+        "button":  "btnCekPCareKesadaran",
+        "label":  "Referensi Kesadaran PCare"
+    },
+    {
+        "permission":  "pcare_cek_khusus",
+        "button":  "btnPCareReferensiKhusus",
+        "label":  "Referensi Khusus PCare"
+    },
+    {
+        "permission":  "pcare_cek_obat",
+        "button":  "btnPCareReferensiObat",
+        "label":  "Referensi Obat PCare"
+    },
+    {
+        "permission":  "pcare_cek_penyakit",
+        "button":  "btnCekPCareDiagnosa",
+        "label":  "Referensi Diagnosa PCare"
+    },
+    {
+        "permission":  "pcare_cek_poli",
+        "button":  "btnPCareReferensiPoli",
+        "label":  "Referensi Poli PCare"
+    },
+    {
+        "permission":  "pcare_cek_prognosa",
+        "button":  "btnPCareReferensiPrognosa",
+        "label":  "Referensi Prognosa PCare"
+    },
+    {
+        "permission":  "pcare_cek_provider",
+        "button":  "btnPCareReferensiProvider",
+        "label":  "Referensi Provider PCare"
+    },
+    {
+        "permission":  "pcare_cek_rujukan",
+        "button":  "btnCekPCareRujukan",
+        "label":  "Cek Rujukan PCare"
+    },
+    {
+        "permission":  "pcare_cek_sarana",
+        "button":  "btnPCareReferensiSarana",
+        "label":  "Referensi Sarana PCare"
+    },
+    {
+        "permission":  "pcare_cek_spesialis",
+        "button":  "btnPCareReferensiSpesialis",
+        "label":  "Referensi Spesialis PCare"
+    },
+    {
+        "permission":  "pcare_cek_statuspulang",
+        "button":  "btnPCareReferensiStatusPulang",
+        "label":  "Referensi Stts Pulang PCare"
+    },
+    {
+        "permission":  "pcare_cek_subspesialis",
+        "button":  "btnPCareReferensiSubspesialis",
+        "label":  "Referensi Subspesialis PCare"
+    },
+    {
+        "permission":  "pcare_cek_tindakan",
+        "button":  "btnPCareReferensiTindakan",
+        "label":  "Referensi Tindakan PCare"
+    },
+    {
+        "permission":  "pcare_club_prolanis",
+        "button":  "btnPCareClubProlanis",
+        "label":  "Club Prolanis PCare"
+    },
+    {
+        "permission":  "pcare_mapping_dokter",
+        "button":  "btnPCareMapingDokter",
+        "label":  "Mapping Dokter PCare"
+    },
+    {
+        "permission":  "pcare_mapping_obat",
+        "button":  "btnPCareMapingObat",
+        "label":  "Mapping Obat PCare"
+    },
+    {
+        "permission":  "pcare_mapping_poli",
+        "button":  "btnPCareMapingPoli",
+        "label":  "Mapping Poli PCare"
+    },
+    {
+        "permission":  "pcare_mapping_tindakan",
+        "button":  "btnPCareMapingTindakan",
+        "label":  "Tarif Ralan PCare"
+    },
+    {
+        "permission":  "pcare_mapping_tindakan_ranap",
+        "button":  "btnPCareMapingTindakanRanap",
+        "label":  "Tarif Ranap PCare"
+    },
+    {
+        "permission":  "pcare_pemberian_obat",
+        "button":  "btnPCareBeriObat",
+        "label":  "Pemberian Obat PCare"
+    },
+    {
+        "permission":  "pcare_pemberian_tindakan",
+        "button":  "btnPCareBeriTindakan",
+        "label":  "Pemberian Tindakan PCare"
+    },
+    {
+        "permission":  "pcare_peserta_kegiatan_kelompok",
+        "button":  "btnPCarePesertaKegiatanKelompok",
+        "label":  "Peserta Keg Kelompok PCare"
+    },
+    {
+        "permission":  "pelaksanaan_informasi_edukasi",
+        "button":  "btnEdukasiKomunikasiRujukan",
+        "label":  "Edukasi Komunikasi Pasien Rujukan"
+    },
+    {
+        "permission":  "pelaksanaan_informasi_edukasi",
+        "button":  "btnPelaksanaanInformasiEdukasi",
+        "label":  "Pelaksanaan Informasi \u0026 Edukasi"
+    },
+    {
+        "permission":  "pelaksanaan_informasi_edukasi",
+        "button":  "btnPenolakanRujukan",
+        "label":  "Penolakan Rujukan"
+    },
+    {
+        "permission":  "pelaksanaan_informasi_edukasi",
+        "button":  "btnSuratPengantarAmbulance",
+        "label":  "Surat Pengantar Ambulance"
+    },
+    {
+        "permission":  "pelanggan_lab_kesehatan_lingkungan",
+        "button":  "btnLabKeslingPelanggan",
+        "label":  "Pelanggan Lab Kesling"
+    },
+    {
+        "permission":  "pelayanan_informasi_obat",
+        "button":  "btnPelayananInformasiObat",
+        "label":  "Pelayanan Informasi Obat"
+    },
+    {
+        "permission":  "pemakaian_air_pdam",
+        "button":  "btnPemakaianAirPDAM",
+        "label":  "Pemakaian Air PDAM"
+    },
+    {
+        "permission":  "pemakaian_air_tanah",
+        "button":  "btnPemakaianAirTanah",
+        "label":  "Pemakaian Air Tanah"
+    },
+    {
+        "permission":  "pemantauan_ews_neonatus",
+        "button":  "btnPemantauanEWSNeonatus",
+        "label":  "Pemantauan EWS Pasien Neonatus"
+    },
+    {
+        "permission":  "pemantauan_meows_obstetri",
+        "button":  "btnPemantauanMEOWS",
+        "label":  "Pemantauan MEOWS Pasien Obstetri"
+    },
+    {
+        "permission":  "pemantauan_pews_anak",
+        "button":  "btnPemantauanPEWSAnak",
+        "label":  "Pemantauan PEWS Pasien Anak"
+    },
+    {
+        "permission":  "pemantauan_pews_dewasa",
+        "button":  "btnPemantauanPEWSDewasa",
+        "label":  "Pemantauan EWS Pasien Dewasa"
+    },
+    {
+        "permission":  "pemasukan_lain",
+        "button":  "btnPemasukanLain",
+        "label":  "Pemasukan Lain-Lain"
+    },
+    {
+        "permission":  "pembatalan_periksa_dokter",
+        "button":  "btnPembatalanPeriksaDokter",
+        "label":  "Pembatalan Periksa Per Dokter"
+    },
+    {
+        "permission":  "pembayaran_akun_bayar",
+        "button":  "btnPembayaranAkunBayar",
+        "label":  "Pembayaran Per Akun Bayar"
+    },
+    {
+        "permission":  "pembayaran_akun_bayar2",
+        "button":  "btnPembayaranAkunBayar2",
+        "label":  "Pembayaran Per Akun Bayar 2"
+    },
+    {
+        "permission":  "pembayaran_akun_bayar3",
+        "button":  "btnPembayaranAkunBayar3",
+        "label":  "Pembayaran Per Akun Bayar 3"
+    },
+    {
+        "permission":  "pembayaran_akun_bayar4",
+        "button":  "btnPembayaranAkunBayar4",
+        "label":  "Pembayaran Per Akun Bayar 4"
+    },
+    {
+        "permission":  "pembayaran_akun_bayar5",
+        "button":  "btnPembayaranAkunBayar5",
+        "label":  "Pembayaran Per Akun Bayar 5"
+    },
+    {
+        "permission":  "pembayaran_bank_jabar",
+        "button":  "btnPembayaranBankJabar",
+        "label":  "Pembayaran Bank Jabar"
+    },
+    {
+        "permission":  "pembayaran_bank_jateng",
+        "button":  "btnPembayaranBankJateng",
+        "label":  "Pembayaran Bank Jateng"
+    },
+    {
+        "permission":  "pembayaran_bank_mandiri",
+        "button":  "btnPembayaranBankMandiri",
+        "label":  "Pembayaran Bank Mandiri"
+    },
+    {
+        "permission":  "pembayaran_bank_papua",
+        "button":  "btnPembayaranBankPapua",
+        "label":  "Pembayaran Bank Papua"
+    },
+    {
+        "permission":  "pembayaran_briva",
+        "button":  "btnPembayaranBRIVA",
+        "label":  "Pembayaran BRIVA"
+    },
+    {
+        "permission":  "pembayaran_per_unit",
+        "button":  "btnPembayaranPerUnit",
+        "label":  "Pembayaran Per Unit"
+    },
+    {
+        "permission":  "pembayaran_pihak_ke3_bankmandiri",
+        "button":  "btnPembayaranPihakKe3BankMandiri",
+        "label":  "Pembayaran Pihak Ke 3 Bank Mandiri"
+    },
+    {
+        "permission":  "pembayaran_ralan",
+        "button":  "btnRalanMasuk",
+        "label":  "Pembayaran Ralan"
+    },
+    {
+        "permission":  "pembayaran_ranap",
+        "button":  "btnRanapMasuk",
+        "label":  "Pembayaran Ranap"
+    },
+    {
+        "permission":  "pemberi_hutang_lain",
+        "button":  "btnPemberiHutangLain",
+        "label":  "Pemberi Hutang Lain"
+    },
+    {
+        "permission":  "pemberian_obat_pertanggal",
+        "button":  "btnObatPerTanggal",
+        "label":  "Obat/Alkes/BHP Per Tanggal"
+    },
+    {
+        "permission":  "pemeliharaan_gedung",
+        "button":  "btnPemeliharaanGedung",
+        "label":  "Pemeliharaan Gedung"
+    },
+    {
+        "permission":  "pemeliharaan_inventaris",
+        "button":  "btnPemeliharaanInventaris",
+        "label":  "Pemeliharaan Inventaris"
+    },
+    {
+        "permission":  "pemeriksaan_fisik_ralan_per_penyakit",
+        "button":  "btnPemeriksaanFisikRalanPerPenyakit",
+        "label":  "Pemeriksaan Fisik Ralan Per Penyakit"
+    },
+    {
+        "permission":  "pemeriksaan_lab_mb",
+        "button":  "btnLaboratoriumMB",
+        "label":  "Periksa Lab MB"
+    },
+    {
+        "permission":  "pemeriksaan_lab_pa",
+        "button":  "btnLaboratoriumPA",
+        "label":  "Periksa Lab PA"
+    },
+    {
+        "permission":  "peminjam_piutang",
+        "button":  "btnPeminjamPiutang",
+        "label":  "Peminjam Piutang"
+    },
+    {
+        "permission":  "peminjaman_berkas",
+        "button":  "btnSirkulasiBerkas",
+        "label":  "Peminjaman Berkas RM"
+    },
+    {
+        "permission":  "peminjaman_perpustakaan",
+        "button":  "btnPeminjamanPerpustakaan",
+        "label":  "Peminjaman Koleksi Perpustakaan"
+    },
+    {
+        "permission":  "penagihan_piutang_pasien",
+        "button":  "btnPenagihanPiutangPasien",
+        "label":  "Penagihan Piutang Pasien"
+    },
+    {
+        "permission":  "penatalaksanaan_terapi_okupasi",
+        "button":  "btnPenatalaksanaanTerapiOkupasi",
+        "label":  "Penatalaksanaan Terapi Okupasi"
+    },
+    {
+        "permission":  "pendapatan_per_akun",
+        "button":  "btnPendapatanPerAkun",
+        "label":  "Pendapatan Per Akun Rekening"
+    },
+    {
+        "permission":  "pendapatan_per_akun_closing",
+        "button":  "btnPendapatanPerAkunClosing",
+        "label":  "Pendapatan Per Akun Closing"
+    },
+    {
+        "permission":  "pendapatan_per_carabayar",
+        "button":  "btnPendapatanPerCaraBayar",
+        "label":  "Pendapatan Per Cara Bayar"
+    },
+    {
+        "permission":  "penerbit_perpustakaan",
+        "button":  "btnPenerbitPerpustakaan",
+        "label":  "Penerbit Koleksi"
+    },
+    {
+        "permission":  "penerimaan_aset_inventaris",
+        "button":  "btnPenerimaanAset",
+        "label":  "Penerimaan Aset/Inventaris"
+    },
+    {
+        "permission":  "penerimaan_non_medis",
+        "button":  "btnPenerimaanNonMedis",
+        "label":  "Penerimaan Barang Non Medis"
+    },
+    {
+        "permission":  "penerimaan_obat_perbulan",
+        "button":  "btnGrafikPenerimaanObatPerBulan",
+        "label":  "Penerimaan Obat, Alkes \u0026 BHP Per Bulan"
+    },
+    {
+        "permission":  "pengadaan_aset_inventaris",
+        "button":  "btnPengadaanAset",
+        "label":  "Pengadaan Aset/Inventaris"
+    },
+    {
+        "permission":  "pengadaan_obat",
+        "button":  "btnPembelian",
+        "label":  "Pengadaan Obat \u0026 BHP"
+    },
+    {
+        "permission":  "pengaduan_pasien",
+        "button":  "btnPengaduan",
+        "label":  "Pengaduan/Chat"
+    },
+    {
+        "permission":  "pengajuan_asetinventaris",
+        "button":  "btnPengajuanAsetInventaris",
+        "label":  "Pengajuan Aset/Inventaris"
+    },
+    {
+        "permission":  "pengajuan_barang_dapur",
+        "button":  "btnPengajuanBarangDapur",
+        "label":  "Pengajuan Barang Dapur"
+    },
+    {
+        "permission":  "pengajuan_barang_medis",
+        "button":  "btnPengajuanBarangMedis",
+        "label":  "Pengajuan Obat \u0026 BHP"
+    },
+    {
+        "permission":  "pengajuan_barang_nonmedis",
+        "button":  "btnPengajuanBarangNonMedis",
+        "label":  "Pengajuan Barang Non Medis"
+    },
+    {
+        "permission":  "pengajuan_biaya",
+        "button":  "btnPengajuanBiayaKuangan",
+        "label":  "Pengajuan Biaya"
+    },
+    {
+        "permission":  "pengajuan_cuti",
+        "button":  "btnPengajuanCuti",
+        "label":  "Pengajuan Cuti"
+    },
+    {
+        "permission":  "pengambilan_penunjang_utd",
+        "button":  "btnPengambilanPenunjangUTD",
+        "label":  "Pengambilan UTD"
+    },
+    {
+        "permission":  "pengambilan_penunjang_utd2",
+        "button":  "btnPengambilanPenunjangUTD2",
+        "label":  "Pengambilan BHP Non Medis"
+    },
+    {
+        "permission":  "pengambilan_utd",
+        "button":  "btnPengambilanUTD",
+        "label":  "Pengambilan BHP UTD"
+    },
+    {
+        "permission":  "pengambilan_utd2",
+        "button":  "btnPengambilanUTD2",
+        "label":  "Pengambilan BHP Medis"
+    },
+    {
+        "permission":  "pengarang_perpustakaan",
+        "button":  "btnPengarangPerpustakaan",
+        "label":  "Pengarang/Penulis"
+    },
+    {
+        "permission":  "pengaturan_rekening",
+        "button":  "btnPengaturanRekening",
+        "label":  "Pengaturan Rekening"
+    },
+    {
+        "permission":  "pengeluaran",
+        "button":  "btnPengeluaran",
+        "label":  "Pengeluaran Harian"
+    },
+    {
+        "permission":  "pengeluaran_pengeluaran",
+        "button":  "btnPengeluaranPengeluaran",
+        "label":  "Pengeluaran-pengeluaran/Kas Keluar"
+    },
+    {
+        "permission":  "pengeluaran_stok_apotek",
+        "button":  "btnStokKeluarMedis",
+        "label":  "Stok Keluar Medis"
+    },
+    {
+        "permission":  "pengembalian_deposit_pasien",
+        "button":  "btnPengembalianDepositPasien",
+        "label":  "Pengembalian Deposit Pasien"
+    },
+    {
+        "permission":  "pengguna_obat_resep",
+        "button":  "btnPenggunaObatResep",
+        "label":  "Pengguna Obat/Alkes/BHP Resep"
+    },
+    {
+        "permission":  "penggunaan_bhp_ok",
+        "button":  "btnPenggunaanBHPOK",
+        "label":  "Penggunaan BHP OK/VK"
+    },
+    {
+        "permission":  "pengkajian_restrain",
+        "button":  "btnPengkajianRestrain",
+        "label":  "Pengkajian Restrain"
+    },
+    {
+        "permission":  "pengumuman_epasien",
+        "button":  "btnPengumumanEPasien",
+        "label":  "Pengumuman E-Pasien"
+    },
+    {
+        "permission":  "penilaian_awal_keperawatan_anak",
+        "button":  "btnPenilaianAwalRalanBayi",
+        "label":  "Awal Keperawatan Ralan Bayi/Anak"
+    },
+    {
+        "permission":  "penilaian_awal_keperawatan_gigi",
+        "button":  "btnPenilaianAwalKeperawatanGigi",
+        "label":  "Awal Keperawatan Gigi"
+    },
+    {
+        "permission":  "penilaian_awal_keperawatan_igd",
+        "button":  "btnPenilaianAwalKeperawatanIGD",
+        "label":  "Awal Keperawatan IGD"
+    },
+    {
+        "permission":  "penilaian_awal_keperawatan_kebidanan",
+        "button":  "btnPenilaianAwalKeperawatanKebidanan",
+        "label":  "Asesmen Awal IGD Ponek"
+    },
+    {
+        "permission":  "penilaian_awal_keperawatan_psikiatri",
+        "button":  "btnPenilaianAwalKeperawatanRalanPsikiatri",
+        "label":  "Awal Keperawatan Ralan Psikiatri"
+    },
+    {
+        "permission":  "penilaian_awal_keperawatan_ralan",
+        "button":  "btnPenilaianAwalKeperawatanRalan",
+        "label":  "Awal Keperawatan Ralan Umum"
+    },
+    {
+        "permission":  "penilaian_awal_keperawatan_ralan_geriatri",
+        "button":  "btnPenilaianAwalKeperawatanRalanGeriatri",
+        "label":  "Awal Keperawatan Ralan Geriatri"
+    },
+    {
+        "permission":  "penilaian_awal_keperawatan_ranap",
+        "button":  "btnPenilaianAwalKeperawatanRanap",
+        "label":  "Awal Keperawatan Ranap Umum"
+    },
+    {
+        "permission":  "penilaian_awal_keperawatan_ranap_bayi",
+        "button":  "btnPenilaianAwalKeperawatanRanapBayiAnak",
+        "label":  "Awal Keperawatan Ranap Bayi/Anak"
+    },
+    {
+        "permission":  "penilaian_awal_keperawatan_ranap_neonatus",
+        "button":  "btnPenilaianAwalKeperawatanRanapNeonatus",
+        "label":  "Awal Keperawatan Ranap Neonatus"
+    },
+    {
+        "permission":  "penilaian_awal_keperawatan_ranapkebidanan",
+        "button":  "btnPenilaianAwalKeperawatanKebidananRanap",
+        "label":  "Awal Keperawatan Ranap Kebidanan"
+    },
+    {
+        "permission":  "penilaian_awal_medis_igd",
+        "button":  "btnPenilaianAwalMedisIGD",
+        "label":  "Awal Medis IGD"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ralan",
+        "button":  "btnPenilaianAwalMedisRalan",
+        "label":  "Awal Medis Ralan Umum"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ralan_anak",
+        "button":  "btnPenilaianAwalMedisRalanBayi",
+        "label":  "Awal Medis Ralan Bayi/Anak"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ralan_bedah",
+        "button":  "btnPenilaianAwalMedisRalanBedah",
+        "label":  "Awal Medis Ralan Bedah"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ralan_bedah_mulut",
+        "button":  "btnPenilaianAwalMedisRalanBedahMulut",
+        "label":  "Awal Medis Ralan Bedah Mulut"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ralan_geriatri",
+        "button":  "btnPenilaianAwalMedisRalanGeriatri",
+        "label":  "Awal Medis Ralan Geriatri"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ralan_kebidanan",
+        "button":  "btnPenilaianAwalMedisRalanKandungan",
+        "label":  "Awal Medis Ralan Kandungan"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ralan_kulit_kelamin",
+        "button":  "btnPenilaianAwalMedisRalanKulitKelamin",
+        "label":  "Awal Medis Ralan Kulit \u0026 Kelamin"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ralan_mata",
+        "button":  "btnPenilaianAwalMedisRalanMata",
+        "label":  "Awal Medis Ralan Mata"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ralan_neurologi",
+        "button":  "btnPenilaianAwalMedisRalanNeurologi",
+        "label":  "Awal Medis Ralan Neurologi"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ralan_orthopedi",
+        "button":  "btnPenilaianAwalMedisRalanOrthopedi",
+        "label":  "Awal Medis Ralan Orthopedi"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ralan_paru",
+        "button":  "btnPenilaianAwalMedisRalanParu",
+        "label":  "Awal Medis Ralan Paru"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ralan_penyakit_dalam",
+        "button":  "btnPenilaianAwalMedisRalanPenyakitDalam",
+        "label":  "Awal Medis Ralan Penyakit Dalam"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ralan_psikiatri",
+        "button":  "btnPenilaianAwalMedisRalanPsikiatri",
+        "label":  "Awal Medis Ralan Psikiatri"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ralan_tht",
+        "button":  "btnPenilaianAwalMedisRalanTHT",
+        "label":  "Awal Medis Ralan THT"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ranap",
+        "button":  "btnPenilaianAwalMedisRanap",
+        "label":  "Awal Medis Ranap Umum"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ranap_kebidanan",
+        "button":  "btnPenilaianAwalMedisRanapKandungan",
+        "label":  "Awal Medis Ranap Kandungan"
+    },
+    {
+        "permission":  "penilaian_awal_medis_ranap_neonatus",
+        "button":  "btnPenilaianAwalMedisRanapNeonatus",
+        "label":  "Awal Medis Ranap Neonatus"
+    },
+    {
+        "permission":  "penilaian_bayi_baru_lahir",
+        "button":  "btnPenilaianBayiBaruLahir",
+        "label":  "Pengkajian Bayi Baru Lahir"
+    },
+    {
+        "permission":  "penilaian_derajat_dehidrasi",
+        "button":  "btnPenilaianDerajatDehidrasi",
+        "label":  "Pengkajian Derajat Dehidrasi"
+    },
+    {
+        "permission":  "penilaian_fisioterapi",
+        "button":  "btnFisioterapi",
+        "label":  "Awal Fisioterapi"
+    },
+    {
+        "permission":  "penilaian_korban_kekerasan",
+        "button":  "btnPenilaianKorbanKekerasan",
+        "label":  "Pengkajian Korban Kekerasan"
+    },
+    {
+        "permission":  "penilaian_lanjutan_resiko_jatuh_anak",
+        "button":  "btnPenilaianRisikoJatuhAnak",
+        "label":  "Pengkajian Lanjutan Risiko Jatuh Anak"
+    },
+    {
+        "permission":  "penilaian_lanjutan_resiko_jatuh_dewasa",
+        "button":  "btnPenilaianRisikoJatuhDewasa",
+        "label":  "Pengkajian Lanjutan Risiko Jatuh Dewasa"
+    },
+    {
+        "permission":  "penilaian_lanjutan_resiko_jatuh_geriatri",
+        "button":  "btnPenilaianRisikoJatuhGeriatri",
+        "label":  "Pengkajian Lanjutan Risiko Jatuh Geriatri"
+    },
+    {
+        "permission":  "penilaian_lanjutan_resiko_jatuh_lansia",
+        "button":  "btnPenilaianRisikoJatuhLansia",
+        "label":  "Pengkajian Lanjutan Risiko Jatuh Lansia"
+    },
+    {
+        "permission":  "penilaian_lanjutan_resiko_jatuh_psikiatri",
+        "button":  "btnPenilaianRisikoJatuhPsikiatri",
+        "label":  "Pengkajian Lanjutan Risiko Jatuh Psikiatri"
+    },
+    {
+        "permission":  "penilaian_lanjutan_skrining_fungsional",
+        "button":  "btnPenilaianLanjutanSkriningFungsional",
+        "label":  "Pengkajian Lanjutan Skrining Fungsional"
+    },
+    {
+        "permission":  "penilaian_level_kecemasan_ranap_anak",
+        "button":  "btnPenilaianLevelKecemasanRanapAnak",
+        "label":  "Pengkajian Level Kecemasan Ranap Anak"
+    },
+    {
+        "permission":  "penilaian_mcu",
+        "button":  "btnPenilaianMCU",
+        "label":  "Pengkajian MCU"
+    },
+    {
+        "permission":  "penilaian_medis_ralan_gawat_darurat_psikiatri",
+        "button":  "btnPenilaianAwalMedisRalanIGDPsikiatri",
+        "label":  "Awal Medis IGD Psikiatri"
+    },
+    {
+        "permission":  "penilaian_medis_ralan_hemodialisa",
+        "button":  "btnPenilaianAwalMedisHemodialisa",
+        "label":  "Awal Medis Pasien Hemodialisa"
+    },
+    {
+        "permission":  "penilaian_medis_ralan_rehab_medik",
+        "button":  "btnPenilaianAwalMedisRalanRehabMedik",
+        "label":  "Awal Medis Ralan Fisik \u0026 Rehabilitasi"
+    },
+    {
+        "permission":  "penilaian_medis_ranap_psikiatrik",
+        "button":  "btnPenilaianAwalMedisRanapPsikiatri",
+        "label":  "Awal Medis Ranap Psikiatri"
+    },
+    {
+        "permission":  "penilaian_pasien_imunitas_rendah",
+        "button":  "btnPenilaianPasienImunitasRendah",
+        "label":  "Pengkajian Pasien Imunitas Rendah"
+    },
+    {
+        "permission":  "penilaian_pasien_keracunan",
+        "button":  "btnPenilaianPasienKeracunan",
+        "label":  "Pengkajian Pasien Keracunan"
+    },
+    {
+        "permission":  "penilaian_pasien_penyakit_menular",
+        "button":  "btnPenilaianPasienPenyakitMenular",
+        "label":  "Pengkajian Pasien Penyakit Menular"
+    },
+    {
+        "permission":  "penilaian_pasien_terminal",
+        "button":  "btnPenilaianPasienTerminal",
+        "label":  "Pengkajian Pasien Terminal"
+    },
+    {
+        "permission":  "penilaian_pre_anestesi",
+        "button":  "btnPenilaianPreAnastesi",
+        "label":  "Pengkajian Pre Anestesi"
+    },
+    {
+        "permission":  "penilaian_pre_induksi",
+        "button":  "btnPenilaianPreInduksi",
+        "label":  "Pengkajian Pre Induksi"
+    },
+    {
+        "permission":  "penilaian_pre_operasi",
+        "button":  "btnPenilaianPreOperasi",
+        "label":  "Pengkajian Pre Operasi"
+    },
+    {
+        "permission":  "penilaian_psikologi",
+        "button":  "btnPenilaianPsikologi",
+        "label":  "Pengkajian Psikologi"
+    },
+    {
+        "permission":  "penilaian_psikologi_klinis",
+        "button":  "btnPenilaianPsikologiKlinis",
+        "label":  "Pengkajian Psikologi Klinis"
+    },
+    {
+        "permission":  "penilaian_risiko_dekubitus",
+        "button":  "btnPenilaianRisikoDekubitus",
+        "label":  "Pengkajian Risiko Dekubitus"
+    },
+    {
+        "permission":  "penilaian_risiko_jatuh_neonatus",
+        "button":  "btnPenilaianRisikoJatuhNeonatus",
+        "label":  "Pengkajian Lanjutan Risiko Jatuh Neonatus"
+    },
+    {
+        "permission":  "penilaian_tambahan_beresiko_melarikan_diri",
+        "button":  "btnPenilaianTambahanMelarikanDiri",
+        "label":  "Pengkajian Tambahan Melarikan Diri"
+    },
+    {
+        "permission":  "penilaian_tambahan_bunuh_diri",
+        "button":  "btnPenilaianTambahanBunuhDiri",
+        "label":  "Pengkajian Tambahan Bunuh Diri"
+    },
+    {
+        "permission":  "penilaian_tambahan_pasien_geriatri",
+        "button":  "btnPenilaianTambahanGeriatri",
+        "label":  "Pengkajian Tambahan Pasien Geriatri"
+    },
+    {
+        "permission":  "penilaian_tambahan_perilaku_kekerasan",
+        "button":  "btnPenilaianTambahanPerilakuKekerasan",
+        "label":  "Pengkajian Tambahan Perilaku Kekerasan"
+    },
+    {
+        "permission":  "penilaian_terapi_wicara",
+        "button":  "btnPenilaianTerapiWicara",
+        "label":  "Pengkajian Terapi Wicara"
+    },
+    {
+        "permission":  "penilaian_ulang_nyeri",
+        "button":  "btnPenilaianUlangNyeri",
+        "label":  "Pengkajian Ulang Nyeri"
+    },
+    {
+        "permission":  "penjualan_obat",
+        "button":  "btnPenjualan",
+        "label":  "Penjualan Obat \u0026 BHP"
+    },
+    {
+        "permission":  "penjualan_obat_pertanggal",
+        "button":  "btnPenjualanPerTanggal",
+        "label":  "Penjualan Bebas Per Tanggal"
+    },
+    {
+        "permission":  "penolakan_anjuran_medis",
+        "button":  "btnPenolakanAnjuranMedis",
+        "label":  "Penolakan Anjuran Medis"
+    },
+    {
+        "permission":  "penyakit",
+        "button":  "btnICD",
+        "label":  "ICD 10"
+    },
+    {
+        "permission":  "penyakit_menular_ralan",
+        "button":  "btnPnyMenularRalan",
+        "label":  "Pny Menular Ralan"
+    },
+    {
+        "permission":  "penyakit_menular_ranap",
+        "button":  "btnPnyMenularRanap",
+        "label":  "Pny Menular Ranap"
+    },
+    {
+        "permission":  "penyakit_pd3i",
+        "button":  "btnPenyakitPD3I",
+        "label":  "Penyakit AFP \u0026 PD3I"
+    },
+    {
+        "permission":  "penyakit_ralan",
+        "button":  "btnFrekuensiRalan",
+        "label":  "Frekuensi Penyakit Ralan"
+    },
+    {
+        "permission":  "penyakit_ranap",
+        "button":  "btnFrekuensiRanap",
+        "label":  "Frekuensi Penyakit Ranap"
+    },
+    {
+        "permission":  "penyakit_ranap_cara_bayar",
+        "button":  "btnPenyakitRanapCaraBayar",
+        "label":  "Penyakit Ranap Per Cara Bayar"
+    },
+    {
+        "permission":  "penyebab_k3rs",
+        "button":  "btnPenyebabKecelakaanK3",
+        "label":  "Penyebab Kecelakaan K3"
+    },
+    {
+        "permission":  "penyebab_k3rstahun",
+        "button":  "btnPenyebabKecelakaanK3PerTahun",
+        "label":  "Penyebab Kecelakaan K3 Per Tahun"
+    },
+    {
+        "permission":  "perawatan_pasien_corona",
+        "button":  "btnPerawatanPasienCorona",
+        "label":  "Perawatan Pasien Corona"
+    },
+    {
+        "permission":  "perbaikan_inventaris",
+        "button":  "btnPerbaikanInventaris",
+        "label":  "Perbaikan Inventaris"
+    },
+    {
+        "permission":  "perencanaan_pemulangan",
+        "button":  "btnPerencanaanPemulangan",
+        "label":  "Perencanaan Pemulangan"
+    },
+    {
+        "permission":  "periksa_lab",
+        "button":  "btnLaboratorium",
+        "label":  "Periksa Lab PK"
+    },
+    {
+        "permission":  "periksa_radiologi",
+        "button":  "btnPeriksaRadiologi",
+        "label":  "Periksa Radiologi"
+    },
+    {
+        "permission":  "peristiwa_k3rs",
+        "button":  "btnPeristiwaK3",
+        "label":  "Peristiwa K3"
+    },
+    {
+        "permission":  "perkiraan_biaya_ranap",
+        "button":  "btnPerkiraanBiayaRanap",
+        "label":  "Perkiraan Biaya Ranap"
+    },
+    {
+        "permission":  "permintaan_dapur",
+        "button":  "btnPermintaanDapur",
+        "label":  "Permintaan Barang Dapur"
+    },
+    {
+        "permission":  "permintaan_non_medis",
+        "button":  "btnPermintaanNonMedis",
+        "label":  "Permintaan Barang Non Medis"
+    },
+    {
+        "permission":  "permintaan_perbaikan_inventaris",
+        "button":  "btnPermintaanPerbaikanInventaris",
+        "label":  "Permintaan Perbaikan Inventaris"
+    },
+    {
+        "permission":  "permintaan_ranap",
+        "button":  "btnPermintaanRanap",
+        "label":  "Permintaan Rawat Inap"
+    },
+    {
+        "permission":  "permintaan_resep_pulang",
+        "button":  "btnPermintaanResepPulang",
+        "label":  "Permintaan Resep Pulang"
+    },
+    {
+        "permission":  "permintaan_stok_obat_pasien",
+        "button":  "btnPermintaanStokObatPasien",
+        "label":  "Permintaan Stok Obat Pasien"
+    },
+    {
+        "permission":  "persetujuan_pengajuan_biaya",
+        "button":  "btnPersetujuanPengajuanBiaya",
+        "label":  "Persetujuan Pengajuan Biaya"
+    },
+    {
+        "permission":  "persetujuan_penolakan_tindakan",
+        "button":  "btnPersetujuanPenolakanTindakan",
+        "label":  "Persetujuan/Penolakan Tindakan"
+    },
+    {
+        "permission":  "persetujuan_penundaan_pelayanan",
+        "button":  "btnPersetujuanPenundaanPelayanan",
+        "label":  "Persetujuan Penundaan Pelayanan"
+    },
+    {
+        "permission":  "perujuk_lab_pertahun",
+        "button":  "btnPerujukLabPerTahun",
+        "label":  "Perujuk Lab Per Tahun"
+    },
+    {
+        "permission":  "perujuk_radiologi_pertahun",
+        "button":  "btnPerujukRadiologiPerTahun",
+        "label":  "Perujuk Radiologi Per Tahun"
+    },
+    {
+        "permission":  "perusahaan_pasien",
+        "button":  "btnPerusahaan",
+        "label":  "Instansi/Perusahaan Pasien"
+    },
+    {
+        "permission":  "pest_control",
+        "button":  "btnPestControl",
+        "label":  "Pest Control"
+    },
+    {
+        "permission":  "petugas",
+        "button":  "btnPegawai",
+        "label":  "Petugas"
+    },
+    {
+        "permission":  "piutang_akun_piutang",
+        "button":  "btnPiutangPerAkunPiutang",
+        "label":  "Piutang Per Akun Piutang"
+    },
+    {
+        "permission":  "piutang_jasa_perusahaan",
+        "button":  "btnPiutangJasaPerusahaan",
+        "label":  "Piutang Jasa Perusahaan"
+    },
+    {
+        "permission":  "piutang_jasa_perusahaan_belum_lunas",
+        "button":  "btnPiutangJasaPerusahaanBelumLunas",
+        "label":  "Piutang Jasa Perusahaan Belum Lunas"
+    },
+    {
+        "permission":  "piutang_obat",
+        "button":  "btnPiutang",
+        "label":  "Piutang Obat \u0026 BHP"
+    },
+    {
+        "permission":  "piutang_obat_belum_lunas",
+        "button":  "btnPiutangObatBelumLunas",
+        "label":  "Piutang Obat \u0026 BHP Belum Lunas"
+    },
+    {
+        "permission":  "piutang_pasien",
+        "button":  "btnLihatPiutang",
+        "label":  "Piutang Pasien"
+    },
+    {
+        "permission":  "piutang_pasien2",
+        "button":  "btnPiutangBelumLunas",
+        "label":  "Piutang Belum Lunas"
+    },
+    {
+        "permission":  "piutang_peminjaman_uang_belum_lunas",
+        "button":  "btnPiutangPeminjamanUangBelumLunas",
+        "label":  "Piutang Peminjaman Uang Belum Lunas"
+    },
+    {
+        "permission":  "piutang_ralan",
+        "button":  "btnPiutangRalan",
+        "label":  "Piutang Ralan"
+    },
+    {
+        "permission":  "piutang_ranap",
+        "button":  "btnPiutangRanap",
+        "label":  "Piutang Ranap"
+    },
+    {
+        "permission":  "pny_takmenular_ralan",
+        "button":  "btnPnyTakMenularRalan",
+        "label":  "Pny Tdk Menular Ralan"
+    },
+    {
+        "permission":  "pny_takmenular_ranap",
+        "button":  "btnPnyTakMenularRanap",
+        "label":  "Pny Tdk Menular Ranap"
+    },
+    {
+        "permission":  "poli_asal_pasien_ranap",
+        "button":  "btnPoliAsalPasienRanap",
+        "label":  "Poli Asal Pasien Ranap"
+    },
+    {
+        "permission":  "posting_jurnal",
+        "button":  "btnPostingJurnal",
+        "label":  "Posting Jurnal"
+    },
+    {
+        "permission":  "potongan_biaya",
+        "button":  "btnPotonganBiaya",
+        "label":  "Potongan Biaya Pasien"
+    },
+    {
+        "permission":  "ppn_obat",
+        "button":  "btnPPNObat",
+        "label":  "PPN Obat"
+    },
+    {
+        "permission":  "presensi_bulanan",
+        "button":  "btnRekapBulanan",
+        "label":  "Presensi Bulanan"
+    },
+    {
+        "permission":  "presensi_harian",
+        "button":  "btnRekapHarian",
+        "label":  "Presensi Harian"
+    },
+    {
+        "permission":  "ranap_per_ruang",
+        "button":  "btnRanapPerRuang",
+        "label":  "Ranap Per Ruang"
+    },
+    {
+        "permission":  "referensi_dokter_mobilejknfktp",
+        "button":  "btnReferensiDokterMobileJKNFKTP",
+        "label":  "Referensi Dokter Mobile JKN FKTP"
+    },
+    {
+        "permission":  "referensi_mobilejkn_bpjs",
+        "button":  "btnReferensiPendaftaranMobileJKN",
+        "label":  "Referensi Pendaftaran Mobile JKN"
+    },
+    {
+        "permission":  "referensi_poli_mobilejknfktp",
+        "button":  "btnReferensiPoliMobileJKNFKTP",
+        "label":  "Referensi Poli Mobile JKN FKTP"
+    },
+    {
+        "permission":  "registrasi",
+        "button":  "btnRegistrasi",
+        "label":  "Registrasi"
+    },
+    {
+        "permission":  "registrasi_poli_per_tanggal",
+        "button":  "btnRegistrasiPoliPerTanggal",
+        "label":  "Registrasi Poli Per Tanggal"
+    },
+    {
+        "permission":  "rekap_biaya_registrasi",
+        "button":  "btnRekapBiayaRegistrasi",
+        "label":  "Rekap Biaya Registrasi"
+    },
+    {
+        "permission":  "rekap_jm_dokter",
+        "button":  "btnRekapJasaDokter",
+        "label":  "Rekap JM Dokter"
+    },
+    {
+        "permission":  "rekap_kunjungan",
+        "button":  "btnRekapKunjungan",
+        "label":  "Rekap Kunjungan"
+    },
+    {
+        "permission":  "rekap_lab_pertahun",
+        "button":  "btnRekapLabPerTahun",
+        "label":  "Rekap Lab Per Tahun"
+    },
+    {
+        "permission":  "rekap_mutasi_berkas",
+        "button":  "btnRekapMutasiBerkas",
+        "label":  "Rekap Mutasi Berkas"
+    },
+    {
+        "permission":  "rekap_obat_pasien",
+        "button":  "btnRekapObatPasien",
+        "label":  "Rekap Obat Per Pasien"
+    },
+    {
+        "permission":  "rekap_obat_poli",
+        "button":  "btnRekapObatPoli",
+        "label":  "Rekap Obat Per Poli"
+    },
+    {
+        "permission":  "rekap_pembayaran_per_unit",
+        "button":  "btnRekapPembayaranPerUnit",
+        "label":  "Rekap Pembayaran Per Unit"
+    },
+    {
+        "permission":  "rekap_pembayaran_ralan",
+        "button":  "btnTagihanRalanPerhari",
+        "label":  "Rekap Pembayaran Ralan"
+    },
+    {
+        "permission":  "rekap_pembayaran_ranap",
+        "button":  "btnTagihanRanapPerhari",
+        "label":  "Rekap Pembayaran Ranap"
+    },
+    {
+        "permission":  "rekap_pemesanan",
+        "button":  "btnRekapPenerimaanObat",
+        "label":  "Rekap Penerimaan Obat \u0026 BHP"
+    },
+    {
+        "permission":  "rekap_pemesanan_non_medis",
+        "button":  "btnRekapPenerimaanNonMedis",
+        "label":  "Rekap Penerimaan Non Medis"
+    },
+    {
+        "permission":  "rekap_pengadaan_dapur",
+        "button":  "btnRekapPengadaanDapur",
+        "label":  "Rekap Pengadaan Dapur"
+    },
+    {
+        "permission":  "rekap_pengajuan_aset_departemen",
+        "button":  "btnRekapPengajuanAsetDepartemen",
+        "label":  "Rekap Pengajuan Aset Departemen"
+    },
+    {
+        "permission":  "rekap_pengajuan_biaya",
+        "button":  "btnRekapPengajuanBiaya",
+        "label":  "Rekap Pengajuan Biaya"
+    },
+    {
+        "permission":  "rekap_per_shift",
+        "button":  "btnRekapPershift",
+        "label":  "Rekap Uang Pershift"
+    },
+    {
+        "permission":  "rekap_permintaan_diet",
+        "button":  "btnRekapPermintaanDiet",
+        "label":  "Rekap Permintaan Diet"
+    },
+    {
+        "permission":  "rekap_permintaan_medis",
+        "button":  "btnRingkasanPermintaanMedis",
+        "label":  "Ringkasan Permintaan Obat \u0026 BHP"
+    },
+    {
+        "permission":  "rekap_permintaan_non_medis",
+        "button":  "btnRekapPermintaanNonMedis",
+        "label":  "Ringkasan Permintaan Barang Non Medis"
+    },
+    {
+        "permission":  "rekap_poli_anak",
+        "button":  "btnRekapPoliAnak",
+        "label":  "Rekap Poli Anak"
+    },
+    {
+        "permission":  "rekap_radiologi_pertahun",
+        "button":  "btnRekapRadiologiPerTahun",
+        "label":  "Rekap Radiologi Per Tahun"
+    },
+    {
+        "permission":  "rekening_tahun",
+        "button":  "btnRekeningTahun",
+        "label":  "Rekening Tahun"
+    },
+    {
+        "permission":  "reklasifikasi_ralan",
+        "button":  "btnReklasifikasiRalan",
+        "label":  "Reklasifikasi Ralan"
+    },
+    {
+        "permission":  "reklasifikasi_ranap",
+        "button":  "btnReklasifikasiRanap",
+        "label":  "Reklasifikasi Ranap"
+    },
+    {
+        "permission":  "rekomendasi_dpjp",
+        "button":  "btnRekomendasidpjp",
+        "label":  "ReRekomendasi dpjp"
+    },
+    {
+        "permission":  "rekonsiliasi_obat",
+        "button":  "btnRekonsiliasiObat",
+        "label":  "Rekonsiliasi Obat"
+    },
+    {
+        "permission":  "resep_dokter",
+        "button":  "btnDaftarPermintaanResep",
+        "label":  "Daftar Resep Dokter"
+    },
+    {
+        "permission":  "resep_luar",
+        "button":  "btnResepLuar",
+        "label":  "Resep Luar"
+    },
+    {
+        "permission":  "resep_obat",
+        "button":  "btnResepObat",
+        "label":  "No. Resep"
+    },
+    {
+        "permission":  "resep_pulang",
+        "button":  "btnResepPulang",
+        "label":  "Resep Pulang"
+    },
+    {
+        "permission":  "resume_pasien",
+        "button":  "btnResume",
+        "label":  "Riwayat Perawatan"
+    },
+    {
+        "permission":  "retensi_rm",
+        "button":  "btnRetensiRM",
+        "label":  "Retensi Berkas R.M."
+    },
+    {
+        "permission":  "retur_dari_pembeli",
+        "button":  "btnReturJual",
+        "label":  "Retur Dari Pembeli"
+    },
+    {
+        "permission":  "retur_ke_suplier",
+        "button":  "btnReturBeli",
+        "label":  "Retur Ke Suplier"
+    },
+    {
+        "permission":  "retur_obat_ranap",
+        "button":  "btnReturPasien",
+        "label":  "Retur Obat Ranap"
+    },
+    {
+        "permission":  "retur_piutang_pasien",
+        "button":  "btnReturPiutang",
+        "label":  "Retur Piutang Pembeli"
+    },
+    {
+        "permission":  "rincian_piutang_pasien",
+        "button":  "btnRincianPiutangPasien",
+        "label":  "Rincian Piutang Pasien"
+    },
+    {
+        "permission":  "ringkasan_beri_obat",
+        "button":  "btnRingkasanBeriObat",
+        "label":  "Ringkasan Beri Obat \u0026 BHP"
+    },
+    {
+        "permission":  "ringkasan_biaya_obat_pasien_pertanggal",
+        "button":  "btnRingkasanBiayaObatPasienPerTanggal",
+        "label":  "Ringkasan Biaya Obat Pasien Per Tanggal"
+    },
+    {
+        "permission":  "ringkasan_hibah_obat",
+        "button":  "btnRingkasanHibahMedis",
+        "label":  "Ringkasan Hibah Obat \u0026 BHP"
+    },
+    {
+        "permission":  "ringkasan_hutang_vendor_dapur",
+        "button":  "btnRingkasanHutangVendorBarangDapur",
+        "label":  "Ringkasan Hutang Vendor Dapur"
+    },
+    {
+        "permission":  "ringkasan_hutang_vendor_farmasi",
+        "button":  "btnRingkasanHutangVendorFarmasi",
+        "label":  "Ringkasan Hutang Vendor Farmasi"
+    },
+    {
+        "permission":  "ringkasan_hutang_vendor_nonmedis",
+        "button":  "btnRingkasanHutangVendorBarangNonMedis",
+        "label":  "Ringkasan Hutang Vendor Non Medis"
+    },
+    {
+        "permission":  "ringkasan_jasa_tindakan_medis",
+        "button":  "btnRingkasanJasaTindakanPasien",
+        "label":  "Ringkasan Jasa Tindakan Pasien"
+    },
+    {
+        "permission":  "ringkasan_pemesanan_dapur",
+        "button":  "btnRingkasanPemesananDapur",
+        "label":  "Ringkasan Pemesanan Dapur"
+    },
+    {
+        "permission":  "ringkasan_pemesanan_nonmedis",
+        "button":  "btnRingkasanPemesananNonMedis",
+        "label":  "Ringkasan Pemesanan Non Medis"
+    },
+    {
+        "permission":  "ringkasan_pemesanan_obat",
+        "button":  "btnRingkasanPemesananMedis",
+        "label":  "Ringkasan Pemesanan Obat \u0026 BHP"
+    },
+    {
+        "permission":  "ringkasan_penerimaan_dapur",
+        "button":  "btnRingkasanPenerimaanDapur",
+        "label":  "Ringkasan Penerimaan Dapur"
+    },
+    {
+        "permission":  "ringkasan_penerimaan_nonmedis",
+        "button":  "btnRingkasanPenerimaanNonMedis",
+        "label":  "Ringkasan Penerimaan Non Medis"
+    },
+    {
+        "permission":  "ringkasan_penerimaan_obat",
+        "button":  "btnRingkasanPenerimaanMedis",
+        "label":  "Ringkasan Penerimaan Obat \u0026 BHP"
+    },
+    {
+        "permission":  "ringkasan_pengadaan_nonmedis",
+        "button":  "btnRingkasanPengadaanNonMedis",
+        "label":  "Ringkasan Pengadaan Non Medis"
+    },
+    {
+        "permission":  "ringkasan_pengadaan_obat",
+        "button":  "btnRingkasanPembelianMedis",
+        "label":  "Ringkasan Pengadaan Obat \u0026 BHP"
+    },
+    {
+        "permission":  "ringkasan_pengajuan_dapur",
+        "button":  "btnRingkasanPengajuanDapur",
+        "label":  "Ringkasan Pengajuan Dapur"
+    },
+    {
+        "permission":  "ringkasan_pengajuan_nonmedis",
+        "button":  "btnRingkasanPengajuanNonMedis",
+        "label":  "Ringkasan Pengajuan Non Medis"
+    },
+    {
+        "permission":  "ringkasan_pengajuan_obat",
+        "button":  "btnRingkasanPengajuanMedis",
+        "label":  "Ringkasan Pengajuan Obat \u0026 BHP"
+    },
+    {
+        "permission":  "ringkasan_penjualan_obat",
+        "button":  "btnRingkasanPenjualanMedis",
+        "label":  "Ringkasan Penjualan Obat \u0026 BHP"
+    },
+    {
+        "permission":  "ringkasan_piutang_jenis_bayar",
+        "button":  "btnRingkasanPiutangPerJenisBayar",
+        "label":  "Ringkasan Piutang Per Cara Bayar"
+    },
+    {
+        "permission":  "ringkasan_piutang_obat",
+        "button":  "btnRingkasanPiutangObat",
+        "label":  "Ringkasan Piutang Obat \u0026 BHP"
+    },
+    {
+        "permission":  "ringkasan_retur_pembeli_obat",
+        "button":  "btnRingkasanReturJualObat",
+        "label":  "Ringkasan Retur Pembeli Obat \u0026 BHP"
+    },
+    {
+        "permission":  "ringkasan_retur_suplier_obat",
+        "button":  "btnRingkasanReturSuplierObat",
+        "label":  "Ringkasan Retur Suplier Obat \u0026 BHP"
+    },
+    {
+        "permission":  "ringkasan_returbeli_dapur",
+        "button":  "btnRingkasanReturBeliDapur",
+        "label":  "Ringkasan Retur Suplier Dapur"
+    },
+    {
+        "permission":  "ringkasan_returbeli_nonmedis",
+        "button":  "btnRingkasanReturSuplierNonMedis",
+        "label":  "Ringkasan Retur Suplier Non Medis"
+    },
+    {
+        "permission":  "ringkasan_stok_keluar_obat",
+        "button":  "btnRingkasanStokKeluarObat",
+        "label":  "Ringkasan Stok Keluar Obat \u0026 BHP"
+    },
+    {
+        "permission":  "ringkasan_stokkeluar_dapur",
+        "button":  "btnRingkasanStokKeluarDapur",
+        "label":  "Ringkasan Stok Keluar Dapur"
+    },
+    {
+        "permission":  "ringkasan_stokkeluar_nonmedis",
+        "button":  "btnRingkasanStokKeluarNonMedis",
+        "label":  "Ringkasan Stok Keluar Non Medis"
+    },
+    {
+        "permission":  "ringkasan_tindakan",
+        "button":  "btnRingkasanTindakanRalan",
+        "label":  "Ringkasan Tindakan"
+    },
+    {
+        "permission":  "riwayat_data_batch",
+        "button":  "btnRiwayatBatch",
+        "label":  "Riwayat Batch"
+    },
+    {
+        "permission":  "riwayat_jabatan",
+        "button":  "btnRiwayatJabatan",
+        "label":  "Riwayat Jabatan"
+    },
+    {
+        "permission":  "riwayat_kamar_pasien",
+        "button":  "btnRiwayatKamarPasien",
+        "label":  "Riwayat Kamar Pasien"
+    },
+    {
+        "permission":  "riwayat_naik_gaji",
+        "button":  "btnRiwayatNaikGaji",
+        "label":  "Riwayat Naik Gaji"
+    },
+    {
+        "permission":  "riwayat_obat_alkes_bhp",
+        "button":  "btnRiwayatBarangMedis",
+        "label":  "Riwayat Obat, Alkes \u0026 BHP"
+    },
+    {
+        "permission":  "riwayat_pendidikan",
+        "button":  "btnRiwayatPendidikan",
+        "label":  "Riwayat Pendidikan"
+    },
+    {
+        "permission":  "riwayat_penelitian",
+        "button":  "btnRiwayatPenelitian",
+        "label":  "Riwayat Penelitian"
+    },
+    {
+        "permission":  "riwayat_penghargaan",
+        "button":  "btnRiwayatPenghargaan",
+        "label":  "Riwayat Penghargaan"
+    },
+    {
+        "permission":  "riwayat_perawatan_icare_bpjs",
+        "button":  "btnRiwayatPerawatanICare",
+        "label":  "Riwayat Perawatan ICare BPJS"
+    },
+    {
+        "permission":  "riwayat_surat_peringatan",
+        "button":  "btnRiwayatSuratPeringatan",
+        "label":  "Riwayat Surat Peringatan"
+    },
+    {
+        "permission":  "rl1_3_ketersediaan_kamar",
+        "button":  "btnRl13KetersediaanKamar",
+        "label":  "RL 1.3 Ketersediaan Tempat Tidur"
+    },
+    {
+        "permission":  "rl32",
+        "button":  "btnRl32",
+        "label":  "RL 3.2 Rawat Darurat"
+    },
+    {
+        "permission":  "rl33",
+        "button":  "btnRl33",
+        "label":  "RL 3.3 Gigi dan Mulut"
+    },
+    {
+        "permission":  "rl34",
+        "button":  "btnRl34",
+        "label":  "RL 3.4 Kebidanan"
+    },
+    {
+        "permission":  "rl36",
+        "button":  "btnRl36",
+        "label":  "RL 3.6 Pembedahan"
+    },
+    {
+        "permission":  "rl37",
+        "button":  "btnRl37",
+        "label":  "RL 3.7 Radiologi"
+    },
+    {
+        "permission":  "rl38",
+        "button":  "btnRl38",
+        "label":  "RL 3.8 Laboratorium"
+    },
+    {
+        "permission":  "rl4a",
+        "button":  "btnRl4a",
+        "label":  "RL 4A Morbiditas Ranap"
+    },
+    {
+        "permission":  "rl4asebab",
+        "button":  "btnRl4asebab",
+        "label":  "RL 4A Sebab Morbiditas Ranap"
+    },
+    {
+        "permission":  "rl4b",
+        "button":  "btnRl4b",
+        "label":  "RL 4B Morbiditas Ralan"
+    },
+    {
+        "permission":  "rl4bsebab",
+        "button":  "btnRl4bsebab",
+        "label":  "RL 4B Sebab Morbiditas Ralan"
+    },
+    {
+        "permission":  "ruang_audit_kepatuhan",
+        "button":  "btnRuangAuditKepatuhan",
+        "label":  "Ruang/Unit Audit Kepatuhan"
+    },
+    {
+        "permission":  "ruang_ok",
+        "button":  "btnRuangOperasi",
+        "label":  "Ruang Operasi"
+    },
+    {
+        "permission":  "ruang_perpustakaan",
+        "button":  "btnRuangPerpustakaan",
+        "label":  "Ruang Perpustakaan"
+    },
+    {
+        "permission":  "rujukan_keluar",
+        "button":  "btnRujukPasien",
+        "label":  "Rujukan Keluar"
+    },
+    {
+        "permission":  "rujukan_masuk",
+        "button":  "btnRujukMasuk",
+        "label":  "Rujukan Masuk"
+    },
+    {
+        "permission":  "rvu_bpjs",
+        "button":  "btnRVPPiutangBPJS",
+        "label":  "RVP Piutang BPJS"
+    },
+    {
+        "permission":  "saldo_akun_perbulan",
+        "button":  "btnSaldoAkunPerBulan",
+        "label":  "Saldo Akun Per Bulan"
+    },
+    {
+        "permission":  "satu_sehat_kirim_careplan",
+        "button":  "btnKirimCarePlanSatuSehat",
+        "label":  "Kirim Care Plan Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_clinicalimpression",
+        "button":  "btnKirimClinicalImpressionSatuSehat",
+        "label":  "Kirim Clinical Impression Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_condition",
+        "button":  "btnKirimConditionSatuSehat",
+        "label":  "Kirim Condition Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_diagnosticreport_lab",
+        "button":  "btnKirimDiagnosticReportLabPKSatuSehat",
+        "label":  "Kirim Diagnostic Report Lab PK Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_diagnosticreport_labmb",
+        "button":  "btnKirimDiagnosticReportLabMBSatuSehat",
+        "label":  "Kirim Diagnostic Report Lab MB Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_diagnosticreport_radiologi",
+        "button":  "btnKirimDiagnosticReportSatuSehat",
+        "label":  "Kirim Diagnostic Report Radiologi Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_diet",
+        "button":  "btnKirimDietSatuSehat",
+        "label":  "Kirim Diet Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_encounter",
+        "button":  "btnKirimEncounterSatuSehat",
+        "label":  "Kirim Encounter Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_Immunization",
+        "button":  "btnKirimVaksinSatuSehat",
+        "label":  "Kirim Imunisasi Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_medication",
+        "button":  "btnKirimMedicationSatuSehat",
+        "label":  "Kirim Medication Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_medicationdispense",
+        "button":  "btnKirimMedicationDispenseSatuSehat",
+        "label":  "Kirim Medication Dispense Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_medicationrequest",
+        "button":  "btnKirimMedicationRequestSatuSehat",
+        "label":  "Kirim Medication Request Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_medicationstatement",
+        "button":  "btnKirimMedicationStatementSatuSehat",
+        "label":  "Kirim Medication Statement Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_observation_lab",
+        "button":  "btnKirimObservationLabPKSatuSehat",
+        "label":  "Kirim Observation Lab PK Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_observation_labmb",
+        "button":  "btnKirimObservationLabMBSatuSehat",
+        "label":  "Kirim Observation Lab MB Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_observation_radiologi",
+        "button":  "btnKirimObservationRadiologiSatuSehat",
+        "label":  "Kirim Observation Radiologi Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_observationttv",
+        "button":  "btnKirimObservationTTVSatuSehat",
+        "label":  "Kirim Observation-TTV Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_procedure",
+        "button":  "btnKirimProcedureSatuSehat",
+        "label":  "Kirim Procedure Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_servicerequest_lab",
+        "button":  "btnKirimServiceRequestLabPKSatuSehat",
+        "label":  "Kirim Service Request Lab PK Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_servicerequest_labmb",
+        "button":  "btnKirimServiceRequestLabMBSatuSehat",
+        "label":  "Kirim Service Request Lab MB Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_servicerequest_radiologi",
+        "button":  "btnKirimServiceRequestRadiologiSatuSehat",
+        "label":  "Kirim Service Request Radiologi Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_specimen_lab",
+        "button":  "btnKirimSpecimenLabPKSatuSehat",
+        "label":  "Kirim Specimen Lab PK Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_specimen_labmb",
+        "button":  "btnKirimSpecimenLabMBSatuSehat",
+        "label":  "Kirim Specimen Lab MB Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_kirim_specimen_radiologi",
+        "button":  "btnKirimSpecimenRadiologiSatuSehat",
+        "label":  "Kirim Specimen Radiologi Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_mapping_departemen",
+        "button":  "btnMappingOrganisasiSatuSehat",
+        "label":  "Mapping Organisasi Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_mapping_lab",
+        "button":  "btnMappingLaboratSatuSehat",
+        "label":  "Mapping Tindakan Lab PK \u0026 MB Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_mapping_lokasi",
+        "button":  "btnMappingLokasiSatuSehat",
+        "label":  "Mapping Lokasi Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_mapping_obat",
+        "button":  "btnMappingObatSatuSehat",
+        "label":  "Mapping Obat/Alkes/BHP Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_mapping_radiologi",
+        "button":  "btnMappingRadiologiSatuSehat",
+        "label":  "Mapping Tindakan Radiologi Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_mapping_vaksin",
+        "button":  "btnMappingVaksinSatuSehat",
+        "label":  "Mapping Vaksin Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_referensi_dokter",
+        "button":  "btnReferensiDokterSatuSehat",
+        "label":  "Referensi Praktisi Satu Sehat"
+    },
+    {
+        "permission":  "satu_sehat_referensi_pasien",
+        "button":  "btnReferensiPasienSatuSehat",
+        "label":  "Referensi Pasien Satu Sehat"
+    },
+    {
+        "permission":  "satuan_barang",
+        "button":  "btnSatuan",
+        "label":  "Satuan Barang"
+    },
+    {
+        "permission":  "satuan_polri",
+        "button":  "btnSatuanPolri",
+        "label":  "Satuan POLRI"
+    },
+    {
+        "permission":  "satuan_tni",
+        "button":  "btnSatuanTNI",
+        "label":  "Satuan TNI"
+    },
+    {
+        "permission":  "sekrining_rawat_jalan",
+        "button":  "btnSkriningRawatJalan",
+        "label":  "Skrining Rawat Jalan"
+    },
+    {
+        "permission":  "sensus_harian_poli",
+        "button":  "btnSensusHarianPoli",
+        "label":  "Sensus Harian Poli"
+    },
+    {
+        "permission":  "sensus_harian_ralan",
+        "button":  "btnSensusHarianRalan",
+        "label":  "Sensus Harian Ralan"
+    },
+    {
+        "permission":  "set_harga_kamar",
+        "button":  "btnSetHargaKamar",
+        "label":  "Set Harga Kamar"
+    },
+    {
+        "permission":  "set_harga_obat",
+        "button":  "btnSetupHarga",
+        "label":  "Set Harga Obat"
+    },
+    {
+        "permission":  "set_harga_obat_ralan",
+        "button":  "btnSetObatRalan",
+        "label":  "Set Obat Ralan"
+    },
+    {
+        "permission":  "set_harga_obat_ranap",
+        "button":  "btnSetObatRanap",
+        "label":  "Set Obat Ranap"
+    },
+    {
+        "permission":  "set_input_parsial",
+        "button":  "btnSetInputParsial",
+        "label":  "Set Input Parsial"
+    },
+    {
+        "permission":  "set_no_rm",
+        "button":  "btnSetupRM",
+        "label":  "Set RM"
+    },
+    {
+        "permission":  "set_nota",
+        "button":  "btnSetupNota",
+        "label":  "Set Billing"
+    },
+    {
+        "permission":  "set_oto_ralan",
+        "button":  "btnSetOtoRalan",
+        "label":  "Set Oto Ralan"
+    },
+    {
+        "permission":  "set_peminjaman_perpustakaan",
+        "button":  "btnPengaturanPeminjamanPerpustakaan",
+        "label":  "Pengaturan Peminjaman"
+    },
+    {
+        "permission":  "set_penggunaan_tarif",
+        "button":  "btnSetupTarif",
+        "label":  "Set Penggunaan Tarif"
+    },
+    {
+        "permission":  "set_tarif_online",
+        "button":  "btnSetTarifOnline",
+        "label":  "Set Tarif Online"
+    },
+    {
+        "permission":  "setup_embalase",
+        "button":  "btnSetupEmbalase",
+        "label":  "Set Embalase \u0026 Tuslah"
+    },
+    {
+        "permission":  "setup_jam_kamin",
+        "button":  "btnSetupJamInap",
+        "label":  "Set Kamar Inap"
+    },
+    {
+        "permission":  "setup_otolokasi",
+        "button":  "btnSetupOtoLokasi",
+        "label":  "Set Oto Lokasi"
+    },
+    {
+        "permission":  "setup_pjlab",
+        "button":  "btnSetPenjab",
+        "label":  "Set P.J. Unit Penunjang"
+    },
+    {
+        "permission":  "sidikjari",
+        "button":  "btnSidikJari",
+        "label":  "Sidik Jari"
+    },
+    {
+        "permission":  "signin_sebelum_anestesi",
+        "button":  "btnSignInSebelumAnestesi",
+        "label":  "Sign-In Sebelum Anestesi"
+    },
+    {
+        "permission":  "signout_sebelum_menutup_luka",
+        "button":  "btnSignOutSebelumMenutupLuka",
+        "label":  "Sign-Out Sebelum Menutup Luka"
+    },
+    {
+        "permission":  "siranap_ketersediaan_kamar",
+        "button":  "btnSiranapKetersediaanKamar",
+        "label":  "Ketersediaan Kamar SIRANAP"
+    },
+    {
+        "permission":  "sirkulasi_cssd",
+        "button":  "btnSirkulasiInventarisCSSD",
+        "label":  "Sirkulasi CSSD"
+    },
+    {
+        "permission":  "sirkulasi_dapur",
+        "button":  "btnSirkulasiDapur",
+        "label":  "Sirkulasi Barang Dapur"
+    },
+    {
+        "permission":  "sirkulasi_dapur2",
+        "button":  "btnSirkulasiDapur2",
+        "label":  "Sirkulasi Barang Dapur 2"
+    },
+    {
+        "permission":  "sirkulasi_non_medis",
+        "button":  "btnSirkulasiNonMedis",
+        "label":  "Sirkulasi Non Medis"
+    },
+    {
+        "permission":  "sirkulasi_non_medis2",
+        "button":  "btnSirkulasiNonMedis2",
+        "label":  "Sirkulasi Non Medis 2"
+    },
+    {
+        "permission":  "sirkulasi_obat",
+        "button":  "btnSirkulasi",
+        "label":  "Sirkulasi Obat, Alkes \u0026 BHP"
+    },
+    {
+        "permission":  "sirkulasi_obat2",
+        "button":  "btnSirkulasi2",
+        "label":  "Sirkulasi Obat, Alkes \u0026 BHP 2"
+    },
+    {
+        "permission":  "sirkulasi_obat3",
+        "button":  "btnSirkulasi3",
+        "label":  "Sirkulasi Obat, Alkes \u0026 BHP 3"
+    },
+    {
+        "permission":  "sirkulasi_obat4",
+        "button":  "btnSirkulasiObat4",
+        "label":  "Sirkulasi Obat, Alkes \u0026 BHP 4"
+    },
+    {
+        "permission":  "sirkulasi_obat5",
+        "button":  "btnSirkulasiObat5",
+        "label":  "Sirkulasi Obat, Alkes \u0026 BHP 5"
+    },
+    {
+        "permission":  "sirkulasi_obat6",
+        "button":  "btnSirkulasiObat6",
+        "label":  "Sirkulasi Obat, Alkes \u0026 BHP 6"
+    },
+    {
+        "permission":  "sisa_diet_pasien",
+        "button":  "btnSisaDietPasien",
+        "label":  "Sisa Diet Pasien"
+    },
+    {
+        "permission":  "sisa_stok",
+        "button":  "btnSisaStok",
+        "label":  "Sisa Stok"
+    },
+    {
+        "permission":  "sisrute_referensi_alasanrujuk",
+        "button":  "btnCekSisruteAlasanRujuk",
+        "label":  "Referensi Alasan Rujuk Sisrute"
+    },
+    {
+        "permission":  "sisrute_referensi_diagnosa",
+        "button":  "btnCekSisruteDiagnosa",
+        "label":  "Referensi Diagnosa Sisrute"
+    },
+    {
+        "permission":  "sisrute_referensi_faskes",
+        "button":  "btnCekSisruteFaskes",
+        "label":  "Referensi Faskes Sisrute"
+    },
+    {
+        "permission":  "sisrute_rujukan_keluar",
+        "button":  "btnRujukanKeluarSisrute",
+        "label":  "Rujukan Keluar Sisrute"
+    },
+    {
+        "permission":  "sisrute_rujukan_masuk",
+        "button":  "btnRujukanMasukSisrute",
+        "label":  "Rujukan Masuk Sisrute"
+    },
+    {
+        "permission":  "skdp_bpjs",
+        "button":  "btnSKDPBPJS",
+        "label":  "Surat Kontrol"
+    },
+    {
+        "permission":  "skor_aldrette_pasca_anestesi",
+        "button":  "btnSkorAldrettePascaAnestesi",
+        "label":  "Skor Aldrette Pasca Anestesi"
+    },
+    {
+        "permission":  "skor_bromage_pasca_anestesi",
+        "button":  "btnSkorBromagePascaAnestesi",
+        "label":  "Skor Bromage Pasca Anestesi"
+    },
+    {
+        "permission":  "skor_steward_pasca_anestesi",
+        "button":  "btnSkorStewardPascaAnestesi",
+        "label":  "Skor Steward Pasca Anestesi"
+    },
+    {
+        "permission":  "skp_kategori_penilaian",
+        "button":  "btnSKPKategoriPenilaian",
+        "label":  "Kategori Pengkajian SKP"
+    },
+    {
+        "permission":  "skp_kriteria_penilaian",
+        "button":  "btnSKPKriteriaPenilaian",
+        "label":  "Kriteria Pengkajian SKP"
+    },
+    {
+        "permission":  "skp_penilaian",
+        "button":  "btnSKPPenilaianPegawai",
+        "label":  "Pengkajian SKP Petugas/Dokter"
+    },
+    {
+        "permission":  "skp_rekapitulasi_penilaian",
+        "button":  "btnSKPRekapitulasiPenilaian",
+        "label":  "Rekapitulasi Pengkajian SKP"
+    },
+    {
+        "permission":  "skrining_adiksi_nikotin",
+        "button":  "btnSkriningAdiksiNikotin",
+        "label":  "Skrining Adiksi Nikotin"
+    },
+    {
+        "permission":  "skrining_anemia",
+        "button":  "btnSkriningAnemia",
+        "label":  "Skrining Anemia"
+    },
+    {
+        "permission":  "skrining_diabetes_melitus",
+        "button":  "btnSkriningDiabetesMelitus",
+        "label":  "Skrining Diabetes Melitus"
+    },
+    {
+        "permission":  "skrining_frailty_syndrome",
+        "button":  "btnSkriningFrailtySyndrome",
+        "label":  "Skrining Frailty Syndrome"
+    },
+    {
+        "permission":  "skrining_gizi",
+        "button":  "btnSkriningGiziLanjut",
+        "label":  "Skrining Gizi Lanjut"
+    },
+    {
+        "permission":  "skrining_hipertensi",
+        "button":  "btnSkriningHipertensi",
+        "label":  "Skrining Hipertensi"
+    },
+    {
+        "permission":  "skrining_indra_pendengaran",
+        "button":  "btnSkriningIndraPendengaran",
+        "label":  "Skrining Indra Pendengaran"
+    },
+    {
+        "permission":  "skrining_instrumen_acrs",
+        "button":  "btnSkriningInstrumenACRS",
+        "label":  "Skrining Instrumen ACRS"
+    },
+    {
+        "permission":  "skrining_instrumen_amt",
+        "button":  "btnSkriningInstrumenAMT",
+        "label":  "Skrining Instrumen AMT"
+    },
+    {
+        "permission":  "skrining_instrumen_mental_emosional",
+        "button":  "btnSkriningInstrumenMentalEmosional",
+        "label":  "Skrining Instrumen Mental Emosional Anak"
+    },
+    {
+        "permission":  "skrining_instrumen_sdq",
+        "button":  "btnSkriningInstrumenSDQ",
+        "label":  "Skrining Instrumen SDQ"
+    },
+    {
+        "permission":  "skrining_instrumen_srq",
+        "button":  "btnSkriningInstrumenSRQ",
+        "label":  "Skrining Instrumen SRQ"
+    },
+    {
+        "permission":  "skrining_kanker_kolorektal",
+        "button":  "btnSkriningKankerKolorektal",
+        "label":  "Skrining Kanker Kolorektal"
+    },
+    {
+        "permission":  "skrining_kekerasan_pada_perempuan",
+        "button":  "btnSkriningKekerasanPadaPerempuan",
+        "label":  "Skrining Kekerasan Pada Perempuan"
+    },
+    {
+        "permission":  "skrining_kesehatan_gigi_mulut_balita",
+        "button":  "btnSkriningKesehatanGigiMulutBalita",
+        "label":  "Skrining Kesehatan Gigi Mulut Balita"
+    },
+    {
+        "permission":  "skrining_kesehatan_gigi_mulut_dewasa",
+        "button":  "btnSkriningKesehatanGigiMulutDewasa",
+        "label":  "Skrining Kesehatan Gigi Mulut Dewasa"
+    },
+    {
+        "permission":  "skrining_kesehatan_gigi_mulut_lansia",
+        "button":  "btnSkriningKesehatanGigiMulutLansia",
+        "label":  "Skrining Kesehatan Gigi Mulut Lansia"
+    },
+    {
+        "permission":  "skrining_kesehatan_gigi_mulut_remaja",
+        "button":  "btnSkriningKesehatanGigiMulutRemaja",
+        "label":  "Skrining Kesehatan Gigi Mulut Remaja"
+    },
+    {
+        "permission":  "skrining_kesehatan_penglihatan",
+        "button":  "btnSkriningKesehatanPenglihatan",
+        "label":  "Skrining Kesehatan Penglihatan"
+    },
+    {
+        "permission":  "skrining_nutrisi_anak",
+        "button":  "btnSkriningNutrisiAnak",
+        "label":  "Skrining Nutrisi Pasien Anak"
+    },
+    {
+        "permission":  "skrining_nutrisi_dewasa",
+        "button":  "btnSkriningNutrisiDewasa",
+        "label":  "Skrining Nutrisi Pasien Dewasa"
+    },
+    {
+        "permission":  "skrining_nutrisi_lansia",
+        "button":  "btnSkriningNutrisiLansia",
+        "label":  "Skrining Nutrisi Pasien Lansia"
+    },
+    {
+        "permission":  "skrining_obesitas",
+        "button":  "btnSkriningObesitas",
+        "label":  "Skrining Obesitas"
+    },
+    {
+        "permission":  "skrining_perilaku_merokok_sekolah_remaja",
+        "button":  "btnSkriningMerokokUsiaSekolah",
+        "label":  "Skrining Merokok Usia Sekolah \u0026 Remaja"
+    },
+    {
+        "permission":  "skrining_pneumonia_severity_index",
+        "button":  "btnSkriningPneumoniaSeverityIndex",
+        "label":  "Skrining Pneumonia Severity Index"
+    },
+    {
+        "permission":  "skrining_puma",
+        "button":  "btnSkriningPUMA",
+        "label":  "Skrining PUMA"
+    },
+    {
+        "permission":  "skrining_ralan_pernapasan_pertahun",
+        "button":  "btnSkriningRalanPernapasanPerTahun",
+        "label":  "Skrining Pernapasan Ralan Per Tahun"
+    },
+    {
+        "permission":  "skrining_risiko_kanker_paru",
+        "button":  "btnSkriningRisikoKankerParu",
+        "label":  "Skrining Risiko Kanker Paru"
+    },
+    {
+        "permission":  "skrining_risiko_kanker_payudara",
+        "button":  "btnSkriningRisikoKankerPayudara",
+        "label":  "Skrining Risiko Kanker Payudara"
+    },
+    {
+        "permission":  "skrining_risiko_kanker_serviks",
+        "button":  "btnSkriningRisikoKankerServiks",
+        "label":  "Skrining Risiko Kanker Serviks"
+    },
+    {
+        "permission":  "skrining_tbc",
+        "button":  "btnSkriningTBC",
+        "label":  "Skrining TBC"
+    },
+    {
+        "permission":  "skrining_thalassemia",
+        "button":  "btnSkriningThalassemia",
+        "label":  "Skrining Thalassemia"
+    },
+    {
+        "permission":  "sms",
+        "button":  "btnSMS",
+        "label":  "SMS Gateway"
+    },
+    {
+        "permission":  "soap_perawatan",
+        "button":  "btnSOAPPerawatan",
+        "label":  "SOAP Perawatan"
+    },
+    {
+        "permission":  "soap_ralan_polri",
+        "button":  "btnSOAPRalanAnggotaPolri",
+        "label":  "SOAP Ralan Anggota POLRI"
+    },
+    {
+        "permission":  "soap_ralan_tni",
+        "button":  "btnSOAPRalanAnggotaTNI",
+        "label":  "SOAP Ralan Anggota TNI"
+    },
+    {
+        "permission":  "soap_ranap_polri",
+        "button":  "btnSOAPRanapAnggotaPolri",
+        "label":  "SOAP Ranap Anggota POLRI"
+    },
+    {
+        "permission":  "soap_ranap_tni",
+        "button":  "btnSOAPRanapAnggotaTNI",
+        "label":  "SOAP Ranap Anggota TNI"
+    },
+    {
+        "permission":  "status_data_rm",
+        "button":  "btnStatusDataRM",
+        "label":  "Status Data RM"
+    },
+    {
+        "permission":  "stok_akhir_farmasi_pertanggal",
+        "button":  "btnStokAkhirFarmasiPerTanggal",
+        "label":  "Stok Akhir Farmasi Per Tanggal"
+    },
+    {
+        "permission":  "stok_obat_pasien",
+        "button":  "btnStokObatPasien",
+        "label":  "Stok Obat Pasien"
+    },
+    {
+        "permission":  "stok_opname_logistik",
+        "button":  "btnOpnameIPSRS",
+        "label":  "Stok Opname Non Medis"
+    },
+    {
+        "permission":  "stok_opname_obat",
+        "button":  "btnOpname",
+        "label":  "Stok Opname Obat \u0026 BHP"
+    },
+    {
+        "permission":  "stok_opname_toko",
+        "button":  "btnStokOpnameToko",
+        "label":  "Stok Opname Toko"
+    },
+    {
+        "permission":  "suku_bangsa",
+        "button":  "btnSuku",
+        "label":  "Suku/Bangsa Pasien"
+    },
+    {
+        "permission":  "suplier",
+        "button":  "btnSuplier",
+        "label":  "Suplier Obat/Alkes/BHP"
+    },
+    {
+        "permission":  "suplier_inventaris",
+        "button":  "btnSuplierInventaris",
+        "label":  "Suplier Aset/Inventaris"
+    },
+    {
+        "permission":  "suplier_penunjang",
+        "button":  "btnSuplierIPSRS",
+        "label":  "Suplier Non Medis"
+    },
+    {
+        "permission":  "surat_almari",
+        "button":  "btnSuratAlmari",
+        "label":  "Almari Surat"
+    },
+    {
+        "permission":  "surat_balas",
+        "button":  "btnSuratBalas",
+        "label":  "Stts Balas Surat"
+    },
+    {
+        "permission":  "surat_bebas_narkoba",
+        "button":  "btnSuratBebasNarkoba",
+        "label":  "Surat Bebas Narkoba"
+    },
+    {
+        "permission":  "surat_bebas_tato",
+        "button":  "btnSuratBebasTato",
+        "label":  "Surat Bebas Tato"
+    },
+    {
+        "permission":  "surat_bebas_tbc",
+        "button":  "btnSuratBebasTBC",
+        "label":  "Surat Bebas TBC"
+    },
+    {
+        "permission":  "surat_buta_warna",
+        "button":  "btnSuratButaWarna",
+        "label":  "Surat Keterangan Buta Warna"
+    },
+    {
+        "permission":  "surat_cuti_hamil",
+        "button":  "btnSuratCutiHamil",
+        "label":  "Surat Cuti Hamil"
+    },
+    {
+        "permission":  "surat_hamil",
+        "button":  "btnSuratHamil",
+        "label":  "Surat Hamil"
+    },
+    {
+        "permission":  "surat_indeks",
+        "button":  "btnSuratIndeks",
+        "label":  "Indeks Surat"
+    },
+    {
+        "permission":  "surat_keluar",
+        "button":  "btnSuratKeluar",
+        "label":  "Surat Keluar"
+    },
+    {
+        "permission":  "surat_keterangan_covid",
+        "button":  "btnSuratKeteranganCovid",
+        "label":  "Surat Keterangan Covid"
+    },
+    {
+        "permission":  "surat_keterangan_layak_terbang",
+        "button":  "btnSuratKeteranganLayakTerbang",
+        "label":  "Surat Keterangan Layak Terbang"
+    },
+    {
+        "permission":  "surat_keterangan_rawat_inap",
+        "button":  "btnSuratKeteranganRawatInap",
+        "label":  "Surat Keterangan Rawat Inap"
+    },
+    {
+        "permission":  "surat_keterangan_sehat",
+        "button":  "btnSuratKeteranganSehat",
+        "label":  "Surat Keterangan Sehat"
+    },
+    {
+        "permission":  "surat_kewaspadaan_kesehatan",
+        "button":  "btnSuratKewaspadaanKesehatan",
+        "label":  "Surat Kewaspadaan Kesehatan"
+    },
+    {
+        "permission":  "surat_klasifikasi",
+        "button":  "btnSuratKlasifikasi",
+        "label":  "Klasifikasi Surat"
+    },
+    {
+        "permission":  "surat_map",
+        "button":  "btnSuratMap",
+        "label":  "Map Surat"
+    },
+    {
+        "permission":  "surat_masuk",
+        "button":  "btnSuratMasuk",
+        "label":  "Surat Masuk"
+    },
+    {
+        "permission":  "surat_pemesanan_dapur",
+        "button":  "btnSuratPemesananDapur",
+        "label":  "Surat Pemesanan Barang Dapur"
+    },
+    {
+        "permission":  "surat_pemesanan_non_medis",
+        "button":  "btnSuratPemesananNonMedis",
+        "label":  "Surat Pemesanan Barang Non Medis"
+    },
+    {
+        "permission":  "surat_pernyataan_memilih_dpjp",
+        "button":  "btnSuratPernyataanMemilihDPJP",
+        "label":  "Surat Pernyataan Memilih DPJP"
+    },
+    {
+        "permission":  "surat_pernyataan_pasien_umum",
+        "button":  "btnPernyataanPasienUmum",
+        "label":  "Pernyataan Pasien Umum"
+    },
+    {
+        "permission":  "surat_persetujuan_pemeriksaan_hiv",
+        "button":  "btnPersetujuanPemeriksaanHIV",
+        "label":  "Persetujuan Pemeriksaan HIV"
+    },
+    {
+        "permission":  "surat_persetujuan_rawat_inap",
+        "button":  "btnPersetujuanRawatInap",
+        "label":  "Persetujuan Rawat Inap"
+    },
+    {
+        "permission":  "surat_persetujuan_umum",
+        "button":  "btnPersetujuanUmum",
+        "label":  "Persetujuan Umum"
+    },
+    {
+        "permission":  "surat_pulang_atas_permintaan_sendiri",
+        "button":  "btnPersetujuanPulangAtasPermintanSendiri",
+        "label":  "Pulang Atas Permintaan Sendiri"
+    },
+    {
+        "permission":  "surat_rak",
+        "button":  "btnSuratRak",
+        "label":  "Rak Surat"
+    },
+    {
+        "permission":  "surat_ruang",
+        "button":  "btnSuratRuang",
+        "label":  "Ruang Surat"
+    },
+    {
+        "permission":  "surat_sakit",
+        "button":  "btnSuratSakit",
+        "label":  "Surat Keterangan Sakit"
+    },
+    {
+        "permission":  "surat_sakit_pihak_2",
+        "button":  "btnSuratSakitPihak2",
+        "label":  "Surat Keterangan Sakit Pihak 2"
+    },
+    {
+        "permission":  "surat_sifat",
+        "button":  "btnSuratSifat",
+        "label":  "Sifat Surat"
+    },
+    {
+        "permission":  "surat_status",
+        "button":  "btnSuratStatus",
+        "label":  "Status Surat"
+    },
+    {
+        "permission":  "surveilans_pd3i",
+        "button":  "btnSurveilansPD3I",
+        "label":  "Surveilans AFP \u0026 PD3I"
+    },
+    {
+        "permission":  "surveilans_ralan",
+        "button":  "btnSurveilansRalan",
+        "label":  "Surveilans Ralan"
+    },
+    {
+        "permission":  "surveilans_ranap",
+        "button":  "btnSurveilansRanap",
+        "label":  "Surveilans Ranap"
+    },
+    {
+        "permission":  "tagihan_hutang_obat",
+        "button":  "btnTagihanHutangObat",
+        "label":  "Titip Faktur/Tagihan Obat \u0026 BHP"
+    },
+    {
+        "permission":  "tagihan_masuk",
+        "button":  "btnTagihanMasuk",
+        "label":  "Tagihan Masuk"
+    },
+    {
+        "permission":  "tambahan_biaya",
+        "button":  "btnTambahanBiaya",
+        "label":  "Tambahan Biaya Pasien"
+    },
+    {
+        "permission":  "tarif_lab",
+        "button":  "btnTarifLab",
+        "label":  "Tarif Lab"
+    },
+    {
+        "permission":  "tarif_operasi",
+        "button":  "btnPaketOperasi",
+        "label":  "Tarif Operasi/VK"
+    },
+    {
+        "permission":  "tarif_radiologi",
+        "button":  "btnTarifRadiologi",
+        "label":  "Tarif Radiologi"
+    },
+    {
+        "permission":  "tarif_ralan",
+        "button":  "btnTindakanRalan",
+        "label":  "Tarif Ralan"
+    },
+    {
+        "permission":  "tarif_ranap",
+        "button":  "btnTindakanRanap",
+        "label":  "Tarif Ranap"
+    },
+    {
+        "permission":  "tarif_utd",
+        "button":  "btnTarifUtd",
+        "label":  "Tarif UTD"
+    },
+    {
+        "permission":  "telaah_resep",
+        "button":  "btnTelaahResep",
+        "label":  "Telaah Resep \u0026 Obat"
+    },
+    {
+        "permission":  "template_hasil_radiologi",
+        "button":  "btnMasterTemplateHasilRadiologi",
+        "label":  "Master Template Hasil Radiologi"
+    },
+    {
+        "permission":  "template_laporan_operasi",
+        "button":  "btnMasterTemplateLaporanOperasi",
+        "label":  "Master Template Laporan Operasi"
+    },
+    {
+        "permission":  "template_pemeriksaan",
+        "button":  "btnMasterTemplatePemeriksaanDokter",
+        "label":  "Master Template Pemeriksaan"
+    },
+    {
+        "permission":  "template_persetujuan_penolakan_tindakan",
+        "button":  "btnTemplatePersetujuanPenolakanTindakan",
+        "label":  "Template Persetujuan Penolakan Tindakan"
+    },
+    {
+        "permission":  "temporary_presensi",
+        "button":  "btnTemporaryPresensi",
+        "label":  "Temporary Presensi"
+    },
+    {
+        "permission":  "timeout_sebelum_insisi",
+        "button":  "btnTimeOutSebelumInsisi",
+        "label":  "Time-Out Sebelum Insisi"
+    },
+    {
+        "permission":  "tindakan_ralan",
+        "button":  "btnRalan",
+        "label":  "Tindakan Ralan"
+    },
+    {
+        "permission":  "tindakan_ranap",
+        "button":  "btnRanap",
+        "label":  "Tindakan Ranap"
+    },
+    {
+        "permission":  "titip_faktur_aset",
+        "button":  "btnTagihanHutangAset",
+        "label":  "Titip Faktur/Tagihan Aset/Inventaris"
+    },
+    {
+        "permission":  "titip_faktur_dapur",
+        "button":  "btnTagihanHutangDapur",
+        "label":  "Titip Faktur/Tagihan Dapur"
+    },
+    {
+        "permission":  "titip_faktur_non_medis",
+        "button":  "btnTagihanHutangNonMedis",
+        "label":  "Titip Faktur/Tagihan Non Medis"
+    },
+    {
+        "permission":  "toko_barang",
+        "button":  "btnBarangToko",
+        "label":  "Barang Toko"
+    },
+    {
+        "permission":  "toko_bayar_pemesanan",
+        "button":  "btnBayarPesanToko",
+        "label":  "Bayar Pesan Toko"
+    },
+    {
+        "permission":  "toko_bayar_piutang",
+        "button":  "btnBayarPiutangToko",
+        "label":  "Bayar Piutang Toko"
+    },
+    {
+        "permission":  "toko_hutang",
+        "button":  "btnHutangToko",
+        "label":  "Hutang Toko"
+    },
+    {
+        "permission":  "toko_jenis",
+        "button":  "btnJenisToko",
+        "label":  "Jenis Barang Toko"
+    },
+    {
+        "permission":  "toko_keuntungan_barang",
+        "button":  "btnKeuntunganBarangToko",
+        "label":  "Keuntungan Barang Toko"
+    },
+    {
+        "permission":  "toko_member",
+        "button":  "btnMemberToko",
+        "label":  "Member Toko"
+    },
+    {
+        "permission":  "toko_pendapatan_harian",
+        "button":  "btnPendapatanHarianToko",
+        "label":  "Pendapatan Harian Toko"
+    },
+    {
+        "permission":  "toko_penerimaan_barang",
+        "button":  "btnPenerimaanBarangToko",
+        "label":  "Penerimaan Barang Toko"
+    },
+    {
+        "permission":  "toko_pengadaan_barang",
+        "button":  "btnPengadaanBarangToko",
+        "label":  "Pengadaan Barang Toko"
+    },
+    {
+        "permission":  "toko_pengajuan_barang",
+        "button":  "btnPengajuanBarangToko",
+        "label":  "Pengajuan Barang Toko"
+    },
+    {
+        "permission":  "toko_penjualan",
+        "button":  "btnPenjualanToko",
+        "label":  "Penjualan Toko"
+    },
+    {
+        "permission":  "toko_penjualan_harian",
+        "button":  "btnPenjualanHarianToko",
+        "label":  "Penjualan Harian Toko"
+    },
+    {
+        "permission":  "toko_piutang",
+        "button":  "btnPiutangToko",
+        "label":  "Piutang Toko"
+    },
+    {
+        "permission":  "toko_piutang_harian",
+        "button":  "btnPiutangHarianToko",
+        "label":  "Piutang Harian Toko"
+    },
+    {
+        "permission":  "toko_retur_beli",
+        "button":  "btnReturKeSuplierToko",
+        "label":  "Retur Ke Suplier Toko"
+    },
+    {
+        "permission":  "toko_retur_jual",
+        "button":  "btnReturJualToko",
+        "label":  "Retur Jual Toko"
+    },
+    {
+        "permission":  "toko_retur_piutang",
+        "button":  "btnReturPiutangToko",
+        "label":  "Retur Piutang Toko"
+    },
+    {
+        "permission":  "toko_riwayat_barang",
+        "button":  "btnRiwayatBarangToko",
+        "label":  "Riwayat Barang Toko"
+    },
+    {
+        "permission":  "toko_set_harga",
+        "button":  "btnSetHargaToko",
+        "label":  "Set Harga Toko"
+    },
+    {
+        "permission":  "toko_sirkulasi",
+        "button":  "btnSirkulasiBarangToko",
+        "label":  "Sirkulasi Barang Toko"
+    },
+    {
+        "permission":  "toko_sirkulasi2",
+        "button":  "btnSirkulasiBarangToko2",
+        "label":  "Sirkulasi Barang Toko 2"
+    },
+    {
+        "permission":  "toko_suplier",
+        "button":  "btnSuplierToko",
+        "label":  "Suplier Toko"
+    },
+    {
+        "permission":  "toko_surat_pemesanan",
+        "button":  "btnSuratPemesananToko",
+        "label":  "Surat Pemesanan Toko"
+    },
+    {
+        "permission":  "tracer_login",
+        "button":  "btnTracker",
+        "label":  "Tracker Login"
+    },
+    {
+        "permission":  "transfer_pasien_antar_ruang",
+        "button":  "btnTransferPasienAntarRuang",
+        "label":  "Transfer Pasien Antar Ruang"
+    },
+    {
+        "permission":  "uji_fungsi_kfr",
+        "button":  "btnUjiFungsiKFR",
+        "label":  "Uji Fungsi/Prosedur KFR"
+    },
+    {
+        "permission":  "user",
+        "button":  "btnUser",
+        "label":  "Set User"
+    },
+    {
+        "permission":  "utd_cekal_darah",
+        "button":  "btnUTDCekalDarah",
+        "label":  "Pencekalan Darah"
+    },
+    {
+        "permission":  "utd_donor",
+        "button":  "btnUTDDonorDarah",
+        "label":  "Donor Darah"
+    },
+    {
+        "permission":  "utd_komponen_darah",
+        "button":  "btnUTDKomponenDarah",
+        "label":  "Komponen Darah"
+    },
+    {
+        "permission":  "utd_medis_rusak",
+        "button":  "btnUTDMedisRusak",
+        "label":  "BHP Medis Rusak"
+    },
+    {
+        "permission":  "utd_pemisahan_darah",
+        "button":  "btnUTDPemisahanDarah",
+        "label":  "Pemisahan Darah"
+    },
+    {
+        "permission":  "utd_pendonor",
+        "button":  "btnPendonorDarah",
+        "label":  "Pendonor Darah"
+    },
+    {
+        "permission":  "utd_penunjang_rusak",
+        "button":  "btnUTDPenunjangRusak",
+        "label":  "BHP Non Medis Rusak"
+    },
+    {
+        "permission":  "utd_penyerahan_darah",
+        "button":  "btnUTDPenyerahanDarah",
+        "label":  "Penyerahan Darah"
+    },
+    {
+        "permission":  "utd_stok_darah",
+        "button":  "btnUTDStokDarah",
+        "label":  "Stok Darah"
+    },
+    {
+        "permission":  "vakum",
+        "button":  "btnVakum",
+        "label":  "Vakum Table"
+    },
+    {
+        "permission":  "validasi_penagihan_piutang",
+        "button":  "btnValidasiPenagihanPiutang",
+        "label":  "Validasi Penagihan Piutang"
+    },
+    {
+        "permission":  "validasi_persetujuan_pengajuan_biaya",
+        "button":  "btnValidasiPersetujuanPengajuanBiaya",
+        "label":  "Validasi Persetujuan Pengajuan Biaya"
+    },
+    {
+        "permission":  "validasi_tagihan_aset",
+        "button":  "btnValidasiTagihanAset",
+        "label":  "Validasi Titip Faktur/Tagihan Aset/Inventaris"
+    },
+    {
+        "permission":  "validasi_tagihan_dapur",
+        "button":  "btnValidasiTagihanDapur",
+        "label":  "Validasi Titip Faktur/Tagihan Dapur"
+    },
+    {
+        "permission":  "validasi_tagihan_hutang_obat",
+        "button":  "btnValidasiTagihanObatBHP",
+        "label":  "Validasi Titip Faktur/Tagihan Obat \u0026 BHP"
+    },
+    {
+        "permission":  "validasi_tagihan_non_medis",
+        "button":  "btnValidasiTagihanNonMedis",
+        "label":  "Validasi Titip Faktur/Tagihan Non Medis"
+    },
+    {
+        "permission":  "verifikasi_penerimaan_dapur",
+        "button":  "btnVerifikasiPenerimaanDapur",
+        "label":  "Verifikasi Penerimaan Dapur"
+    },
+    {
+        "permission":  "verifikasi_penerimaan_farmasi",
+        "button":  "btnVerifikasiPenerimaanFarmasi",
+        "label":  "Verifikasi Penerimaan Obat/Alkes/BHP"
+    },
+    {
+        "permission":  "verifikasi_penerimaan_logistik",
+        "button":  "btnVerifikasiPenerimaanLogistik",
+        "label":  "Verifikasi Penerimaan Non Medis"
+    },
+    {
+        "permission":  "zis_atap_rumah_penerima_dankes",
+        "button":  "btnZISAtapRumahPenerimaDankes",
+        "label":  "Atap Rumah Penerima Dankes"
+    },
+    {
+        "permission":  "zis_dapur_rumah_penerima_dankes",
+        "button":  "btnZISDapurRumahPenerimaDankes",
+        "label":  "Dapur Rumah Penerima Dankes"
+    },
+    {
+        "permission":  "zis_dinding_rumah_penerima_dankes",
+        "button":  "btnZISDindingRumahPenerimaDankes",
+        "label":  "Dinding Rumah Penerima Dankes"
+    },
+    {
+        "permission":  "zis_elektronik_penerima_dankes",
+        "button":  "btnZISElektronikPenerimaDankes",
+        "label":  "Elektronik Penerima Dankes"
+    },
+    {
+        "permission":  "zis_jenis_simpanan_penerima_dankes",
+        "button":  "btnZISJenisSimpananPenerimaDankes",
+        "label":  "Jenis Simpanan Penerima Dankes"
+    },
+    {
+        "permission":  "zis_kamar_mandi_penerima_dankes",
+        "button":  "btnZISKamarMandiPenerimaDankes",
+        "label":  "Kamar Mandi Penerima Dankes"
+    },
+    {
+        "permission":  "zis_kategori_asnaf_penerima_dankes",
+        "button":  "btnZISKategoriAsnafPenerimaDankes",
+        "label":  "Kategori Asnaf Penerima Dankes"
+    },
+    {
+        "permission":  "zis_kategori_phbs_penerima_dankes",
+        "button":  "btnZISKategoriPHBSPenerimaDankes",
+        "label":  "Kategori PHBS Penerima Dankes"
+    },
+    {
+        "permission":  "zis_kepemilikan_rumah_penerima_dankes",
+        "button":  "btnZISKepemilikanRumahPenerimaDankes",
+        "label":  "Kepemilikan Rumah Penerima Dankes"
+    },
+    {
+        "permission":  "zis_kursi_rumah_penerima_dankes",
+        "button":  "btnZISKursiRumahPenerimaDankes",
+        "label":  "Kursi Rumah Penerima Dankes"
+    },
+    {
+        "permission":  "zis_lantai_rumah_penerima_dankes",
+        "button":  "btnZISLantaiRumahPenerimaDankes",
+        "label":  "Lantai Rumah Penerima Dankes"
+    },
+    {
+        "permission":  "zis_patologis_penerima_dankes",
+        "button":  "btnZISPatologisPenerimaDankes",
+        "label":  "Patologis Penerima Dankes"
+    },
+    {
+        "permission":  "zis_pengeluaran_penerima_dankes",
+        "button":  "btnZISPengeluaranPenerimaDankes",
+        "label":  "Ket Pengeluaran Penerima Dankes"
+    },
+    {
+        "permission":  "zis_penghasilan_penerima_dankes",
+        "button":  "btnZISPenghasilanPenerimaDankes",
+        "label":  "Ket Penghasilan Penerima Dankes"
+    },
+    {
+        "permission":  "zis_ternak_penerima_dankes",
+        "button":  "btnZISTernakPenerimaDankes",
+        "label":  "Ternak Penerima Dankes"
+    },
+    {
+        "permission":  "zis_ukuran_rumah_penerima_dankes",
+        "button":  "btnZISUkuranRumahPenerimaDankes",
+        "label":  "Ukuran Rumah Penerima Dankes"
+    }
+]
