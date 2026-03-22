@@ -39,44 +39,6 @@
     <?php if (!empty($error)): ?>
         <p class="muted">Gagal mengambil data: <?= htmlspecialchars((string)$error, ENT_QUOTES, 'UTF-8') ?></p>
     <?php endif; ?>
-    <form method="get" class="row" style="margin-top:10px;">
-        <input type="hidden" name="page" value="registrasi">
-        <div class="field">
-            <label>Dari Tanggal</label>
-            <input type="date" name="from" value="<?= htmlspecialchars((string)$from, ENT_QUOTES, 'UTF-8') ?>">
-        </div>
-        <div class="field">
-            <label>Sampai Tanggal</label>
-            <input type="date" name="to" value="<?= htmlspecialchars((string)$to, ENT_QUOTES, 'UTF-8') ?>">
-        </div>
-        <div class="field">
-            <label>Cari (No Rawat/RM/Nama)</label>
-            <input type="text" name="q" value="<?= htmlspecialchars((string)$q, ENT_QUOTES, 'UTF-8') ?>" placeholder="contoh: 2026/03, 000123, nama pasien">
-        </div>
-        <div class="field">
-            <label>Poli</label>
-            <select name="kd_poli" style="border:1px solid #d7deea;border-radius:8px;padding:9px 10px;min-width:220px;">
-                <option value="">Semua Poli</option>
-                <?php foreach ($poliList as $p): ?>
-                    <option value="<?= htmlspecialchars((string)$p['kd_poli'], ENT_QUOTES, 'UTF-8') ?>" <?= ((string)$kdPoli === (string)$p['kd_poli']) ? 'selected' : '' ?>>
-                        <?= htmlspecialchars((string)$p['nm_poli'], ENT_QUOTES, 'UTF-8') ?>
-                    </option>
-                <?php endforeach; ?>
-            </select>
-        </div>
-        <div class="field">
-            <label>Cara Bayar</label>
-            <select name="kd_pj" style="border:1px solid #d7deea;border-radius:8px;padding:9px 10px;min-width:220px;">
-                <option value="">Semua Cara Bayar</option>
-                <?php foreach ($penjabList as $pj): ?>
-                    <option value="<?= htmlspecialchars((string)$pj['kd_pj'], ENT_QUOTES, 'UTF-8') ?>" <?= ((string)$kdPj === (string)$pj['kd_pj']) ? 'selected' : '' ?>>
-                        <?= htmlspecialchars((string)$pj['png_jawab'], ENT_QUOTES, 'UTF-8') ?>
-                    </option>
-                <?php endforeach; ?>
-            </select>
-        </div>
-        <button type="submit">Filter</button>
-    </form>
 </div>
 
 <div class="card" style="margin-top:12px;">
@@ -442,6 +404,44 @@
 
 <div class="card" style="margin-top:12px;">
     <h3 style="margin-top:0;">Data Registrasi</h3>
+    <form method="get" class="row" style="margin:10px 0 12px;">
+        <input type="hidden" name="page" value="registrasi">
+        <div class="field">
+            <label>Dari Tanggal</label>
+            <input type="date" name="from" value="<?= htmlspecialchars((string)$from, ENT_QUOTES, 'UTF-8') ?>">
+        </div>
+        <div class="field">
+            <label>Sampai Tanggal</label>
+            <input type="date" name="to" value="<?= htmlspecialchars((string)$to, ENT_QUOTES, 'UTF-8') ?>">
+        </div>
+        <div class="field">
+            <label>Cari (No Rawat/RM/Nama)</label>
+            <input type="text" name="q" value="<?= htmlspecialchars((string)$q, ENT_QUOTES, 'UTF-8') ?>" placeholder="contoh: 2026/03, 000123, nama pasien">
+        </div>
+        <div class="field">
+            <label>Poli</label>
+            <select name="kd_poli" style="border:1px solid #d7deea;border-radius:8px;padding:9px 10px;min-width:220px;">
+                <option value="">Semua Poli</option>
+                <?php foreach ($poliList as $p): ?>
+                    <option value="<?= htmlspecialchars((string)$p['kd_poli'], ENT_QUOTES, 'UTF-8') ?>" <?= ((string)$kdPoli === (string)$p['kd_poli']) ? 'selected' : '' ?>>
+                        <?= htmlspecialchars((string)$p['nm_poli'], ENT_QUOTES, 'UTF-8') ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+        </div>
+        <div class="field">
+            <label>Cara Bayar</label>
+            <select name="kd_pj" style="border:1px solid #d7deea;border-radius:8px;padding:9px 10px;min-width:220px;">
+                <option value="">Semua Cara Bayar</option>
+                <?php foreach ($penjabList as $pj): ?>
+                    <option value="<?= htmlspecialchars((string)$pj['kd_pj'], ENT_QUOTES, 'UTF-8') ?>" <?= ((string)$kdPj === (string)$pj['kd_pj']) ? 'selected' : '' ?>>
+                        <?= htmlspecialchars((string)$pj['png_jawab'], ENT_QUOTES, 'UTF-8') ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+        </div>
+        <button type="submit">Filter</button>
+    </form>
     <table>
         <thead>
             <tr>
