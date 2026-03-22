@@ -29,6 +29,7 @@ $menuModul = [
 ];
 $menuModul = array_values(array_filter($menuModul, static fn(array $item): bool => $canPage((string)$item['page'])));
 $showMenuDropdown = !empty($menuModul);
+$showPublicShell = $isLoggedIn;
 ?>
 <!doctype html>
 <html lang="id">
@@ -295,9 +296,30 @@ $showMenuDropdown = !empty($menuModul);
             justify-content: flex-end;
         }
         .app-alert-open { display: block; }
+        .content-shell {
+            display: grid;
+            gap: 18px;
+        }
+        .content-hero {
+            background: #fff;
+            border: 1px solid #edf1f7;
+            border-radius: 16px;
+            padding: 18px 22px;
+            box-shadow: 0 2px 10px rgba(17, 24, 39, .04);
+        }
+        .content-hero h1 {
+            margin: 0 0 4px;
+            font-size: 28px;
+        }
+        .content-hero p {
+            margin: 0;
+        }
     </style>
+    <link rel="stylesheet" href="hospital-management/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="hospital-management/assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="public/assets/css/hospital-management-app.css">
 </head>
-<body>
+<body class="app-shell">
 <div id="appAlertBackdrop" class="app-alert-backdrop"></div>
 <div id="appAlertModal" class="app-alert-modal" role="dialog" aria-modal="true" aria-labelledby="appAlertTitle">
     <div id="appAlertTitle" class="app-alert-head">Informasi</div>
@@ -404,23 +426,21 @@ $showMenuDropdown = !empty($menuModul);
 </html>
 <?php return; endif; ?>
 <div class="page">
-    <header class="topbar">
-        <div class="topbar-wrap">
-            <div class="brand-panel">
-                <a class="brand" href="?page=dashboard">
-                    <img src="?page=app-logo" alt="Logo RS">
-                    <div class="brand-title">
-                        <strong><?= htmlspecialchars($appName, ENT_QUOTES, 'UTF-8') ?></strong>
-                        <small>Sistem Informasi Manajemen Rumah Sakit</small>
-                    </div>
-                </a>
-                <?php if ($isLoggedIn): ?>
+    <?php if ($showPublicShell): ?>
+        <header class="topbar">
+            <div class="topbar-wrap">
+                <div class="brand-panel">
+                    <a class="brand" href="?page=dashboard">
+                        <img src="?page=app-logo" alt="Logo RS">
+                        <div class="brand-title">
+                            <strong><?= htmlspecialchars($appName, ENT_QUOTES, 'UTF-8') ?></strong>
+                            <small>Sistem Informasi Manajemen Rumah Sakit</small>
+                        </div>
+                    </a>
                     <div class="welcome brand-welcome">
                         Welcome <?= htmlspecialchars((string)($auth['nama'] ?? $auth['kode'] ?? '-'), ENT_QUOTES, 'UTF-8') ?>
                     </div>
-                <?php endif; ?>
-            </div>
-            <?php if ($isLoggedIn): ?>
+                </div>
                 <div class="topbar-right">
                     <nav class="menu">
                         <a class="<?= $pageNow === 'registrasi' ? 'active' : '' ?>" href="?page=registrasi">Registrasi</a>
@@ -438,32 +458,44 @@ $showMenuDropdown = !empty($menuModul);
                         <a href="?page=logout">Logout</a>
                     </nav>
                 </div>
-            <?php endif; ?>
-        </div>
-    </header>
+            </div>
+        </header>
+    <?php endif; ?>
 
     <main class="main">
-        <?php require $viewFile; ?>
+        <?php if ($showPublicShell): ?>
+            <div class="content-shell">
+                <section class="content-hero">
+                    <h1><?= htmlspecialchars((string)($title ?? $appName), ENT_QUOTES, 'UTF-8') ?></h1>
+                    <p class="muted"><?= htmlspecialchars($appName, ENT_QUOTES, 'UTF-8') ?> - Panel operasional harian</p>
+                </section>
+                <?php require $viewFile; ?>
+            </div>
+        <?php else: ?>
+            <?php require $viewFile; ?>
+        <?php endif; ?>
     </main>
 
-    <footer class="footer">
-        <div class="footer-wrap">
-            <div>
-                <strong><?= htmlspecialchars($appName, ENT_QUOTES, 'UTF-8') ?></strong>
-                <?php if (!empty($settingRs['alamat_instansi'])): ?>
-                    | <?= htmlspecialchars((string)$settingRs['alamat_instansi'], ENT_QUOTES, 'UTF-8') ?>
-                <?php endif; ?>
+    <?php if ($showPublicShell): ?>
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div>
+                    <strong><?= htmlspecialchars($appName, ENT_QUOTES, 'UTF-8') ?></strong>
+                    <?php if (!empty($settingRs['alamat_instansi'])): ?>
+                        | <?= htmlspecialchars((string)$settingRs['alamat_instansi'], ENT_QUOTES, 'UTF-8') ?>
+                    <?php endif; ?>
+                </div>
+                <div>
+                    <?php if (!empty($settingRs['kontak'])): ?>
+                        Kontak: <?= htmlspecialchars((string)$settingRs['kontak'], ENT_QUOTES, 'UTF-8') ?>
+                    <?php endif; ?>
+                    <?php if (!empty($settingRs['email'])): ?>
+                        | Email: <?= htmlspecialchars((string)$settingRs['email'], ENT_QUOTES, 'UTF-8') ?>
+                    <?php endif; ?>
+                </div>
             </div>
-            <div>
-                <?php if (!empty($settingRs['kontak'])): ?>
-                    Kontak: <?= htmlspecialchars((string)$settingRs['kontak'], ENT_QUOTES, 'UTF-8') ?>
-                <?php endif; ?>
-                <?php if (!empty($settingRs['email'])): ?>
-                    | Email: <?= htmlspecialchars((string)$settingRs['email'], ENT_QUOTES, 'UTF-8') ?>
-                <?php endif; ?>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    <?php endif; ?>
 </div>
 </body>
 </html>

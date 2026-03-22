@@ -1,0 +1,67 @@
+.wrap-main-box {
+    text-align: center;
+    max-width: 650px;
+    margin: 35px auto;
+    background: #3cb878;
+    opacity: 0.9;
+    padding: 5em;
+    box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.7);
+    -webkit-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.7);
+    -moz-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.7);
+    -ms-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.7);
+    border-radius: 3px;
+    color: #000;
+    margin-top: 0px !important;
+    font-size: 15px;
+}
+#adminmenu .wp-submenu a[href^="themes.php?page=hospital-management-info"] {
+    background-color: #FE7700;
+    color: #ffffff;
+    font-weight: bold;
+}
+.wrap-main-box h2 {
+    font-size: 30px;
+    color: #ffffff;
+    line-height: 1.8;
+    margin: 0;
+}
+.wrap-main-box h3{
+    font-weight: 600;
+    line-height: 1.8;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.about-wrap .feature-section h3{
+    font-size: 25px;
+}
+.about-wrap .feature-section p{
+    color: #ffffff;
+    font-size: 17px;
+}
+.main-box button#import-theme-mods{
+    background: #2f2c2c;
+    border-color: #2f2c2c;
+    border: unset;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+    transition: all .3s ease;
+    text-align: center;
+    line-height: 15px;
+}
+.wrap-main-box p{
+    font-size: 14px;
+}
+.wrap-main-box div#import-response {
+    margin-top: 18px;
+}
+button#import-theme-mods{
+    margin-top: 20px;
+}

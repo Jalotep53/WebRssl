@@ -12,6 +12,11 @@ final class LoginController
     {
         $error = '';
         $username = '';
+        $settingRs = \app_settings();
+        $appName = trim((string)($settingRs['nama_instansi'] ?? 'SIMRS Web'));
+        if ($appName === '') {
+            $appName = 'SIMRS Web';
+        }
         if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
             $username = trim((string)($_POST['username'] ?? ''));
             $password = (string)($_POST['password'] ?? '');
@@ -24,7 +29,8 @@ final class LoginController
         }
 
         view('login', [
-            'title' => 'Login SIMRS Web',
+            'title' => $appName,
+            'appName' => $appName,
             'error' => $error,
             'username' => $username,
         ]);

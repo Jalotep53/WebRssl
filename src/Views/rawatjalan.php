@@ -41,6 +41,7 @@
 
 <div class="card" style="margin-top:12px;">
     <style>
+        .card, table, tbody, tr, td { overflow: visible !important; }
         .aksi-wrap { position: relative; display: inline-block; }
         .aksi-trigger {
             width: 32px; height: 32px; border-radius: 8px; border: 1px solid #cfe0eb;
@@ -52,12 +53,13 @@
             position: absolute; right: 0; top: calc(100% + 6px); z-index: 40;
             background: #fff; border: 1px solid #d7deea; border-radius: 10px;
             box-shadow: 0 12px 30px rgba(15, 23, 42, .18);
-            padding: 8px; display: none; grid-template-columns: repeat(4, 36px); gap: 8px;
-            width: max-content;
+            padding: 10px; display: none; grid-template-columns: repeat(4, 42px); gap: 8px;
+            width: max-content; max-width: min(260px, calc(100vw - 32px));
+            overflow: visible;
         }
         .aksi-wrap.open .aksi-menu { display: grid; }
         .icon-action-btn {
-            width: 36px; height: 36px; border-radius: 8px; border: 1px solid #d7e4ed;
+            width: 42px; height: 42px; min-height: 42px; border-radius: 10px; border: 1px solid #d7e4ed;
             background: #f7fbfd; color: #1f4f69; text-decoration: none; cursor: pointer;
             display: inline-flex; align-items: center; justify-content: center; position: relative;
             padding: 0;
@@ -73,7 +75,7 @@
             opacity: 0; pointer-events: none; transition: opacity .12s ease;
         }
         .icon-action-btn:hover::after, .icon-action-btn:focus::after { opacity: 1; }
-        .icon-action-btn svg { width: 18px; height: 18px; display: block; }
+        .icon-action-btn svg { width: 18px; height: 18px; display: block; flex: 0 0 18px; }
         .service-modal-overlay {
             display: none; position: fixed; inset: 0; z-index: 80;
             background: rgba(8, 25, 38, .48);

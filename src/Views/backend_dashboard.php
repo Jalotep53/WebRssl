@@ -1,3 +1,4 @@
+<div class="content-shell">
 <div class="grid cols-3">
     <div class="card"><div class="muted">Total Menu Legacy</div><div class="stat"><?= (int)($summary['total_menus'] ?? 0) ?></div></div>
     <div class="card"><div class="muted">Modul Admin Terdeteksi</div><div class="stat"><?= (int)($summary['admin_menus'] ?? 0) ?></div></div>
@@ -60,4 +61,5 @@
             </tbody>
         </table>
     </div>
+</div>
 </div>

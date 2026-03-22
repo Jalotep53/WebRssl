@@ -15,6 +15,7 @@ $modulePageMap = [
     'config' => 'konfigurasi',
     'bridging-bpjs' => 'bridging-bpjs',
     'bridging-satusehat' => 'backend-admin',
+    'user' => 'backend-admin',
     'rbac' => 'backend-admin',
     'monitoring' => 'tracker',
 ];
@@ -163,13 +164,20 @@ $canTracker = \WebBaru\Services\RbacService::canAccessPage('tracker', $authUser)
             padding: 10px 12px;
             background: #fbfeff;
         }
+        .content-shell {
+            display: grid;
+            gap: 18px;
+        }
         @media (max-width: 980px) {
             .shell { grid-template-columns: 1fr; }
             .sidebar { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.08); }
         }
     </style>
+    <link rel="stylesheet" href="../hospital-management/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../hospital-management/assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../public/assets/css/hospital-management-app.css">
 </head>
-<body>
+<body class="backend-shell">
 <div class="shell">
     <aside class="sidebar">
         <a href="./" class="brand">
@@ -194,18 +202,20 @@ $canTracker = \WebBaru\Services\RbacService::canAccessPage('tracker', $authUser)
         </div>
     </aside>
     <main class="content">
-        <div class="topbar">
-            <div>
-                <h1><?= htmlspecialchars((string)($title ?? 'Backend Admin'), ENT_QUOTES, 'UTF-8') ?></h1>
-                <div class="muted">Akses admin melalui <code>/WebBaru/backend</code></div>
+        <div class="content-shell">
+            <div class="topbar">
+                <div>
+                    <h1><?= htmlspecialchars((string)($title ?? 'Backend Admin'), ENT_QUOTES, 'UTF-8') ?></h1>
+                    <div class="muted">Akses admin melalui <code>/WebBaru/backend</code></div>
+                </div>
+                <div class="actions">
+                    <?php if ($canCatalog): ?><a href="../?page=menu-catalog" class="secondary">Katalog Menu</a><?php endif; ?>
+                    <?php if ($canKonfig): ?><a href="../?page=konfigurasi" class="secondary">Konfigurasi Legacy</a><?php endif; ?>
+                    <?php if ($canTracker): ?><a href="../?page=tracker">Tracker</a><?php endif; ?>
+                </div>
             </div>
-            <div class="actions">
-                <?php if ($canCatalog): ?><a href="../?page=menu-catalog" class="secondary">Katalog Menu</a><?php endif; ?>
-                <?php if ($canKonfig): ?><a href="../?page=konfigurasi" class="secondary">Konfigurasi Legacy</a><?php endif; ?>
-                <?php if ($canTracker): ?><a href="../?page=tracker">Tracker</a><?php endif; ?>
-            </div>
+            <?php require $backendContentFile; ?>
         </div>
-        <?php require $backendContentFile; ?>
     </main>
 </div>
 </body>

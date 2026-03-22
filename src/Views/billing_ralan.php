@@ -133,9 +133,12 @@
 
             <div class="card" style="margin-top:10px;">
                 <div class="muted">Grand Total Billing</div>
-                <div class="badge"><?= number_format($grandTotalFinal, 0, ',', '.') ?></div>
+                <div class="badge" id="billing-grand-total"><?= number_format($grandTotalFinal, 0, ',', '.') ?></div>
                 <div class="muted" style="margin-top:6px;">
-                    Sudah termasuk PPN <?= number_format($ppnTotalDisplay, 0, ',', '.') ?>, tambahan biaya <?= number_format((float)$komponen['tambahan'], 0, ',', '.') ?>, dan potongan <?= number_format((float)$komponen['pengurangan'], 0, ',', '.') ?>.
+                    Tagihan dasar <span id="billing-base-total"><?= number_format($totalTagihanDisplay, 0, ',', '.') ?></span>,
+                    PPN <span id="billing-ppn-total"><?= number_format($ppnTotalDisplay, 0, ',', '.') ?></span>,
+                    tambahan biaya <?= number_format((float)$komponen['tambahan'], 0, ',', '.') ?>,
+                    dan potongan <?= number_format((float)$komponen['pengurangan'], 0, ',', '.') ?>.
                 </div>
             </div>
 
@@ -148,7 +151,7 @@
                         <?php
                         $totalPembayaranExisting = 0.0;
                         foreach (($detailPembayaran ?? []) as $dp0) {
-                            $totalPembayaranExisting += (float)($dp0['besar_bayar'] ?? 0);
+                            $totalPembayaranExisting += (float)($dp0['besar_bayar'] ?? 0) + (float)($dp0['besarppn'] ?? 0);
                         }
                         $sisaPiutangDefault = max(0.0, $grandTotalFinal - $totalPembayaranExisting);
                         ?>
@@ -168,7 +171,7 @@
                                             <select name="nama_bayar[]" style="border:1px solid #d7deea;border-radius:8px;padding:9px 10px;min-width:260px;" required>
                                                 <option value="">- pilih akun bayar -</option>
                                                 <?php foreach ($akunBayarList as $ab): ?>
-                                                    <option value="<?= htmlspecialchars((string)$ab['nama_bayar'], ENT_QUOTES, 'UTF-8') ?>" data-is-piutang="<?= (stripos((string)$ab['nama_bayar'], 'piutang') !== false) ? '1' : '0' ?>">
+                                                    <option value="<?= htmlspecialchars((string)$ab['nama_bayar'], ENT_QUOTES, 'UTF-8') ?>" data-is-piutang="<?= (stripos((string)$ab['nama_bayar'], 'piutang') !== false) ? '1' : '0' ?>" data-ppn="<?= htmlspecialchars((string)number_format((float)$ab['ppn'], 2, '.', ''), ENT_QUOTES, 'UTF-8') ?>">
                                                         <?= htmlspecialchars((string)$ab['nama_bayar'], ENT_QUOTES, 'UTF-8') ?> (PPN <?= number_format((float)$ab['ppn'], 2, ',', '.') ?>%)
                                                     </option>
                                                 <?php endforeach; ?>
@@ -240,21 +243,30 @@
                         <th class="num">PPN (%)</th>
                         <th class="num">Nominal PPN</th>
                         <th class="num">Nominal Bayar</th>
+                        <th class="num">Total Final</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php if (empty($detailPembayaran)): ?>
-                        <tr><td colspan="5" class="muted">Belum ada detail akun bayar</td></tr>
+                        <tr><td colspan="6" class="muted">Belum ada detail akun bayar</td></tr>
                     <?php else: ?>
+                        <?php $detailPembayaranTotal = 0.0; ?>
                         <?php foreach ($detailPembayaran as $dp): ?>
+                            <?php $detailPembayaranFinal = (float)$dp['besar_bayar'] + (float)$dp['besarppn']; ?>
+                            <?php $detailPembayaranTotal += $detailPembayaranFinal; ?>
                             <tr>
                                 <td><?= htmlspecialchars((string)$dp['nama_bayar'], ENT_QUOTES, 'UTF-8') ?></td>
                                 <td><?= htmlspecialchars((string)($dp['kd_rek'] ?? '-'), ENT_QUOTES, 'UTF-8') ?></td>
                                 <td class="num"><?= number_format((float)($dp['ppn'] ?? 0), 2, ',', '.') ?></td>
                                 <td class="num"><?= number_format((float)$dp['besarppn'], 0, ',', '.') ?></td>
                                 <td class="num"><?= number_format((float)$dp['besar_bayar'], 0, ',', '.') ?></td>
+                                <td class="num"><?= number_format($detailPembayaranFinal, 0, ',', '.') ?></td>
                             </tr>
                         <?php endforeach; ?>
+                        <tr>
+                            <td colspan="5" style="text-align:right;font-weight:700;">Total Pembayaran Final</td>
+                            <td class="num" style="font-weight:700;"><?= number_format($detailPembayaranTotal, 0, ',', '.') ?></td>
+                        </tr>
                     <?php endif; ?>
                 </tbody>
             </table>
@@ -386,17 +398,56 @@
     (function () {
         var container = document.getElementById('akun_bayar_items');
         var piutangContainer = document.getElementById('akun_piutang_items');
+        var baseTotalNode = document.getElementById('billing-base-total');
+        var ppnTotalNode = document.getElementById('billing-ppn-total');
+        var grandTotalNode = document.getElementById('billing-grand-total');
         if (!container) return;
         var firstRow = container.querySelector('.akun-row');
-        var grandTotal = parseFloat('<?= htmlspecialchars((string)number_format((float)$grandTotalFinal, 2, '.', ''), ENT_QUOTES, 'UTF-8') ?>') || 0;
+        var baseTotal = parseFloat('<?= htmlspecialchars((string)number_format((float)$totalTagihanDisplay, 2, '.', ''), ENT_QUOTES, 'UTF-8') ?>') || 0;
+        function formatIdr(value) {
+            return (value || 0).toLocaleString('id-ID', { maximumFractionDigits: 0 });
+        }
+        function computePaymentState() {
+            var nominalBayar = 0;
+            var totalPpn = 0;
+            container.querySelectorAll('.akun-row').forEach(function (row) {
+                var sel = row.querySelector('select[name="nama_bayar[]"]');
+                var nom = row.querySelector('input[name="besar_bayar[]"]');
+                var nominal = parseFloat(((nom && nom.value) || '').replace(',', '.'));
+                if (isNaN(nominal)) nominal = 0;
+                nominalBayar += nominal;
+                if (sel) {
+                    var opt = sel.options[sel.selectedIndex];
+                    var ppn = parseFloat((opt && opt.getAttribute('data-ppn')) || '0');
+                    if (!isNaN(ppn) && nominal > 0) {
+                        totalPpn += (nominal * ppn) / 100;
+                    }
+                }
+            });
+            return {
+                nominalBayar: nominalBayar,
+                totalPpn: totalPpn,
+                grandTotal: baseTotal + totalPpn,
+                totalBayarFinal: nominalBayar + totalPpn
+            };
+        }
+        function syncSummary() {
+            var state = computePaymentState();
+            if (ppnTotalNode) {
+                ppnTotalNode.textContent = formatIdr(state.totalPpn);
+            }
+            if (grandTotalNode) {
+                grandTotalNode.textContent = formatIdr(state.grandTotal);
+            }
+            if (baseTotalNode) {
+                baseTotalNode.textContent = formatIdr(baseTotal);
+            }
+            return state;
+        }
         function syncSisaPiutang() {
             if (!piutangContainer) return;
-            var bayar = 0;
-            container.querySelectorAll('input[name="besar_bayar[]"]').forEach(function (el) {
-                var val = parseFloat((el.value || '').replace(',', '.'));
-                if (!isNaN(val)) bayar += val;
-            });
-            var sisa = Math.max(0, grandTotal - bayar);
+            var state = syncSummary();
+            var sisa = Math.max(0, state.grandTotal - state.totalBayarFinal);
             var piutangNominal = piutangContainer.querySelector('input[name="total_piutang[]"]');
             if (piutangNominal) {
                 piutangNominal.value = sisa.toFixed(2);
@@ -410,7 +461,7 @@
                 if (!sel || !nom) return;
                 var opt = sel.options[sel.selectedIndex];
                 var isPiutang = opt && opt.getAttribute('data-is-piutang') === '1';
-                var defaultTotal = '<?= htmlspecialchars((string)number_format((float)$grandTotalFinal, 2, '.', ''), ENT_QUOTES, 'UTF-8') ?>';
+                var defaultTotal = '<?= htmlspecialchars((string)number_format((float)$totalTagihanDisplay, 2, '.', ''), ENT_QUOTES, 'UTF-8') ?>';
                 if (isPiutang) {
                     nom.value = defaultTotal;
                     nom.readOnly = true;
@@ -443,6 +494,7 @@
             }
         }
         bindRow(firstRow);
+        syncSummary();
         syncSisaPiutang();
     })();
 </script>

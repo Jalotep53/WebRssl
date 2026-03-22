@@ -11,11 +11,12 @@ foreach (($topPoli7Day ?? []) as $p) {
 }
 ?>
 
+<div class="content-shell">
 <div class="card">
     <h2 style="margin-top:0;">Dashboard Operasional Harian</h2>
     <p class="muted">Ringkasan layanan harian untuk Registrasi, Rawat Jalan, Farmasi, dan Billing.</p>
 
-    <h3 style="margin:14px 0 8px;">1) Ringkasan Hari Ini</h3>
+    <h3 style="margin:14px 0 8px;">Ringkasan Hari Ini</h3>
     <div class="cards">
         <div class="card">
             <div class="muted">Total Kunjungan</div>
@@ -35,7 +36,10 @@ foreach (($topPoli7Day ?? []) as $p) {
         </div>
     </div>
 
-    <h3 style="margin:16px 0 8px;">2) Antrian Layanan</h3>
+</div>
+
+<div class="card">
+    <h3 style="margin-top:0;">Antrian Layanan</h3>
     <table>
         <thead>
         <tr>
@@ -66,16 +70,20 @@ foreach (($topPoli7Day ?? []) as $p) {
         </tr>
         </tbody>
     </table>
+</div>
 
-    <h3 style="margin:16px 0 8px;">3) Alert Prioritas</h3>
+<div class="card">
+    <h3 style="margin-top:0;">Alert Prioritas</h3>
     <div class="row">
         <span class="pill">Resep Pending > 2 Jam: <strong><?= (int)($alerts['resep_pending_lama'] ?? 0) ?></strong></span>
         <span class="pill">Permintaan Lab Hari Ini: <strong><?= (int)($alerts['permintaan_lab_pending'] ?? 0) ?></strong></span>
         <span class="pill">Permintaan Radiologi Hari Ini: <strong><?= (int)($alerts['permintaan_rad_pending'] ?? 0) ?></strong></span>
         <span class="pill">Billing Belum Bayar: <strong><?= (int)($alerts['billing_belum_bayar'] ?? 0) ?></strong></span>
     </div>
+</div>
 
-    <h3 style="margin:16px 0 8px;">4) Grafik 7 Hari</h3>
+<div class="card">
+    <h3 style="margin-top:0;">Grafik 7 Hari</h3>
     <div class="cards">
         <div class="card">
             <div class="muted" style="margin-bottom:8px;">Tren Kunjungan Rawat Jalan</div>
@@ -104,7 +112,7 @@ foreach (($topPoli7Day ?? []) as $p) {
             <?php endforeach; ?>
         </div>
     </div>
-    <div class="card" style="margin-top:10px;">
+    <div class="card" style="margin-top:12px;">
         <div class="muted" style="margin-bottom:8px;">Top Poli (7 Hari Terakhir)</div>
         <?php foreach (($topPoli7Day ?? []) as $p): ?>
             <?php $w = (int)round(((int)$p['total'] / $maxPoli) * 100); ?>
@@ -117,13 +125,16 @@ foreach (($topPoli7Day ?? []) as $p) {
             </div>
         <?php endforeach; ?>
     </div>
+</div>
 
-    <h3 style="margin:16px 0 8px;">6) Shortcut Aksi Cepat</h3>
+<div class="card">
+    <h3 style="margin-top:0;">Shortcut Aksi Cepat</h3>
     <div class="row">
         <a href="?page=registrasi" style="text-decoration:none;"><span class="pill">Daftarkan Pasien</span></a>
         <a href="?page=rawatjalan" style="text-decoration:none;"><span class="pill">Buka Rawat Jalan</span></a>
         <a href="?page=farmasi" style="text-decoration:none;"><span class="pill">Validasi Resep</span></a>
         <a href="?page=billing-ralan" style="text-decoration:none;"><span class="pill">Billing Ralan</span></a>
     </div>
+</div>
 </div>
 

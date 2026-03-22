@@ -52,16 +52,13 @@ $tambahanBiaya = (float)($komponen['tambahan'] ?? 0);
 $penguranganBiaya = (float)($komponen['pengurangan'] ?? 0);
 $totalTagihan = (float)($komponen['grand_total'] ?? 0);
 $ppnTotal = 0.0;
-foreach ($billingRows as $br) {
-    $nm = strtolower((string)($br['nm_perawatan'] ?? ''));
-    if (strpos($nm, 'ppn') !== false) {
-        $ppnTotal += (float)($br['totalbiaya'] ?? 0);
-    }
+foreach ($detailPembayaran as $dp) {
+    $ppnTotal += (float)($dp['besarppn'] ?? 0);
 }
 $tagihanPpn = $totalTagihan + $ppnTotal;
 $dibayar = 0.0;
 foreach ($detailPembayaran as $dp) {
-    $dibayar += (float)($dp['besar_bayar'] ?? 0);
+    $dibayar += (float)($dp['besar_bayar'] ?? 0) + (float)($dp['besarppn'] ?? 0);
 }
 $sisaPiutang = max(0.0, $tagihanPpn - $dibayar);
 

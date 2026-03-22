@@ -553,11 +553,19 @@ final class BillingRalanController
                 }
             }
             unset($it);
+
+            $selAkun = $pdo->prepare("SELECT ppn FROM akun_bayar WHERE nama_bayar=:nama LIMIT 1");
             $totalBayar = 0.0;
+            $totalPpnBayar = 0.0;
             foreach ($itemsBayar as $it) {
                 $totalBayar += (float)$it['besar_bayar'];
+                $selAkun->execute(['nama' => $it['nama_bayar']]);
+                $ppnPersen = (float)($selAkun->fetchColumn() ?: 0);
+                $totalPpnBayar += (((float)$it['besar_bayar']) * $ppnPersen) / 100;
             }
-            $sisaPiutang = max(0.0, $grandTotal - $totalBayar);
+            $grandTotalFinal = $grandTotal + $totalPpnBayar;
+            $totalBayarFinal = $totalBayar + $totalPpnBayar;
+            $sisaPiutang = max(0.0, $grandTotalFinal - $totalBayarFinal);
 
             $today = date('Y-m-d');
             $jam = date('H:i:s');
@@ -608,7 +616,6 @@ final class BillingRalanController
                 ]);
             }
 
-            $selAkun = $pdo->prepare("SELECT ppn FROM akun_bayar WHERE nama_bayar=:nama LIMIT 1");
             $insDet = $pdo->prepare($isRanap
                 ? "INSERT INTO detail_nota_inap(no_rawat,nama_bayar,besarppn,besar_bayar) VALUES(:n,:nama,:ppn,:besar)"
                 : "INSERT INTO detail_nota_jalan(no_rawat,nama_bayar,besarppn,besar_bayar) VALUES(:n,:nama,:ppn,:besar)"
@@ -716,8 +723,8 @@ final class BillingRalanController
                     'n' => $noRawat,
                     'tgl' => $today,
                     'rm' => $noRkmMedis,
-                    'total' => $grandTotal,
-                    'uangmuka' => $totalBayar,
+                    'total' => $grandTotalFinal,
+                    'uangmuka' => $totalBayarFinal,
                     'sisa' => $sisaPiutang,
                     'tempo' => $maxTempo,
                 ]);

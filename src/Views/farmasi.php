@@ -152,13 +152,20 @@
                         <th>Aturan Pakai</th>
                         <th class="num">Stok</th>
                         <th class="num">Harga Ralan</th>
+                        <th class="num">Subtotal</th>
+                        <?php if ((string)($detail['status_layanan'] ?? '') !== 'Sudah Terlayani'): ?>
+                            <th>Aksi</th>
+                        <?php endif; ?>
                     </tr>
                 </thead>
                 <tbody>
                     <?php if (empty($detailItems)): ?>
-                        <tr><td colspan="8" class="muted">Tidak ada item resep</td></tr>
+                        <tr><td colspan="<?= ((string)($detail['status_layanan'] ?? '') !== 'Sudah Terlayani') ? '10' : '9' ?>" class="muted">Tidak ada item resep</td></tr>
                     <?php else: ?>
+                        <?php $totalResep = 0.0; ?>
                         <?php foreach ($detailItems as $it): ?>
+                            <?php $subtotalItem = (float)$it['jml'] * (float)$it['ralan']; ?>
+                            <?php $totalResep += $subtotalItem; ?>
                             <tr>
                                 <td><?= htmlspecialchars((string)$it['kode_brng'], ENT_QUOTES, 'UTF-8') ?></td>
                                 <td><?= htmlspecialchars((string)$it['nama_brng'], ENT_QUOTES, 'UTF-8') ?></td>
@@ -168,8 +175,44 @@
                                 <td><?= htmlspecialchars((string)$it['aturan_pakai'], ENT_QUOTES, 'UTF-8') ?></td>
                                 <td class="num"><?= number_format((float)$it['stok_total'], 2, ',', '.') ?></td>
                                 <td class="num"><?= number_format((float)$it['ralan'], 0, ',', '.') ?></td>
+                                <td class="num"><?= number_format($subtotalItem, 0, ',', '.') ?></td>
+                                <?php if ((string)$detail['status_layanan'] !== 'Sudah Terlayani'): ?>
+                                    <td>
+                                        <form method="post" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:6px;">
+                                            <input type="hidden" name="action" value="update_resep_item">
+                                            <input type="hidden" name="no_resep" value="<?= htmlspecialchars((string)$detailNoResep, ENT_QUOTES, 'UTF-8') ?>">
+                                            <input type="hidden" name="kode_brng" value="<?= htmlspecialchars((string)$it['kode_brng'], ENT_QUOTES, 'UTF-8') ?>">
+                                            <input type="hidden" name="from" value="<?= htmlspecialchars((string)$from, ENT_QUOTES, 'UTF-8') ?>">
+                                            <input type="hidden" name="to" value="<?= htmlspecialchars((string)$to, ENT_QUOTES, 'UTF-8') ?>">
+                                            <input type="hidden" name="q" value="<?= htmlspecialchars((string)$q, ENT_QUOTES, 'UTF-8') ?>">
+                                            <input type="hidden" name="status" value="<?= htmlspecialchars((string)$status, ENT_QUOTES, 'UTF-8') ?>">
+                                            <input type="hidden" name="stts_rawat" value="<?= htmlspecialchars((string)$sttsRawat, ENT_QUOTES, 'UTF-8') ?>">
+                                            <input type="number" step="0.01" min="0.01" name="jml" value="<?= htmlspecialchars((string)number_format((float)$it['jml'], 2, '.', ''), ENT_QUOTES, 'UTF-8') ?>" style="width:88px;">
+                                            <input type="text" name="aturan_pakai" value="<?= htmlspecialchars((string)$it['aturan_pakai'], ENT_QUOTES, 'UTF-8') ?>" style="width:160px;">
+                                            <button type="submit" style="padding:6px 10px;">Ubah</button>
+                                        </form>
+                                        <form method="post" style="margin-top:6px;" onsubmit="return confirm('Hapus item resep ini?');">
+                                            <input type="hidden" name="action" value="delete_resep_item">
+                                            <input type="hidden" name="no_resep" value="<?= htmlspecialchars((string)$detailNoResep, ENT_QUOTES, 'UTF-8') ?>">
+                                            <input type="hidden" name="kode_brng" value="<?= htmlspecialchars((string)$it['kode_brng'], ENT_QUOTES, 'UTF-8') ?>">
+                                            <input type="hidden" name="from" value="<?= htmlspecialchars((string)$from, ENT_QUOTES, 'UTF-8') ?>">
+                                            <input type="hidden" name="to" value="<?= htmlspecialchars((string)$to, ENT_QUOTES, 'UTF-8') ?>">
+                                            <input type="hidden" name="q" value="<?= htmlspecialchars((string)$q, ENT_QUOTES, 'UTF-8') ?>">
+                                            <input type="hidden" name="status" value="<?= htmlspecialchars((string)$status, ENT_QUOTES, 'UTF-8') ?>">
+                                            <input type="hidden" name="stts_rawat" value="<?= htmlspecialchars((string)$sttsRawat, ENT_QUOTES, 'UTF-8') ?>">
+                                            <button type="submit" style="background:#b91c1c;padding:6px 10px;">Hapus</button>
+                                        </form>
+                                    </td>
+                                <?php endif; ?>
                             </tr>
                         <?php endforeach; ?>
+                        <tr>
+                            <td colspan="<?= ((string)($detail['status_layanan'] ?? '') !== 'Sudah Terlayani') ? '8' : '7' ?>" style="text-align:right;font-weight:700;">Total Resep</td>
+                            <td class="num" style="font-weight:700;"><?= number_format($totalResep, 0, ',', '.') ?></td>
+                            <?php if ((string)($detail['status_layanan'] ?? '') !== 'Sudah Terlayani'): ?>
+                                <td></td>
+                            <?php endif; ?>
+                        </tr>
                     <?php endif; ?>
                 </tbody>
             </table>

@@ -15,10 +15,11 @@ final class BackendAdminController
 {
     private const SATUSEHAT_FLASH_KEY = 'backend_satusehat_flash';
     private const RBAC_FLASH_KEY = 'backend_rbac_flash';
+    private const USER_FLASH_KEY = 'backend_user_flash';
     public function index(): void
     {
         $module = trim((string)($_GET['module'] ?? 'dashboard'));
-        $allowed = ['dashboard', 'modules', 'config', 'bridging-bpjs', 'bridging-satusehat', 'rbac', 'monitoring'];
+        $allowed = ['dashboard', 'modules', 'config', 'bridging-bpjs', 'bridging-satusehat', 'user', 'rbac', 'monitoring'];
         if (!in_array($module, $allowed, true)) {
             $module = 'dashboard';
         }
@@ -30,6 +31,11 @@ final class BackendAdminController
 
         if ($module === 'rbac' && strtoupper((string)($_SERVER['REQUEST_METHOD'] ?? 'GET')) === 'POST') {
             $this->handleRbacPost();
+            return;
+        }
+
+        if ($module === 'user' && strtoupper((string)($_SERVER['REQUEST_METHOD'] ?? 'GET')) === 'POST') {
+            $this->handleUserPost();
             return;
         }
 
@@ -98,6 +104,12 @@ final class BackendAdminController
                 $data['encounterQueueSummary'] = $encounterAdmin->summarizeQueue($data['encounterRows']);
                 break;
 
+            case 'user':
+                $data['title'] = 'Backend Admin - User';
+                $data['viewFile'] = 'backend_user';
+                $data = array_merge($data, $this->loadUserModuleData());
+                break;
+
             case 'rbac':
                 $data['title'] = 'Backend Admin - RBAC User';
                 $data['viewFile'] = 'backend_rbac';
@@ -133,6 +145,7 @@ final class BackendAdminController
             ['key' => 'config', 'label' => 'Konfigurasi', 'desc' => 'Kunci konfigurasi legacy dan ringkasan integrasi.'],
             ['key' => 'bridging-bpjs', 'label' => 'Bridging BPJS', 'desc' => 'Konfigurasi BPJS/VClaim dari Khanza Java.'],
             ['key' => 'bridging-satusehat', 'label' => 'Bridging Satu Sehat', 'desc' => 'Pengiriman data Satu Sehat langsung dari backend.'],
+            ['key' => 'user', 'label' => 'User', 'desc' => 'Daftar akun legacy dan ringkasan akses penting.'],
             ['key' => 'rbac', 'label' => 'RBAC User', 'desc' => 'Kelola role dan hak akses user WebBaru.'],
             ['key' => 'monitoring', 'label' => 'Monitoring', 'desc' => 'Statistik package dan gambaran area sistem.'],
         ];
@@ -626,6 +639,354 @@ final class BackendAdminController
         }
 
         return $data;
+    }
+
+    private function loadUserModuleData(): array
+    {
+        $importantColumns = $this->userImportantColumns();
+        $data = [
+            'userModuleReady' => false,
+            'userModuleError' => '',
+            'userSearch' => trim((string)($_GET['q'] ?? '')),
+            'userList' => [],
+            'userSummary' => [
+                'total_users' => 0,
+                'linked_pegawai' => 0,
+                'avg_access' => 0,
+                'important_access_cols' => count($importantColumns),
+            ],
+            'userEdit' => null,
+            'userFlash' => $this->pullUserFlash(),
+            'userImportantColumns' => $importantColumns,
+        ];
+
+        try {
+            $pdo = Database::pdo();
+            $metadata = $this->getUserTableMetadata($pdo);
+            $enumColumns = $metadata['enum_columns'];
+            $accessCountExpr = $metadata['access_count_expr'];
+            $importantSelect = $metadata['important_select'];
+
+            $search = $data['userSearch'];
+            $where = '';
+            $params = [];
+            if ($search !== '') {
+                $where = "WHERE (
+                    CONVERT(AES_DECRYPT(u.id_user,'nur') USING utf8mb4) LIKE :q
+                    OR COALESCE(p.nama, '') LIKE :q
+                    OR COALESCE(p.nik, '') LIKE :q
+                    OR COALESCE(CAST(p.id AS CHAR), '') LIKE :q
+                )";
+                $params['q'] = '%' . $search . '%';
+            }
+
+            $summarySql = "
+                SELECT
+                    COUNT(*) AS total_users,
+                    SUM(CASE WHEN p.nama IS NOT NULL AND p.nama <> '' THEN 1 ELSE 0 END) AS linked_pegawai,
+                    AVG($accessCountExpr) AS avg_access
+                FROM user u
+                LEFT JOIN pegawai p
+                  ON p.nik = CONVERT(AES_DECRYPT(u.id_user,'nur') USING utf8mb4)
+                  OR p.id = CONVERT(AES_DECRYPT(u.id_user,'nur') USING utf8mb4)
+                $where
+            ";
+            $summaryStmt = $pdo->prepare($summarySql);
+            $summaryStmt->execute($params);
+            $summaryRow = $summaryStmt->fetch() ?: [];
+
+            $listSql = "
+                SELECT
+                    CONVERT(AES_DECRYPT(u.id_user,'nur') USING utf8mb4) AS username,
+                    COALESCE(NULLIF(p.nama, ''), '-') AS nama_pegawai,
+                    COALESCE(NULLIF(p.jbtn, ''), '-') AS jabatan,
+                    ($accessCountExpr) AS akses_aktif,
+                    $importantSelect
+                FROM user u
+                LEFT JOIN pegawai p
+                  ON p.nik = CONVERT(AES_DECRYPT(u.id_user,'nur') USING utf8mb4)
+                  OR p.id = CONVERT(AES_DECRYPT(u.id_user,'nur') USING utf8mb4)
+                $where
+                ORDER BY username
+                LIMIT 100
+            ";
+            $listStmt = $pdo->prepare($listSql);
+            $listStmt->execute($params);
+            $rows = $listStmt->fetchAll() ?: [];
+
+            foreach ($rows as &$row) {
+                $badges = [];
+                foreach ($importantColumns as $column) {
+                    if (($row[$column] ?? 'false') === 'true') {
+                        $badges[] = $column;
+                    }
+                    unset($row[$column]);
+                }
+                $row['akses_penting'] = $badges;
+            }
+            unset($row);
+
+            $editUsername = trim((string)($_GET['edit'] ?? ''));
+            if ($editUsername !== '') {
+                $editSelectParts = ["CONVERT(AES_DECRYPT(u.id_user,'nur') USING utf8mb4) AS username"];
+                foreach ($importantColumns as $column) {
+                    $editSelectParts[] = sprintf("u.`%s` AS `%s`", $column, $column);
+                }
+                $editStmt = $pdo->prepare(
+                    "SELECT " . implode(", ", $editSelectParts) . "
+                     FROM user u
+                     WHERE u.id_user=AES_ENCRYPT(:username,'nur')
+                     LIMIT 1"
+                );
+                $editStmt->execute(['username' => $editUsername]);
+                $editRow = $editStmt->fetch();
+                if ($editRow) {
+                    $editRow['important_permissions'] = [];
+                    foreach ($importantColumns as $column) {
+                        $editRow['important_permissions'][$column] = (($editRow[$column] ?? 'false') === 'true');
+                        unset($editRow[$column]);
+                    }
+                    $data['userEdit'] = $editRow;
+                }
+            }
+
+            $data['userModuleReady'] = true;
+            $data['userList'] = $rows;
+            $data['userSummary'] = [
+                'total_users' => (int)($summaryRow['total_users'] ?? 0),
+                'linked_pegawai' => (int)($summaryRow['linked_pegawai'] ?? 0),
+                'avg_access' => (int)round((float)($summaryRow['avg_access'] ?? 0)),
+                'important_access_cols' => count($importantColumns),
+            ];
+        } catch (\Throwable $e) {
+            $data['userModuleError'] = $e->getMessage();
+        }
+
+        return $data;
+    }
+
+    private function handleUserPost(): void
+    {
+        $action = trim((string)($_POST['user_action'] ?? ''));
+        if ($action === 'save_user') {
+            $this->saveLegacyUser();
+            return;
+        }
+        if ($action === 'delete_user') {
+            $this->deleteLegacyUser();
+            return;
+        }
+        $this->storeUserFlash('error', 'Aksi user tidak dikenali.');
+        $this->redirectUserModule();
+    }
+
+    private function saveLegacyUser(): void
+    {
+        $originalUsername = trim((string)($_POST['original_username'] ?? ''));
+        $username = trim((string)($_POST['username'] ?? ''));
+        $password = (string)($_POST['password'] ?? '');
+        $selectedPermissionsRaw = $_POST['important_permissions'] ?? [];
+        $selectedPermissions = [];
+        if (is_array($selectedPermissionsRaw)) {
+            foreach ($selectedPermissionsRaw as $permission) {
+                $permission = trim((string)$permission);
+                if ($permission !== '') {
+                    $selectedPermissions[] = $permission;
+                }
+            }
+        }
+        $selectedPermissions = array_values(array_unique($selectedPermissions));
+
+        if ($username === '') {
+            $this->storeUserFlash('error', 'Username wajib diisi.');
+            $this->redirectUserModule();
+        }
+
+        try {
+            $pdo = Database::pdo();
+            $metadata = $this->getUserTableMetadata($pdo);
+            $enumColumns = $metadata['enum_columns'];
+            $importantColumns = $this->userImportantColumns();
+            $validPermissionMap = array_fill_keys($importantColumns, true);
+            $selectedPermissions = array_values(array_filter(
+                $selectedPermissions,
+                static fn(string $permission): bool => isset($validPermissionMap[$permission])
+            ));
+
+            if ($originalUsername === '') {
+                if ($password === '') {
+                    throw new \RuntimeException('Password wajib diisi untuk user baru.');
+                }
+
+                $checkStmt = $pdo->prepare("SELECT COUNT(*) FROM user WHERE id_user=AES_ENCRYPT(:username,'nur')");
+                $checkStmt->execute(['username' => $username]);
+                if ((int)$checkStmt->fetchColumn() > 0) {
+                    throw new \RuntimeException('Username sudah ada.');
+                }
+
+                $insertColumns = ['id_user', 'password'];
+                $insertValues = ["AES_ENCRYPT(:username,'nur')", "AES_ENCRYPT(:password,'windi')"];
+                $params = [
+                    'username' => $username,
+                    'password' => $password,
+                ];
+                foreach ($enumColumns as $column) {
+                    $insertColumns[] = sprintf('`%s`', $column);
+                    $insertValues[] = ':' . $column;
+                    $params[$column] = in_array($column, $selectedPermissions, true) ? 'true' : 'false';
+                }
+
+                $sql = sprintf(
+                    'INSERT INTO user (%s) VALUES (%s)',
+                    implode(', ', $insertColumns),
+                    implode(', ', $insertValues)
+                );
+                $stmt = $pdo->prepare($sql);
+                $stmt->execute($params);
+                $this->storeUserFlash('success', 'User legacy berhasil ditambahkan: ' . $username);
+                $this->redirectUserModule('', $username);
+            }
+
+            $checkOriginalStmt = $pdo->prepare("SELECT COUNT(*) FROM user WHERE id_user=AES_ENCRYPT(:username,'nur')");
+            $checkOriginalStmt->execute(['username' => $originalUsername]);
+            if ((int)$checkOriginalStmt->fetchColumn() <= 0) {
+                throw new \RuntimeException('User yang akan diedit tidak ditemukan.');
+            }
+
+            if ($username !== $originalUsername) {
+                $checkTargetStmt = $pdo->prepare("SELECT COUNT(*) FROM user WHERE id_user=AES_ENCRYPT(:username,'nur')");
+                $checkTargetStmt->execute(['username' => $username]);
+                if ((int)$checkTargetStmt->fetchColumn() > 0) {
+                    throw new \RuntimeException('Username tujuan sudah dipakai user lain.');
+                }
+            }
+
+            $setParts = ["id_user=AES_ENCRYPT(:new_username,'nur')"];
+            $params = [
+                'new_username' => $username,
+                'original_username' => $originalUsername,
+            ];
+            if ($password !== '') {
+                $setParts[] = "password=AES_ENCRYPT(:password,'windi')";
+                $params['password'] = $password;
+            }
+            foreach ($importantColumns as $column) {
+                $setParts[] = sprintf("`%s`=:%s", $column, $column);
+                $params[$column] = in_array($column, $selectedPermissions, true) ? 'true' : 'false';
+            }
+
+            $sql = sprintf(
+                "UPDATE user SET %s WHERE id_user=AES_ENCRYPT(:original_username,'nur')",
+                implode(', ', $setParts)
+            );
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute($params);
+            $this->storeUserFlash('success', 'User legacy berhasil diperbarui: ' . $username);
+            $this->redirectUserModule('', $username);
+        } catch (\Throwable $e) {
+            $this->storeUserFlash('error', 'Gagal simpan user legacy: ' . $e->getMessage());
+            $editTarget = $originalUsername !== '' ? $originalUsername : $username;
+            $this->redirectUserModule('', $editTarget);
+        }
+    }
+
+    private function deleteLegacyUser(): void
+    {
+        $username = trim((string)($_POST['username'] ?? ''));
+        if ($username === '') {
+            $this->storeUserFlash('error', 'User tidak valid.');
+            $this->redirectUserModule();
+        }
+
+        try {
+            $pdo = Database::pdo();
+            $stmt = $pdo->prepare("DELETE FROM user WHERE id_user=AES_ENCRYPT(:username,'nur')");
+            $stmt->execute(['username' => $username]);
+            if ($stmt->rowCount() <= 0) {
+                throw new \RuntimeException('User tidak ditemukan atau sudah terhapus.');
+            }
+            $this->storeUserFlash('success', 'User legacy berhasil dihapus: ' . $username);
+        } catch (\Throwable $e) {
+            $this->storeUserFlash('error', 'Gagal hapus user legacy: ' . $e->getMessage());
+        }
+
+        $this->redirectUserModule();
+    }
+
+    private function redirectUserModule(string $search = '', string $edit = ''): void
+    {
+        $params = ['module' => 'user'];
+        if ($search !== '') {
+            $params['q'] = $search;
+        }
+        if ($edit !== '') {
+            $params['edit'] = $edit;
+        }
+        header('Location: ?' . http_build_query($params));
+        exit;
+    }
+
+    private function storeUserFlash(string $type, string $message): void
+    {
+        $_SESSION[self::USER_FLASH_KEY] = ['type' => $type, 'message' => $message];
+    }
+
+    private function pullUserFlash(): array
+    {
+        $flash = $_SESSION[self::USER_FLASH_KEY] ?? [];
+        unset($_SESSION[self::USER_FLASH_KEY]);
+        return is_array($flash) ? $flash : [];
+    }
+
+    private function getUserTableMetadata(\PDO $pdo): array
+    {
+        $columnsStmt = $pdo->query('SHOW COLUMNS FROM user');
+        $columns = $columnsStmt ? ($columnsStmt->fetchAll() ?: []) : [];
+        if (empty($columns)) {
+            throw new \RuntimeException('Schema tabel user tidak terbaca.');
+        }
+
+        $enumColumns = [];
+        foreach ($columns as $column) {
+            $field = (string)($column['Field'] ?? '');
+            $type = strtolower((string)($column['Type'] ?? ''));
+            if ($field !== '' && str_starts_with($type, 'enum(')) {
+                $enumColumns[] = $field;
+            }
+        }
+
+        if (empty($enumColumns)) {
+            throw new \RuntimeException('Kolom akses user tidak ditemukan.');
+        }
+
+        $accessCountExpr = implode(' + ', array_map(
+            static fn(string $field): string => sprintf("(u.`%s`='true')", str_replace('`', '', $field)),
+            $enumColumns
+        ));
+        $importantSelect = implode(",\n                        ", array_map(
+            static fn(string $field): string => sprintf("u.`%s` AS `%s`", str_replace('`', '', $field), str_replace('`', '', $field)),
+            $this->userImportantColumns()
+        ));
+
+        return [
+            'enum_columns' => $enumColumns,
+            'access_count_expr' => $accessCountExpr,
+            'important_select' => $importantSelect,
+        ];
+    }
+
+    private function userImportantColumns(): array
+    {
+        return [
+            'registrasi',
+            'billing_ralan',
+            'billing_ranap',
+            'periksa_lab',
+            'periksa_radiologi',
+            'bpjs_sep',
+            'satu_sehat_kirim_encounter',
+            'stok_opname_obat',
+        ];
     }
 
     private function isRbacSchemaReady(): bool
