@@ -199,47 +199,51 @@ final class MenuUtamaController
             'no_faktur' => trim((string)($_GET['enf'] ?? '')),
         ];
 
-        $tableCheck = $db->value("SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = DATABASE() AND table_name = 'opname'");
+        // Halaman ini dipakai untuk melihat & mengatur stok per bangsal (gudangbarang)
+        // dengan ringkasan stok pada 3 lokasi: Logistik (GDO), Farmasi (FM), OK (OK)
         $rows = ['ok' => true, 'data' => [], 'error' => null];
+        $params = [];
+        $where = '';
+        if ($q !== '') {
+            $where = "WHERE db.kode_brng LIKE :q1 OR db.nama_brng LIKE :q2";
+            $params = [
+                'q1' => '%' . $q . '%',
+                'q2' => '%' . $q . '%',
+            ];
+        }
+
+        $rows = $db->run(
+            "SELECT db.kode_brng, db.nama_brng,
+                    IFNULL(gl.stok, 0) AS stok_logistik,
+                    IFNULL(gf.stok, 0) AS stok_farmasi,
+                    IFNULL(gok.stok, 0) AS stok_ok
+             FROM databarang db
+             LEFT JOIN gudangbarang gl ON gl.kode_brng = db.kode_brng AND gl.kd_bangsal = 'GDO'
+             LEFT JOIN gudangbarang gf ON gf.kode_brng = db.kode_brng AND gf.kd_bangsal = 'FM'
+             LEFT JOIN gudangbarang gok ON gok.kode_brng = db.kode_brng AND gok.kd_bangsal = 'OK'
+             {$where}
+             ORDER BY db.nama_brng ASC
+             LIMIT 200",
+            $params
+        );
+
+        // Form edit stok gudangbarang (1 item) berdasarkan key gudangbarang
         $editRow = null;
-        if ($tableCheck['ok'] && (int)$tableCheck['data'] > 0) {
-            $params = [];
-            $where = '';
-            if ($q !== '') {
-                $where = "WHERE o.kode_brng LIKE :q1 OR db.nama_brng LIKE :q2 OR o.no_batch LIKE :q3 OR o.no_faktur LIKE :q4";
-                $params = [
-                    'q1' => '%' . $q . '%',
-                    'q2' => '%' . $q . '%',
-                    'q3' => '%' . $q . '%',
-                    'q4' => '%' . $q . '%',
-                ];
-            }
-            $rows = $db->run(
-                "SELECT o.kode_brng, db.nama_brng, o.h_beli, o.tanggal, o.stok, o.real, o.selisih, o.nomihilang, o.lebih, o.nomilebih, o.keterangan, o.kd_bangsal, o.no_batch, o.no_faktur
-                 FROM opname o
-                 LEFT JOIN databarang db ON db.kode_brng = o.kode_brng
-                 {$where}
-                 ORDER BY o.tanggal DESC, o.kode_brng DESC
-                 LIMIT 200",
-                $params
+        if ($editKey['kode_brng'] !== '' && $editKey['kd_bangsal'] !== '') {
+            $res = $db->run(
+                "SELECT kode_brng, kd_bangsal, stok, no_batch, no_faktur
+                 FROM gudangbarang
+                 WHERE kode_brng=:kode AND kd_bangsal=:bangsal AND no_batch=:batch AND no_faktur=:faktur
+                 LIMIT 1",
+                [
+                    'kode' => $editKey['kode_brng'],
+                    'bangsal' => $editKey['kd_bangsal'],
+                    'batch' => $editKey['no_batch'] === '' ? '-' : $editKey['no_batch'],
+                    'faktur' => $editKey['no_faktur'] === '' ? '-' : $editKey['no_faktur'],
+                ]
             );
-            if ($editKey['kode_brng'] !== '' && $editKey['tanggal'] !== '' && $editKey['kd_bangsal'] !== '') {
-                $res = $db->run(
-                    "SELECT kode_brng, h_beli, tanggal, stok, real, selisih, nomihilang, lebih, nomilebih, keterangan, kd_bangsal, no_batch, no_faktur
-                     FROM opname
-                     WHERE kode_brng=:kode AND tanggal=:tanggal AND kd_bangsal=:bangsal AND no_batch=:batch AND no_faktur=:faktur
-                     LIMIT 1",
-                    [
-                        'kode' => $editKey['kode_brng'],
-                        'tanggal' => $editKey['tanggal'],
-                        'bangsal' => $editKey['kd_bangsal'],
-                        'batch' => $editKey['no_batch'],
-                        'faktur' => $editKey['no_faktur'],
-                    ]
-                );
-                if ($res['ok'] && !empty($res['data'])) {
-                    $editRow = $res['data'][0];
-                }
+            if ($res['ok'] && !empty($res['data'])) {
+                $editRow = $res['data'][0];
             }
         }
 
@@ -248,7 +252,7 @@ final class MenuUtamaController
             'q' => $q,
             'rows' => $rows['data'],
             'error' => $rows['ok'] ? null : $rows['error'],
-            'opnameTableReady' => ($tableCheck['ok'] && (int)$tableCheck['data'] > 0),
+            'opnameTableReady' => true,
             'editRow' => $editRow,
             'msg' => $msg,
             'msgType' => $msgType,
@@ -527,126 +531,97 @@ final class MenuUtamaController
 
     private function createOpname(): void
     {
+        // Disimpan ke gudangbarang (posisi stok saat ini)
         $kode = trim((string)($_POST['kode_brng'] ?? ''));
-        $tanggal = trim((string)($_POST['tanggal'] ?? date('Y-m-d')));
+        $tanggal = trim((string)($_POST['tanggal'] ?? date('Y-m-d'))); // tidak disimpan (gudangbarang tidak punya tanggal)
         $bangsal = trim((string)($_POST['kd_bangsal'] ?? ''));
-        $batch = trim((string)($_POST['no_batch'] ?? ''));
-        $faktur = trim((string)($_POST['no_faktur'] ?? ''));
-        $hBeli = (float)($_POST['h_beli'] ?? 0);
         $stok = (float)($_POST['stok'] ?? 0);
-        $real = (float)($_POST['real'] ?? 0);
-        $keterangan = trim((string)($_POST['keterangan'] ?? '-'));
+
         if ($kode === '' || $tanggal === '' || $bangsal === '') {
             $this->redirectWithMsg('menu-stok-opname', 'Kode barang, tanggal, dan bangsal wajib diisi', 'error');
         }
-        $hitung = $this->hitungOpname($stok, $real, $hBeli);
+
         $db = new SimrsQueryService();
+        // no_batch & no_faktur wajib NOT NULL + bagian dari PK
         $res = $db->run(
-            "INSERT INTO opname (
-                kode_brng,h_beli,tanggal,stok,real,selisih,nomihilang,lebih,nomilebih,keterangan,kd_bangsal,no_batch,no_faktur
-            ) VALUES (
-                :kode_brng,:h_beli,:tanggal,:stok,:real,:selisih,:nomihilang,:lebih,:nomilebih,:keterangan,:kd_bangsal,:no_batch,:no_faktur
-            )",
+            "INSERT INTO gudangbarang (kode_brng, kd_bangsal, stok, no_batch, no_faktur)
+             VALUES (:kode, :bangsal, :stok, :batch, :faktur)
+             ON DUPLICATE KEY UPDATE stok = :stok",
             [
-                'kode_brng' => $kode,
-                'h_beli' => $hBeli,
-                'tanggal' => $tanggal,
+                'kode' => $kode,
+                'bangsal' => $bangsal,
                 'stok' => $stok,
-                'real' => $real,
-                'selisih' => $hitung['selisih'],
-                'nomihilang' => $hitung['nomihilang'],
-                'lebih' => $hitung['lebih'],
-                'nomilebih' => $hitung['nomilebih'],
-                'keterangan' => $keterangan === '' ? '-' : $keterangan,
-                'kd_bangsal' => $bangsal,
-                'no_batch' => $batch,
-                'no_faktur' => $faktur,
+                'batch' => '-',
+                'faktur' => '-',
             ]
         );
         if (!$res['ok']) {
-            $this->redirectWithMsg('menu-stok-opname', 'Gagal tambah opname: ' . (string)$res['error'], 'error');
+            $this->redirectWithMsg('menu-stok-opname', 'Gagal simpan stok: ' . (string)$res['error'], 'error');
         }
-        $this->redirectWithMsg('menu-stok-opname', 'Data opname berhasil ditambahkan');
+        $this->redirectWithMsg('menu-stok-opname', 'Stok berhasil disimpan');
     }
 
     private function updateOpname(): void
     {
+        // Disimpan ke gudangbarang (posisi stok saat ini)
         $oldKode = trim((string)($_POST['old_kode_brng'] ?? ''));
-        $oldTanggal = trim((string)($_POST['old_tanggal'] ?? ''));
         $oldBangsal = trim((string)($_POST['old_kd_bangsal'] ?? ''));
-        $oldBatch = trim((string)($_POST['old_no_batch'] ?? ''));
-        $oldFaktur = trim((string)($_POST['old_no_faktur'] ?? ''));
+
         $kode = trim((string)($_POST['kode_brng'] ?? ''));
-        $tanggal = trim((string)($_POST['tanggal'] ?? date('Y-m-d')));
+        $tanggal = trim((string)($_POST['tanggal'] ?? date('Y-m-d'))); // tidak disimpan
         $bangsal = trim((string)($_POST['kd_bangsal'] ?? ''));
-        $batch = trim((string)($_POST['no_batch'] ?? ''));
-        $faktur = trim((string)($_POST['no_faktur'] ?? ''));
-        $hBeli = (float)($_POST['h_beli'] ?? 0);
         $stok = (float)($_POST['stok'] ?? 0);
-        $real = (float)($_POST['real'] ?? 0);
-        $keterangan = trim((string)($_POST['keterangan'] ?? '-'));
-        if ($oldKode === '' || $oldTanggal === '' || $oldBangsal === '' || $kode === '' || $tanggal === '' || $bangsal === '') {
-            $this->redirectWithMsg('menu-stok-opname', 'Data kunci opname tidak lengkap', 'error');
+
+        if ($oldKode === '' || $oldBangsal === '' || $kode === '' || $tanggal === '' || $bangsal === '') {
+            $this->redirectWithMsg('menu-stok-opname', 'Data kunci stok tidak lengkap', 'error');
         }
-        $hitung = $this->hitungOpname($stok, $real, $hBeli);
+
+        // Key gudangbarang: kode_brng + kd_bangsal + no_batch + no_faktur
+        // Kita pakai default '-' untuk batch/faktur.
         $db = new SimrsQueryService();
         $res = $db->run(
-            "UPDATE opname
-             SET kode_brng=:kode_brng,h_beli=:h_beli,tanggal=:tanggal,stok=:stok,real=:real,selisih=:selisih,nomihilang=:nomihilang,lebih=:lebih,nomilebih=:nomilebih,keterangan=:keterangan,kd_bangsal=:kd_bangsal,no_batch=:no_batch,no_faktur=:no_faktur
-             WHERE kode_brng=:old_kode AND tanggal=:old_tanggal AND kd_bangsal=:old_bangsal AND no_batch=:old_batch AND no_faktur=:old_faktur",
+            "UPDATE gudangbarang
+             SET kode_brng=:kode, kd_bangsal=:bangsal, stok=:stok
+             WHERE kode_brng=:old_kode AND kd_bangsal=:old_bangsal AND no_batch=:batch AND no_faktur=:faktur",
             [
-                'kode_brng' => $kode,
-                'h_beli' => $hBeli,
-                'tanggal' => $tanggal,
+                'kode' => $kode,
+                'bangsal' => $bangsal,
                 'stok' => $stok,
-                'real' => $real,
-                'selisih' => $hitung['selisih'],
-                'nomihilang' => $hitung['nomihilang'],
-                'lebih' => $hitung['lebih'],
-                'nomilebih' => $hitung['nomilebih'],
-                'keterangan' => $keterangan === '' ? '-' : $keterangan,
-                'kd_bangsal' => $bangsal,
-                'no_batch' => $batch,
-                'no_faktur' => $faktur,
                 'old_kode' => $oldKode,
-                'old_tanggal' => $oldTanggal,
                 'old_bangsal' => $oldBangsal,
-                'old_batch' => $oldBatch,
-                'old_faktur' => $oldFaktur,
+                'batch' => '-',
+                'faktur' => '-',
             ]
         );
         if (!$res['ok']) {
-            $this->redirectWithMsg('menu-stok-opname', 'Gagal update opname: ' . (string)$res['error'], 'error');
+            $this->redirectWithMsg('menu-stok-opname', 'Gagal update stok: ' . (string)$res['error'], 'error');
         }
-        $this->redirectWithMsg('menu-stok-opname', 'Data opname berhasil diupdate');
+        $this->redirectWithMsg('menu-stok-opname', 'Stok berhasil diupdate');
     }
 
     private function deleteOpname(): void
     {
         $kode = trim((string)($_POST['kode_brng'] ?? ''));
-        $tanggal = trim((string)($_POST['tanggal'] ?? ''));
         $bangsal = trim((string)($_POST['kd_bangsal'] ?? ''));
-        $batch = trim((string)($_POST['no_batch'] ?? ''));
-        $faktur = trim((string)($_POST['no_faktur'] ?? ''));
-        if ($kode === '' || $tanggal === '' || $bangsal === '') {
-            $this->redirectWithMsg('menu-stok-opname', 'Data hapus opname tidak valid', 'error');
+        if ($kode === '' || $bangsal === '') {
+            $this->redirectWithMsg('menu-stok-opname', 'Data hapus stok tidak valid', 'error');
         }
+
         $db = new SimrsQueryService();
         $res = $db->run(
-            "DELETE FROM opname
-             WHERE kode_brng=:kode AND tanggal=:tanggal AND kd_bangsal=:bangsal AND no_batch=:batch AND no_faktur=:faktur",
+            "DELETE FROM gudangbarang
+             WHERE kode_brng=:kode AND kd_bangsal=:bangsal AND no_batch=:batch AND no_faktur=:faktur",
             [
                 'kode' => $kode,
-                'tanggal' => $tanggal,
                 'bangsal' => $bangsal,
-                'batch' => $batch,
-                'faktur' => $faktur,
+                'batch' => '-',
+                'faktur' => '-',
             ]
         );
         if (!$res['ok']) {
-            $this->redirectWithMsg('menu-stok-opname', 'Gagal hapus opname: ' . (string)$res['error'], 'error');
+            $this->redirectWithMsg('menu-stok-opname', 'Gagal hapus stok: ' . (string)$res['error'], 'error');
         }
-        $this->redirectWithMsg('menu-stok-opname', 'Data opname berhasil dihapus');
+        $this->redirectWithMsg('menu-stok-opname', 'Stok berhasil dihapus');
     }
 
     private function redirectWithMsg(string $page, string $msg, string $type = 'ok'): void
